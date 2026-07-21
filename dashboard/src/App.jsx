@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
+import LoginScreen from "./components/LoginScreen";
 import CSVLoader from "./components/CSVLoader";
 import ExecutiveSummary from "./components/ExecutiveSummary";
 import LeadFunnelStatus from "./components/LeadFunnelStatus";
@@ -12,7 +13,11 @@ import { filterData, getUniqueValues, getCityStateOptions } from "./utils/dataPr
 import { LogOut, Filter, Calendar, RotateCcw, BarChart3, Database, Sun, Moon } from "lucide-react";
 
 export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return sessionStorage.getItem("kia-auth") === "true";
+  });
   const [rawData, setRawData] = useState(null);
+
   const [activeTab, setActiveTab] = useState("executive");
 
   // Dark / Light Mode
@@ -92,6 +97,20 @@ export default function App() {
     setActiveTab("executive");
   };
 
+  // Logout handler
+  const handleLogout = () => {
+    sessionStorage.removeItem("kia-auth");
+    setIsAuthenticated(false);
+    setRawData(null);
+    resetFilters();
+    setActiveTab("executive");
+  };
+
+  // Render Login Screen if not authenticated
+  if (!isAuthenticated) {
+    return <LoginScreen onLogin={() => setIsAuthenticated(true)} />;
+  }
+
   // Render Loader if no data uploaded
   if (!rawData) {
     return <CSVLoader onDataLoaded={setRawData} />;
@@ -160,6 +179,16 @@ export default function App() {
           >
             <LogOut size={13} className="text-kia-red" />
             <span>Upload Another File</span>
+          </button>
+
+          {/* Sign Out */}
+          <button
+            onClick={handleLogout}
+            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-kia-muted hover:text-red-400 bg-white/5 hover:bg-red-500/10 border border-kia-border rounded-lg transition-all"
+            title="Sign out"
+          >
+            <LogOut size={13} className="text-kia-red" />
+            <span>Sign Out</span>
           </button>
         </div>
       </header>
