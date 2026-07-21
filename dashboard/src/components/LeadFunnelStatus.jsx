@@ -54,9 +54,9 @@ export default function LeadFunnelStatus({ data }) {
           <div className="h-[300px] w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
-                layout="yaml"
+                layout="vertical"
                 data={funnelData}
-                margin={{ top: 10, right: 30, left: 40, bottom: 5 }}
+                margin={{ top: 10, right: 30, left: 20, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" stroke="#232733" horizontal={false} />
                 <XAxis type="number" stroke="var(--color-kia-muted)" fontSize={11} />
@@ -88,11 +88,11 @@ export default function LeadFunnelStatus({ data }) {
                   data={statusData}
                   cx="50%"
                   cy="50%"
-                  innerRadius={60}
-                  outerRadius={100}
+                  innerRadius={50}
+                  outerRadius={85}
                   paddingAngle={5}
                   dataKey="value"
-                  label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                  label={({ name, percent }) => `${name.length > 12 ? name.substring(0, 10) + '...' : name} (${(percent * 100).toFixed(0)}%)`}
                 >
                   {statusData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

@@ -141,7 +141,7 @@ export default function App() {
       </a>
 
       {/* Top Navbar */}
-      <header className="sticky top-0 bg-kia-card/95 border-b border-kia-border z-40 px-6 py-4 flex items-center justify-between backdrop-blur-md">
+      <header className="sticky top-0 bg-kia-card/95 border-b border-kia-border z-40 px-4 md:px-6 py-3 md:py-4 flex flex-wrap items-center justify-between gap-2 backdrop-blur-md">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-lg bg-kia-red flex items-center justify-center text-white font-extrabold text-sm tracking-widest font-outfit">
             KIA
@@ -157,7 +157,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           {/* Dark/Light Mode Toggle */}
           <button
             onClick={() => setDarkMode((prev) => !prev)}
@@ -172,23 +172,22 @@ export default function App() {
             )}
           </button>
 
-          {/* Change File Trigger */}
           <button
             onClick={unloadData}
-            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-kia-muted hover:text-white bg-white/5 hover:bg-white/10 border border-kia-border rounded-lg transition-all"
+            className="inline-flex items-center gap-2 px-2 md:px-3 py-1.5 text-xs font-semibold text-kia-muted hover:text-white bg-white/5 hover:bg-white/10 border border-kia-border rounded-lg transition-all"
+            title="Upload Another File"
           >
             <LogOut size={13} className="text-kia-red" />
-            <span>Upload Another File</span>
+            <span className="hidden md:inline">Upload Another File</span>
           </button>
 
-          {/* Sign Out */}
           <button
             onClick={handleLogout}
-            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-kia-muted hover:text-red-400 bg-white/5 hover:bg-red-500/10 border border-kia-border rounded-lg transition-all"
+            className="inline-flex items-center gap-2 px-2 md:px-3 py-1.5 text-xs font-semibold text-kia-muted hover:text-red-400 bg-white/5 hover:bg-red-500/10 border border-kia-border rounded-lg transition-all"
             title="Sign out"
           >
             <LogOut size={13} className="text-kia-red" />
-            <span>Sign Out</span>
+            <span className="hidden md:inline">Sign Out</span>
           </button>
         </div>
       </header>

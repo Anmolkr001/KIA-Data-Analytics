@@ -131,9 +131,13 @@ export default function ExecutiveSummary({ data }) {
               <XAxis 
                 dataKey="date" 
                 stroke="var(--color-kia-muted)" 
-                fontSize={11}
+                fontSize={10}
                 tickLine={false}
                 axisLine={{ stroke: '#232733' }}
+                interval="preserveStartEnd"
+                angle={-35}
+                textAnchor="end"
+                height={50}
               />
               <YAxis 
                 stroke="var(--color-kia-muted)" 

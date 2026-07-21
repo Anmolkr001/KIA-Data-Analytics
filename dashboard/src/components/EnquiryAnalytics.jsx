@@ -280,17 +280,13 @@ export default function EnquiryAnalytics({ data }) {
   }, [search]);
 
   // ── Client-side table processing ──
-  const tableColumns = [
-    { key: "S NO", label: "#" },
-    { key: "Enquiry Date", label: "Enquiry Date" },
-    { key: "Anonymized Customer ID", label: "Customer ID" },
-    { key: "Customer Type", label: "Type" },
-    { key: "Model", label: "Model" },
-    { key: "Enquiry Status", label: "Status" },
-    { key: "Source", label: "Source" },
-    { key: "City", label: "City" },
-    { key: "Consultant Name", label: "Consultant" },
-  ];
+  const tableColumns = useMemo(() => {
+    if (!data || data.length === 0) return [];
+    return Object.keys(data[0]).map(key => ({
+      key,
+      label: key
+    }));
+  }, [data]);
 
   const processedTable = useMemo(() => {
     let view = [...data];
