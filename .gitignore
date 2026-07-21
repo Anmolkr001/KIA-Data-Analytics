@@ -18,3 +18,11 @@ notebooks/funnel_plot.png
 notebooks/source_conversion_plot.png
 notebooks/td_impact_plot.png
 notebooks/followup_optimization_plot.png
+
+# Environment variables
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.staging
