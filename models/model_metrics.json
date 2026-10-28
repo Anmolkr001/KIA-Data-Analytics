@@ -1,0 +1,74 @@
+{
+  "cv_metrics": {
+    "mean_roc_auc": 0.9771,
+    "std_roc_auc": 0.0039,
+    "mean_pr_auc": 0.8377,
+    "mean_precision": 0.552,
+    "mean_recall": 0.9784,
+    "mean_f1": 0.7057
+  },
+  "test_roc_auc": 0.9804,
+  "test_pr_auc": 0.8642,
+  "top_shap_factors": [
+    {
+      "feature": "lead_warmth_Hot",
+      "importance": 3.0765
+    },
+    {
+      "feature": "followup_count",
+      "importance": 0.4863
+    },
+    {
+      "feature": "exchange_interest_No",
+      "importance": 0.404
+    },
+    {
+      "feature": "lead_warmth_Cold",
+      "importance": 0.3811
+    },
+    {
+      "feature": "customer_type_Corporate",
+      "importance": 0.3592
+    },
+    {
+      "feature": "aging_days",
+      "importance": 0.2742
+    },
+    {
+      "feature": "city_clean_OTHER",
+      "importance": 0.1568
+    },
+    {
+      "feature": "lead_source_Referral",
+      "importance": 0.1515
+    },
+    {
+      "feature": "city_clean_BHUBANESWAR",
+      "importance": 0.1376
+    },
+    {
+      "feature": "test_drive_done_No",
+      "importance": 0.1165
+    },
+    {
+      "feature": "lead_warmth_Warm",
+      "importance": 0.1124
+    },
+    {
+      "feature": "city_clean_BERHAMPUR",
+      "importance": 0.1033
+    },
+    {
+      "feature": "city_clean_UNKNOWN",
+      "importance": 0.0885
+    },
+    {
+      "feature": "car_model_SONET",
+      "importance": 0.065
+    },
+    {
+      "feature": "exchange_interest_Yes",
+      "importance": 0.0517
+    }
+  ]
+}

@@ -13,6 +13,8 @@ import {
   Sparkles,
   Users,
   MapPin,
+  ArrowLeft,
+  Bot,
 } from "lucide-react";
 import { sampleCRMData } from "../utils/sampleData";
 
@@ -125,7 +127,7 @@ function RippleButton({ children, onClick, className = "", disabled = false, typ
 /* ═══════════════════════════════════════════════════
    Simple Navbar
    ═══════════════════════════════════════════════════ */
-function LandingNavbar({ onScrollTo }) {
+function LandingNavbar({ onScrollTo, onBack, onOpenChat }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -160,6 +162,30 @@ function LandingNavbar({ onScrollTo }) {
 
         {/* Desktop links */}
         <div className="landing-navbar-links">
+          {onBack && (
+            <button
+              onClick={onBack}
+              className="landing-navbar-link inline-flex items-center gap-1.5 font-bold text-white hover:text-kia-red cursor-pointer"
+              title="Return to Showroom & Login"
+            >
+              <ArrowLeft size={14} className="text-kia-red" />
+              <span>Back to Showroom</span>
+            </button>
+          )}
+          {onOpenChat && (
+            <button
+              onClick={onOpenChat}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-kia-red/30 to-kia-red/20 hover:from-kia-red/50 hover:to-kia-red/30 border border-kia-red/50 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-kia-red cursor-pointer shadow-sm active:scale-95"
+              title="Ask AI questions about your dealership dataset"
+            >
+              <Bot size={14} className="text-kia-red" />
+              <span className="font-outfit font-bold hidden sm:inline">Ask AI Copilot</span>
+              <span className="flex h-2 w-2 relative">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-kia-red opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-kia-red"></span>
+              </span>
+            </button>
+          )}
           {navLinks.map((link) => (
             <button
               key={link.id}
@@ -191,6 +217,24 @@ function LandingNavbar({ onScrollTo }) {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="landing-navbar-mobile-menu">
+          {onBack && (
+            <button
+              onClick={() => { onBack(); setMobileOpen(false); }}
+              className="landing-navbar-mobile-link inline-flex items-center gap-2 font-bold text-white"
+            >
+              <ArrowLeft size={14} className="text-kia-red" />
+              <span>Back to Showroom</span>
+            </button>
+          )}
+          {onOpenChat && (
+            <button
+              onClick={() => { onOpenChat(); setMobileOpen(false); }}
+              className="landing-navbar-mobile-link inline-flex items-center gap-2 font-bold text-white"
+            >
+              <Bot size={14} className="text-kia-red" />
+              <span>Ask AI Copilot</span>
+            </button>
+          )}
           {navLinks.map((link) => (
             <button
               key={link.id}
@@ -215,7 +259,7 @@ function LandingNavbar({ onScrollTo }) {
 /* ═══════════════════════════════════════════════════
    MAIN COMPONENT — CSVLoader (Simple Landing page)
    ═══════════════════════════════════════════════════ */
-export default function CSVLoader({ onDataLoaded }) {
+export default function CSVLoader({ onDataLoaded, onBack, onOpenChat }) {
   const [isDragging, setIsDragging] = useState(false);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -360,7 +404,7 @@ export default function CSVLoader({ onDataLoaded }) {
       <div className="landing-overlay-vignette" aria-hidden="true" />
 
       {/* ═══ Glassmorphism Navbar ═══ */}
-      <LandingNavbar onScrollTo={scrollToSection} />
+      <LandingNavbar onScrollTo={scrollToSection} onBack={onBack} onOpenChat={onOpenChat} />
 
       {/* ═══ Scrollable Content ═══ */}
       <div className="relative z-10 flex flex-col min-h-screen">

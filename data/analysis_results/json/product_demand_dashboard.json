@@ -1,0 +1,545 @@
+{
+  "fuel_type_performance": [
+    {
+      "Fuel type": "Gasoline",
+      "Enquiries": 3861,
+      "Test_Drives": 2484,
+      "Bookings": 1412,
+      "Retails": 694,
+      "Avg_Sales_Cycle_Days": -3621.5325045325044,
+      "TD_Rate": 0.6433566433566433,
+      "Booking_Rate": 0.36570836570836573,
+      "Retail_Rate": 0.17974617974617974
+    },
+    {
+      "Fuel type": "Diesel",
+      "Enquiries": 538,
+      "Test_Drives": 390,
+      "Bookings": 208,
+      "Retails": 72,
+      "Avg_Sales_Cycle_Days": -3882.2843866171,
+      "TD_Rate": 0.724907063197026,
+      "Booking_Rate": 0.38661710037174724,
+      "Retail_Rate": 0.13382899628252787
+    },
+    {
+      "Fuel type": "Electric",
+      "Enquiries": 190,
+      "Test_Drives": 93,
+      "Bookings": 50,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -3343.5789473684213,
+      "TD_Rate": 0.48947368421052634,
+      "Booking_Rate": 0.2631578947368421,
+      "Retail_Rate": 0.10526315789473684
+    },
+    {
+      "Fuel type": null,
+      "Enquiries": 2378,
+      "Test_Drives": 282,
+      "Bookings": 2,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6163.4667788057195,
+      "TD_Rate": 0.11858704793944491,
+      "Booking_Rate": 0.0008410428931875525,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "color_preference": [
+    {
+      "Color": null,
+      "Enquiries": 2508,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Color": "GLACIER WHITE PEARL",
+      "Enquiries": 1181,
+      "Retails": 214,
+      "Retail_Rate": 0.18120237087214225
+    },
+    {
+      "Color": "AURORA BLACK PEARL",
+      "Enquiries": 1137,
+      "Retails": 199,
+      "Retail_Rate": 0.17502198768689534
+    },
+    {
+      "Color": "CLEAR WHITE",
+      "Enquiries": 705,
+      "Retails": 143,
+      "Retail_Rate": 0.2028368794326241
+    },
+    {
+      "Color": "IMPERIAL BLUE",
+      "Enquiries": 263,
+      "Retails": 51,
+      "Retail_Rate": 0.19391634980988592
+    },
+    {
+      "Color": "MORNING HAZE",
+      "Enquiries": 243,
+      "Retails": 35,
+      "Retail_Rate": 0.1440329218106996
+    },
+    {
+      "Color": "GRAVITY GREY",
+      "Enquiries": 173,
+      "Retails": 22,
+      "Retail_Rate": 0.12716763005780346
+    },
+    {
+      "Color": "PEWTER OLIVE",
+      "Enquiries": 163,
+      "Retails": 21,
+      "Retail_Rate": 0.12883435582822086
+    },
+    {
+      "Color": "MAGMA RED",
+      "Enquiries": 162,
+      "Retails": 27,
+      "Retail_Rate": 0.16666666666666666
+    },
+    {
+      "Color": "IVORY SILVER GLOSS",
+      "Enquiries": 114,
+      "Retails": 21,
+      "Retail_Rate": 0.18421052631578946
+    },
+    {
+      "Color": "MATTE GRAPHITE",
+      "Enquiries": 102,
+      "Retails": 40,
+      "Retail_Rate": 0.39215686274509803
+    },
+    {
+      "Color": "FROST BLUE",
+      "Enquiries": 81,
+      "Retails": 7,
+      "Retail_Rate": 0.08641975308641975
+    },
+    {
+      "Color": "INTENSE RED",
+      "Enquiries": 53,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Color": "IVORY SILVER MATT",
+      "Enquiries": 32,
+      "Retails": 4,
+      "Retail_Rate": 0.125
+    },
+    {
+      "Color": "SPARKLING SILVER",
+      "Enquiries": 27,
+      "Retails": 1,
+      "Retail_Rate": 0.037037037037037035
+    }
+  ],
+  "model_fuel_crosstab": [
+    {
+      "Model": "SONET",
+      "Fuel type": "Gasoline",
+      "Enquiries": 1409,
+      "Test_Drives": 944,
+      "Bookings": 587,
+      "Retails": 326,
+      "Avg_Sales_Cycle_Days": -3167.4520936834633,
+      "TD_Rate": 0.6699787083037615,
+      "Booking_Rate": 0.41660752306600424,
+      "Retail_Rate": 0.2313697657913414
+    },
+    {
+      "Model": "CARENS",
+      "Fuel type": "Gasoline",
+      "Enquiries": 758,
+      "Test_Drives": 503,
+      "Bookings": 300,
+      "Retails": 176,
+      "Avg_Sales_Cycle_Days": -3132.4775725593668,
+      "TD_Rate": 0.6635883905013192,
+      "Booking_Rate": 0.39577836411609496,
+      "Retail_Rate": 0.23218997361477572
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Fuel type": "Gasoline",
+      "Enquiries": 1428,
+      "Test_Drives": 959,
+      "Bookings": 450,
+      "Retails": 158,
+      "Avg_Sales_Cycle_Days": -3913.5252100840335,
+      "TD_Rate": 0.6715686274509803,
+      "Booking_Rate": 0.31512605042016806,
+      "Retail_Rate": 0.11064425770308123
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Fuel type": "Diesel",
+      "Enquiries": 219,
+      "Test_Drives": 177,
+      "Bookings": 86,
+      "Retails": 29,
+      "Avg_Sales_Cycle_Days": -3085.648401826484,
+      "TD_Rate": 0.8082191780821918,
+      "Booking_Rate": 0.3926940639269406,
+      "Retail_Rate": 0.1324200913242009
+    },
+    {
+      "Model": "SELTOS",
+      "Fuel type": "Gasoline",
+      "Enquiries": 153,
+      "Test_Drives": 21,
+      "Bookings": 38,
+      "Retails": 23,
+      "Avg_Sales_Cycle_Days": -7098.078431372549,
+      "TD_Rate": 0.13725490196078433,
+      "Booking_Rate": 0.24836601307189543,
+      "Retail_Rate": 0.1503267973856209
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Fuel type": "Electric",
+      "Enquiries": 187,
+      "Test_Drives": 93,
+      "Bookings": 50,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -3177.475935828877,
+      "TD_Rate": 0.49732620320855614,
+      "Booking_Rate": 0.26737967914438504,
+      "Retail_Rate": 0.10695187165775401
+    },
+    {
+      "Model": "CARENS",
+      "Fuel type": "Diesel",
+      "Enquiries": 122,
+      "Test_Drives": 91,
+      "Bookings": 53,
+      "Retails": 19,
+      "Avg_Sales_Cycle_Days": -4197.4098360655735,
+      "TD_Rate": 0.7459016393442623,
+      "Booking_Rate": 0.4344262295081967,
+      "Retail_Rate": 0.1557377049180328
+    },
+    {
+      "Model": "SONET",
+      "Fuel type": "Diesel",
+      "Enquiries": 129,
+      "Test_Drives": 100,
+      "Bookings": 53,
+      "Retails": 18,
+      "Avg_Sales_Cycle_Days": -3652.3488372093025,
+      "TD_Rate": 0.7751937984496124,
+      "Booking_Rate": 0.4108527131782946,
+      "Retail_Rate": 0.13953488372093023
+    },
+    {
+      "Model": "SYROS",
+      "Fuel type": "Gasoline",
+      "Enquiries": 113,
+      "Test_Drives": 57,
+      "Bookings": 37,
+      "Retails": 11,
+      "Avg_Sales_Cycle_Days": -4166.8938053097345,
+      "TD_Rate": 0.504424778761062,
+      "Booking_Rate": 0.3274336283185841,
+      "Retail_Rate": 0.09734513274336283
+    },
+    {
+      "Model": "SYROS",
+      "Fuel type": "Diesel",
+      "Enquiries": 34,
+      "Test_Drives": 17,
+      "Bookings": 13,
+      "Retails": 5,
+      "Avg_Sales_Cycle_Days": -4209.470588235294,
+      "TD_Rate": 0.5,
+      "Booking_Rate": 0.38235294117647056,
+      "Retail_Rate": 0.14705882352941177
+    },
+    {
+      "Model": "SELTOS",
+      "Fuel type": "Diesel",
+      "Enquiries": 30,
+      "Test_Drives": 5,
+      "Bookings": 3,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -8867.9,
+      "TD_Rate": 0.16666666666666666,
+      "Booking_Rate": 0.1,
+      "Retail_Rate": 0.03333333333333333
+    },
+    {
+      "Model": "CARNIVAL",
+      "Fuel type": null,
+      "Enquiries": 19,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -4307.684210526316,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "CARNIVAL",
+      "Fuel type": "Diesel",
+      "Enquiries": 4,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5129.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Fuel type": null,
+      "Enquiries": 254,
+      "Test_Drives": 17,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6132.110236220473,
+      "TD_Rate": 0.06692913385826772,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "CARENS",
+      "Fuel type": null,
+      "Enquiries": 446,
+      "Test_Drives": 62,
+      "Bookings": 1,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6151.54932735426,
+      "TD_Rate": 0.13901345291479822,
+      "Booking_Rate": 0.002242152466367713,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Fuel type": null,
+      "Enquiries": 507,
+      "Test_Drives": 105,
+      "Bookings": 1,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6097.680473372781,
+      "TD_Rate": 0.20710059171597633,
+      "Booking_Rate": 0.0019723865877712033,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Fuel type": "Electric",
+      "Enquiries": 1,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -20528.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "EV6",
+      "Fuel type": null,
+      "Enquiries": 6,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -10244.5,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "EV9",
+      "Fuel type": null,
+      "Enquiries": 1,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": 19.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "EV6",
+      "Fuel type": "Electric",
+      "Enquiries": 2,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -10282.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "SELTOS",
+      "Fuel type": null,
+      "Enquiries": 383,
+      "Test_Drives": 6,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5651.101827676241,
+      "TD_Rate": 0.015665796344647518,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "SONET",
+      "Fuel type": null,
+      "Enquiries": 577,
+      "Test_Drives": 79,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6744.603119584055,
+      "TD_Rate": 0.1369150779896014,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "SYROS",
+      "Fuel type": null,
+      "Enquiries": 185,
+      "Test_Drives": 13,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5755.410810810811,
+      "TD_Rate": 0.07027027027027027,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "top_variant_demand": [
+    {
+      "Model": "CARENS",
+      "Variant": null,
+      "Enquiries": 468
+    },
+    {
+      "Model": "CARENS",
+      "Variant": "Carens Clavis G1.5 6MT HTE EX7",
+      "Enquiries": 291
+    },
+    {
+      "Model": "CARENS",
+      "Variant": "Carens Clavis G1.5 6MT HTE(O)7",
+      "Enquiries": 173
+    },
+    {
+      "Model": "CARENS",
+      "Variant": "Carens G1.5 6MT Premium (O) 7",
+      "Enquiries": 125
+    },
+    {
+      "Model": "CARENS",
+      "Variant": "Carens Clavis G1.5T 6MT HTX7",
+      "Enquiries": 31
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Variant": null,
+      "Enquiries": 259
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Variant": "Carens Clavis EV HTK Plus 7",
+      "Enquiries": 45
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Variant": "Carens Clavis EV ER HTX 7",
+      "Enquiries": 42
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Variant": "Carens Clavis EV ER HTX Plus 7",
+      "Enquiries": 37
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Variant": "Carens Clavis EV ER HTX (E) 7",
+      "Enquiries": 14
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Variant": null,
+      "Enquiries": 512
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Variant": "Seltos G1.5 6MT HTK (O)",
+      "Enquiries": 268
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Variant": "Seltos G1.5 6MT HTE (O)",
+      "Enquiries": 168
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Variant": "Seltos G1.5 6MT HTE",
+      "Enquiries": 163
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Variant": "Seltos G1.5T 7DCT GTX (A)",
+      "Enquiries": 144
+    },
+    {
+      "Model": "SELTOS",
+      "Variant": null,
+      "Enquiries": 385
+    },
+    {
+      "Model": "SELTOS",
+      "Variant": "Seltos HTK (O) 1.5 Petrol",
+      "Enquiries": 47
+    },
+    {
+      "Model": "SELTOS",
+      "Variant": "Seltos HTE (O) 1.5 Petrol",
+      "Enquiries": 30
+    },
+    {
+      "Model": "SELTOS",
+      "Variant": "Seltos HTE 1.5 Petrol",
+      "Enquiries": 18
+    },
+    {
+      "Model": "SELTOS",
+      "Variant": "Seltos HTX 1.5 Petrol",
+      "Enquiries": 16
+    },
+    {
+      "Model": "SONET",
+      "Variant": "Sonet G1.2 5MT HTK Plus",
+      "Enquiries": 761
+    },
+    {
+      "Model": "SONET",
+      "Variant": null,
+      "Enquiries": 560
+    },
+    {
+      "Model": "SONET",
+      "Variant": "Sonet G1.0T 7DCT HTX",
+      "Enquiries": 146
+    },
+    {
+      "Model": "SONET",
+      "Variant": "Sonet G1.2 5MT HTK (O)",
+      "Enquiries": 144
+    },
+    {
+      "Model": "SONET",
+      "Variant": "Sonet G1.0T 7DCT GTX Plus",
+      "Enquiries": 79
+    }
+  ]
+}

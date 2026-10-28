@@ -1,0 +1,3469 @@
+{
+  "executive_summary": {
+    "generated_at": "2026-07-15T22:10:59.125747",
+    "date_range": {
+      "start": "2026-01-01",
+      "end": "2026-06-21"
+    },
+    "kpi": {
+      "total_enquiries": 6967,
+      "total_retails": 786,
+      "total_bookings": 1672,
+      "total_test_drives": 3249,
+      "total_lost": 1797,
+      "overall_retail_rate": 0.1128,
+      "overall_booking_rate": 0.24,
+      "overall_td_rate": 0.4663,
+      "avg_sales_cycle_days_won": 5.3,
+      "median_sales_cycle_days_won": 3.0
+    },
+    "highlights": {
+      "top_model_by_volume": {
+        "model": "NEW SELTOS",
+        "enquiries": 2155,
+        "retails": 187
+      },
+      "top_model_by_conversion": {
+        "model": "SONET",
+        "retail_rate": 0.1626,
+        "enquiries": 2115
+      },
+      "top_source": {
+        "source": "Hyperlocal",
+        "enquiries": 2232,
+        "retail_rate": 0.0345
+      },
+      "top_city": {
+        "city": "Bhubaneshwar",
+        "enquiries": 1889,
+        "retail_rate": 0.0
+      }
+    },
+    "customer_split": {
+      "Individual": {
+        "count": 6617,
+        "pct": 95.0
+      },
+      "Corporate": {
+        "count": 350,
+        "pct": 5.0
+      }
+    },
+    "fuel_split": {
+      "Gasoline": {
+        "count": 3861,
+        "pct": 55.4
+      },
+      "Diesel": {
+        "count": 538,
+        "pct": 7.7
+      },
+      "Electric": {
+        "count": 190,
+        "pct": 2.7
+      }
+    }
+  },
+  "geographic": {
+    "top5_cities": [
+      {
+        "City": "VISAKHAPATNAM",
+        "Enquiries": 24,
+        "Test_Drives": 16,
+        "Bookings": 20,
+        "Retails": 18,
+        "Avg_Sales_Cycle_Days": -844.75,
+        "TD_Rate": 0.6666666666666666,
+        "Booking_Rate": 0.8333333333333334,
+        "Retail_Rate": 0.75
+      },
+      {
+        "City": "MALKANGIRI",
+        "Enquiries": 39,
+        "Test_Drives": 32,
+        "Bookings": 27,
+        "Retails": 17,
+        "Avg_Sales_Cycle_Days": -1042.923076923077,
+        "TD_Rate": 0.8205128205128205,
+        "Booking_Rate": 0.6923076923076923,
+        "Retail_Rate": 0.4358974358974359
+      },
+      {
+        "City": "JUNAGARH",
+        "Enquiries": 20,
+        "Test_Drives": 15,
+        "Bookings": 13,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -3083.3,
+        "TD_Rate": 0.75,
+        "Booking_Rate": 0.65,
+        "Retail_Rate": 0.4
+      },
+      {
+        "City": "PATTAMUNDAI",
+        "Enquiries": 23,
+        "Test_Drives": 22,
+        "Bookings": 13,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -3568.782608695652,
+        "TD_Rate": 0.9565217391304348,
+        "Booking_Rate": 0.5652173913043478,
+        "Retail_Rate": 0.34782608695652173
+      },
+      {
+        "City": "ASKA",
+        "Enquiries": 26,
+        "Test_Drives": 17,
+        "Bookings": 14,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -2363.8846153846152,
+        "TD_Rate": 0.6538461538461539,
+        "Booking_Rate": 0.5384615384615384,
+        "Retail_Rate": 0.3076923076923077
+      }
+    ],
+    "bottom5_cities": [
+      {
+        "City": "BARIPADA",
+        "Enquiries": 21,
+        "Test_Drives": 14,
+        "Bookings": 8,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -2922.904761904762,
+        "TD_Rate": 0.6666666666666666,
+        "Booking_Rate": 0.38095238095238093,
+        "Retail_Rate": 0.0
+      },
+      {
+        "City": "Bhubaneshwar",
+        "Enquiries": 1889,
+        "Test_Drives": 250,
+        "Bookings": 28,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6807.806246691371,
+        "TD_Rate": 0.1323451561672843,
+        "Booking_Rate": 0.014822657490735839,
+        "Retail_Rate": 0.0
+      },
+      {
+        "City": null,
+        "Enquiries": 486,
+        "Test_Drives": 108,
+        "Bookings": 14,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -4966.510288065843,
+        "TD_Rate": 0.2222222222222222,
+        "Booking_Rate": 0.02880658436213992,
+        "Retail_Rate": 0.0
+      },
+      {
+        "City": "KHORDHA",
+        "Enquiries": 36,
+        "Test_Drives": 23,
+        "Bookings": 8,
+        "Retails": 1,
+        "Avg_Sales_Cycle_Days": -3412.4166666666665,
+        "TD_Rate": 0.6388888888888888,
+        "Booking_Rate": 0.2222222222222222,
+        "Retail_Rate": 0.027777777777777776
+      },
+      {
+        "City": "ANGUL",
+        "Enquiries": 286,
+        "Test_Drives": 113,
+        "Bookings": 53,
+        "Retails": 22,
+        "Avg_Sales_Cycle_Days": -2350.846153846154,
+        "TD_Rate": 0.3951048951048951,
+        "Booking_Rate": 0.1853146853146853,
+        "Retail_Rate": 0.07692307692307693
+      }
+    ],
+    "state_performance": [
+      {
+        "State": "ODISHA",
+        "Enquiries": 4515,
+        "Test_Drives": 2841,
+        "Bookings": 1563,
+        "Retails": 758,
+        "Avg_Sales_Cycle_Days": -3540.9840531561463,
+        "TD_Rate": 0.6292358803986711,
+        "Booking_Rate": 0.3461794019933555,
+        "Retail_Rate": 0.16788482834994464
+      },
+      {
+        "State": "ANDHRA PRADESH",
+        "Enquiries": 33,
+        "Test_Drives": 20,
+        "Bookings": 25,
+        "Retails": 19,
+        "Avg_Sales_Cycle_Days": -1854.969696969697,
+        "TD_Rate": 0.6060606060606061,
+        "Booking_Rate": 0.7575757575757576,
+        "Retail_Rate": 0.5757575757575758
+      },
+      {
+        "State": null,
+        "Enquiries": 2363,
+        "Test_Drives": 349,
+        "Bookings": 40,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6420.264071096064,
+        "TD_Rate": 0.14769360981802793,
+        "Booking_Rate": 0.016927634363097757,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "city_performance": [
+      {
+        "City": "BHUBANESWAR",
+        "Enquiries": 1299,
+        "Test_Drives": 901,
+        "Bookings": 313,
+        "Retails": 113,
+        "Avg_Sales_Cycle_Days": -4670.19168591224,
+        "TD_Rate": 0.6936104695919938,
+        "Booking_Rate": 0.2409545804464973,
+        "Retail_Rate": 0.0869899923017706
+      },
+      {
+        "City": "CUTTACK",
+        "Enquiries": 621,
+        "Test_Drives": 358,
+        "Bookings": 190,
+        "Retails": 82,
+        "Avg_Sales_Cycle_Days": -2829.0,
+        "TD_Rate": 0.5764895330112721,
+        "Booking_Rate": 0.3059581320450886,
+        "Retail_Rate": 0.1320450885668277
+      },
+      {
+        "City": "BERHAMPUR",
+        "Enquiries": 480,
+        "Test_Drives": 282,
+        "Bookings": 128,
+        "Retails": 62,
+        "Avg_Sales_Cycle_Days": -3021.397916666667,
+        "TD_Rate": 0.5875,
+        "Booking_Rate": 0.26666666666666666,
+        "Retail_Rate": 0.12916666666666668
+      },
+      {
+        "City": "KUJANG",
+        "Enquiries": 146,
+        "Test_Drives": 50,
+        "Bookings": 54,
+        "Retails": 24,
+        "Avg_Sales_Cycle_Days": -2940.2328767123286,
+        "TD_Rate": 0.3424657534246575,
+        "Booking_Rate": 0.3698630136986301,
+        "Retail_Rate": 0.1643835616438356
+      },
+      {
+        "City": "ANGUL",
+        "Enquiries": 286,
+        "Test_Drives": 113,
+        "Bookings": 53,
+        "Retails": 22,
+        "Avg_Sales_Cycle_Days": -2350.846153846154,
+        "TD_Rate": 0.3951048951048951,
+        "Booking_Rate": 0.1853146853146853,
+        "Retail_Rate": 0.07692307692307693
+      },
+      {
+        "City": "TALCHER",
+        "Enquiries": 99,
+        "Test_Drives": 32,
+        "Bookings": 28,
+        "Retails": 19,
+        "Avg_Sales_Cycle_Days": -1226.3030303030303,
+        "TD_Rate": 0.32323232323232326,
+        "Booking_Rate": 0.2828282828282828,
+        "Retail_Rate": 0.1919191919191919
+      },
+      {
+        "City": "VISAKHAPATNAM",
+        "Enquiries": 24,
+        "Test_Drives": 16,
+        "Bookings": 20,
+        "Retails": 18,
+        "Avg_Sales_Cycle_Days": -844.75,
+        "TD_Rate": 0.6666666666666666,
+        "Booking_Rate": 0.8333333333333334,
+        "Retail_Rate": 0.75
+      },
+      {
+        "City": "MALKANGIRI",
+        "Enquiries": 39,
+        "Test_Drives": 32,
+        "Bookings": 27,
+        "Retails": 17,
+        "Avg_Sales_Cycle_Days": -1042.923076923077,
+        "TD_Rate": 0.8205128205128205,
+        "Booking_Rate": 0.6923076923076923,
+        "Retail_Rate": 0.4358974358974359
+      },
+      {
+        "City": "JAGATPUR",
+        "Enquiries": 51,
+        "Test_Drives": 41,
+        "Bookings": 22,
+        "Retails": 13,
+        "Avg_Sales_Cycle_Days": -3615.9411764705883,
+        "TD_Rate": 0.803921568627451,
+        "Booking_Rate": 0.43137254901960786,
+        "Retail_Rate": 0.2549019607843137
+      },
+      {
+        "City": "KENDRAPARA",
+        "Enquiries": 65,
+        "Test_Drives": 40,
+        "Bookings": 24,
+        "Retails": 13,
+        "Avg_Sales_Cycle_Days": -5358.307692307692,
+        "TD_Rate": 0.6153846153846154,
+        "Booking_Rate": 0.36923076923076925,
+        "Retail_Rate": 0.2
+      },
+      {
+        "City": "PURI",
+        "Enquiries": 79,
+        "Test_Drives": 52,
+        "Bookings": 31,
+        "Retails": 11,
+        "Avg_Sales_Cycle_Days": -5449.354430379747,
+        "TD_Rate": 0.6582278481012658,
+        "Booking_Rate": 0.3924050632911392,
+        "Retail_Rate": 0.13924050632911392
+      },
+      {
+        "City": "CHATRAPUR",
+        "Enquiries": 35,
+        "Test_Drives": 28,
+        "Bookings": 16,
+        "Retails": 10,
+        "Avg_Sales_Cycle_Days": -1750.4285714285713,
+        "TD_Rate": 0.8,
+        "Booking_Rate": 0.45714285714285713,
+        "Retail_Rate": 0.2857142857142857
+      },
+      {
+        "City": "JAJPUR",
+        "Enquiries": 36,
+        "Test_Drives": 25,
+        "Bookings": 14,
+        "Retails": 10,
+        "Avg_Sales_Cycle_Days": -3990.527777777778,
+        "TD_Rate": 0.6944444444444444,
+        "Booking_Rate": 0.3888888888888889,
+        "Retail_Rate": 0.2777777777777778
+      },
+      {
+        "City": "DHENKANAL",
+        "Enquiries": 51,
+        "Test_Drives": 24,
+        "Bookings": 14,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -2000.5098039215686,
+        "TD_Rate": 0.47058823529411764,
+        "Booking_Rate": 0.27450980392156865,
+        "Retail_Rate": 0.1568627450980392
+      },
+      {
+        "City": "ASKA",
+        "Enquiries": 26,
+        "Test_Drives": 17,
+        "Bookings": 14,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -2363.8846153846152,
+        "TD_Rate": 0.6538461538461539,
+        "Booking_Rate": 0.5384615384615384,
+        "Retail_Rate": 0.3076923076923077
+      },
+      {
+        "City": "SALIPUR",
+        "Enquiries": 37,
+        "Test_Drives": 30,
+        "Bookings": 18,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -3324.675675675676,
+        "TD_Rate": 0.8108108108108109,
+        "Booking_Rate": 0.4864864864864865,
+        "Retail_Rate": 0.21621621621621623
+      },
+      {
+        "City": "JUNAGARH",
+        "Enquiries": 20,
+        "Test_Drives": 15,
+        "Bookings": 13,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -3083.3,
+        "TD_Rate": 0.75,
+        "Booking_Rate": 0.65,
+        "Retail_Rate": 0.4
+      },
+      {
+        "City": "PATTAMUNDAI",
+        "Enquiries": 23,
+        "Test_Drives": 22,
+        "Bookings": 13,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": -3568.782608695652,
+        "TD_Rate": 0.9565217391304348,
+        "Booking_Rate": 0.5652173913043478,
+        "Retail_Rate": 0.34782608695652173
+      },
+      {
+        "City": "KAMAKHYANAGAR",
+        "Enquiries": 36,
+        "Test_Drives": 25,
+        "Bookings": 19,
+        "Retails": 7,
+        "Avg_Sales_Cycle_Days": -2272.722222222222,
+        "TD_Rate": 0.6944444444444444,
+        "Booking_Rate": 0.5277777777777778,
+        "Retail_Rate": 0.19444444444444445
+      },
+      {
+        "City": "JAGATSINGHPUR",
+        "Enquiries": 41,
+        "Test_Drives": 23,
+        "Bookings": 15,
+        "Retails": 7,
+        "Avg_Sales_Cycle_Days": -2995.2195121951218,
+        "TD_Rate": 0.5609756097560976,
+        "Booking_Rate": 0.36585365853658536,
+        "Retail_Rate": 0.17073170731707318
+      },
+      {
+        "City": "JAJPUR ROAD",
+        "Enquiries": 30,
+        "Test_Drives": 22,
+        "Bookings": 13,
+        "Retails": 7,
+        "Avg_Sales_Cycle_Days": -3415.5666666666666,
+        "TD_Rate": 0.7333333333333333,
+        "Booking_Rate": 0.43333333333333335,
+        "Retail_Rate": 0.23333333333333334
+      },
+      {
+        "City": "KENDUJHAR",
+        "Enquiries": 24,
+        "Test_Drives": 16,
+        "Bookings": 7,
+        "Retails": 5,
+        "Avg_Sales_Cycle_Days": -3413.9166666666665,
+        "TD_Rate": 0.6666666666666666,
+        "Booking_Rate": 0.2916666666666667,
+        "Retail_Rate": 0.20833333333333334
+      },
+      {
+        "City": "BHADRAK",
+        "Enquiries": 27,
+        "Test_Drives": 20,
+        "Bookings": 7,
+        "Retails": 5,
+        "Avg_Sales_Cycle_Days": -6077.37037037037,
+        "TD_Rate": 0.7407407407407407,
+        "Booking_Rate": 0.25925925925925924,
+        "Retail_Rate": 0.18518518518518517
+      },
+      {
+        "City": "NIALI",
+        "Enquiries": 20,
+        "Test_Drives": 17,
+        "Bookings": 7,
+        "Retails": 4,
+        "Avg_Sales_Cycle_Days": -3061.8,
+        "TD_Rate": 0.85,
+        "Booking_Rate": 0.35,
+        "Retail_Rate": 0.2
+      },
+      {
+        "City": "PARALAKHEMUNDI",
+        "Enquiries": 39,
+        "Test_Drives": 18,
+        "Bookings": 5,
+        "Retails": 4,
+        "Avg_Sales_Cycle_Days": -1563.7948717948718,
+        "TD_Rate": 0.46153846153846156,
+        "Booking_Rate": 0.1282051282051282,
+        "Retail_Rate": 0.10256410256410256
+      },
+      {
+        "City": "HINDOL",
+        "Enquiries": 21,
+        "Test_Drives": 11,
+        "Bookings": 10,
+        "Retails": 4,
+        "Avg_Sales_Cycle_Days": -3904.714285714286,
+        "TD_Rate": 0.5238095238095238,
+        "Booking_Rate": 0.47619047619047616,
+        "Retail_Rate": 0.19047619047619047
+      },
+      {
+        "City": "NAYAGARH",
+        "Enquiries": 23,
+        "Test_Drives": 17,
+        "Bookings": 10,
+        "Retails": 3,
+        "Avg_Sales_Cycle_Days": -7134.130434782609,
+        "TD_Rate": 0.7391304347826086,
+        "Booking_Rate": 0.43478260869565216,
+        "Retail_Rate": 0.13043478260869565
+      },
+      {
+        "City": "KHORDHA",
+        "Enquiries": 36,
+        "Test_Drives": 23,
+        "Bookings": 8,
+        "Retails": 1,
+        "Avg_Sales_Cycle_Days": -3412.4166666666665,
+        "TD_Rate": 0.6388888888888888,
+        "Booking_Rate": 0.2222222222222222,
+        "Retail_Rate": 0.027777777777777776
+      },
+      {
+        "City": "Bhubaneshwar",
+        "Enquiries": 1889,
+        "Test_Drives": 250,
+        "Bookings": 28,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6807.806246691371,
+        "TD_Rate": 0.1323451561672843,
+        "Booking_Rate": 0.014822657490735839,
+        "Retail_Rate": 0.0
+      },
+      {
+        "City": "BARIPADA",
+        "Enquiries": 21,
+        "Test_Drives": 14,
+        "Bookings": 8,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -2922.904761904762,
+        "TD_Rate": 0.6666666666666666,
+        "Booking_Rate": 0.38095238095238093,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "total_cities": 30,
+    "total_states": 2
+  },
+  "product_demand": {
+    "fuel_type_performance": [
+      {
+        "Fuel type": "Gasoline",
+        "Enquiries": 3861,
+        "Test_Drives": 2484,
+        "Bookings": 1412,
+        "Retails": 694,
+        "Avg_Sales_Cycle_Days": -3621.5325045325044,
+        "TD_Rate": 0.6433566433566433,
+        "Booking_Rate": 0.36570836570836573,
+        "Retail_Rate": 0.17974617974617974
+      },
+      {
+        "Fuel type": "Diesel",
+        "Enquiries": 538,
+        "Test_Drives": 390,
+        "Bookings": 208,
+        "Retails": 72,
+        "Avg_Sales_Cycle_Days": -3882.2843866171,
+        "TD_Rate": 0.724907063197026,
+        "Booking_Rate": 0.38661710037174724,
+        "Retail_Rate": 0.13382899628252787
+      },
+      {
+        "Fuel type": "Electric",
+        "Enquiries": 190,
+        "Test_Drives": 93,
+        "Bookings": 50,
+        "Retails": 20,
+        "Avg_Sales_Cycle_Days": -3343.5789473684213,
+        "TD_Rate": 0.48947368421052634,
+        "Booking_Rate": 0.2631578947368421,
+        "Retail_Rate": 0.10526315789473684
+      },
+      {
+        "Fuel type": null,
+        "Enquiries": 2378,
+        "Test_Drives": 282,
+        "Bookings": 2,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6163.4667788057195,
+        "TD_Rate": 0.11858704793944491,
+        "Booking_Rate": 0.0008410428931875525,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "color_preference": [
+      {
+        "Color": null,
+        "Enquiries": 2508,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Color": "GLACIER WHITE PEARL",
+        "Enquiries": 1181,
+        "Retails": 214,
+        "Retail_Rate": 0.18120237087214225
+      },
+      {
+        "Color": "AURORA BLACK PEARL",
+        "Enquiries": 1137,
+        "Retails": 199,
+        "Retail_Rate": 0.17502198768689534
+      },
+      {
+        "Color": "CLEAR WHITE",
+        "Enquiries": 705,
+        "Retails": 143,
+        "Retail_Rate": 0.2028368794326241
+      },
+      {
+        "Color": "IMPERIAL BLUE",
+        "Enquiries": 263,
+        "Retails": 51,
+        "Retail_Rate": 0.19391634980988592
+      },
+      {
+        "Color": "MORNING HAZE",
+        "Enquiries": 243,
+        "Retails": 35,
+        "Retail_Rate": 0.1440329218106996
+      },
+      {
+        "Color": "GRAVITY GREY",
+        "Enquiries": 173,
+        "Retails": 22,
+        "Retail_Rate": 0.12716763005780346
+      },
+      {
+        "Color": "PEWTER OLIVE",
+        "Enquiries": 163,
+        "Retails": 21,
+        "Retail_Rate": 0.12883435582822086
+      },
+      {
+        "Color": "MAGMA RED",
+        "Enquiries": 162,
+        "Retails": 27,
+        "Retail_Rate": 0.16666666666666666
+      },
+      {
+        "Color": "IVORY SILVER GLOSS",
+        "Enquiries": 114,
+        "Retails": 21,
+        "Retail_Rate": 0.18421052631578946
+      },
+      {
+        "Color": "MATTE GRAPHITE",
+        "Enquiries": 102,
+        "Retails": 40,
+        "Retail_Rate": 0.39215686274509803
+      },
+      {
+        "Color": "FROST BLUE",
+        "Enquiries": 81,
+        "Retails": 7,
+        "Retail_Rate": 0.08641975308641975
+      },
+      {
+        "Color": "INTENSE RED",
+        "Enquiries": 53,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Color": "IVORY SILVER MATT",
+        "Enquiries": 32,
+        "Retails": 4,
+        "Retail_Rate": 0.125
+      },
+      {
+        "Color": "SPARKLING SILVER",
+        "Enquiries": 27,
+        "Retails": 1,
+        "Retail_Rate": 0.037037037037037035
+      }
+    ],
+    "model_fuel_crosstab": [
+      {
+        "Model": "SONET",
+        "Fuel type": "Gasoline",
+        "Enquiries": 1409,
+        "Test_Drives": 944,
+        "Bookings": 587,
+        "Retails": 326,
+        "Avg_Sales_Cycle_Days": -3167.4520936834633,
+        "TD_Rate": 0.6699787083037615,
+        "Booking_Rate": 0.41660752306600424,
+        "Retail_Rate": 0.2313697657913414
+      },
+      {
+        "Model": "CARENS",
+        "Fuel type": "Gasoline",
+        "Enquiries": 758,
+        "Test_Drives": 503,
+        "Bookings": 300,
+        "Retails": 176,
+        "Avg_Sales_Cycle_Days": -3132.4775725593668,
+        "TD_Rate": 0.6635883905013192,
+        "Booking_Rate": 0.39577836411609496,
+        "Retail_Rate": 0.23218997361477572
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Fuel type": "Gasoline",
+        "Enquiries": 1428,
+        "Test_Drives": 959,
+        "Bookings": 450,
+        "Retails": 158,
+        "Avg_Sales_Cycle_Days": -3913.5252100840335,
+        "TD_Rate": 0.6715686274509803,
+        "Booking_Rate": 0.31512605042016806,
+        "Retail_Rate": 0.11064425770308123
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Fuel type": "Diesel",
+        "Enquiries": 219,
+        "Test_Drives": 177,
+        "Bookings": 86,
+        "Retails": 29,
+        "Avg_Sales_Cycle_Days": -3085.648401826484,
+        "TD_Rate": 0.8082191780821918,
+        "Booking_Rate": 0.3926940639269406,
+        "Retail_Rate": 0.1324200913242009
+      },
+      {
+        "Model": "SELTOS",
+        "Fuel type": "Gasoline",
+        "Enquiries": 153,
+        "Test_Drives": 21,
+        "Bookings": 38,
+        "Retails": 23,
+        "Avg_Sales_Cycle_Days": -7098.078431372549,
+        "TD_Rate": 0.13725490196078433,
+        "Booking_Rate": 0.24836601307189543,
+        "Retail_Rate": 0.1503267973856209
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Fuel type": "Electric",
+        "Enquiries": 187,
+        "Test_Drives": 93,
+        "Bookings": 50,
+        "Retails": 20,
+        "Avg_Sales_Cycle_Days": -3177.475935828877,
+        "TD_Rate": 0.49732620320855614,
+        "Booking_Rate": 0.26737967914438504,
+        "Retail_Rate": 0.10695187165775401
+      },
+      {
+        "Model": "CARENS",
+        "Fuel type": "Diesel",
+        "Enquiries": 122,
+        "Test_Drives": 91,
+        "Bookings": 53,
+        "Retails": 19,
+        "Avg_Sales_Cycle_Days": -4197.4098360655735,
+        "TD_Rate": 0.7459016393442623,
+        "Booking_Rate": 0.4344262295081967,
+        "Retail_Rate": 0.1557377049180328
+      },
+      {
+        "Model": "SONET",
+        "Fuel type": "Diesel",
+        "Enquiries": 129,
+        "Test_Drives": 100,
+        "Bookings": 53,
+        "Retails": 18,
+        "Avg_Sales_Cycle_Days": -3652.3488372093025,
+        "TD_Rate": 0.7751937984496124,
+        "Booking_Rate": 0.4108527131782946,
+        "Retail_Rate": 0.13953488372093023
+      },
+      {
+        "Model": "SYROS",
+        "Fuel type": "Gasoline",
+        "Enquiries": 113,
+        "Test_Drives": 57,
+        "Bookings": 37,
+        "Retails": 11,
+        "Avg_Sales_Cycle_Days": -4166.8938053097345,
+        "TD_Rate": 0.504424778761062,
+        "Booking_Rate": 0.3274336283185841,
+        "Retail_Rate": 0.09734513274336283
+      },
+      {
+        "Model": "SYROS",
+        "Fuel type": "Diesel",
+        "Enquiries": 34,
+        "Test_Drives": 17,
+        "Bookings": 13,
+        "Retails": 5,
+        "Avg_Sales_Cycle_Days": -4209.470588235294,
+        "TD_Rate": 0.5,
+        "Booking_Rate": 0.38235294117647056,
+        "Retail_Rate": 0.14705882352941177
+      },
+      {
+        "Model": "SELTOS",
+        "Fuel type": "Diesel",
+        "Enquiries": 30,
+        "Test_Drives": 5,
+        "Bookings": 3,
+        "Retails": 1,
+        "Avg_Sales_Cycle_Days": -8867.9,
+        "TD_Rate": 0.16666666666666666,
+        "Booking_Rate": 0.1,
+        "Retail_Rate": 0.03333333333333333
+      },
+      {
+        "Model": "CARNIVAL",
+        "Fuel type": null,
+        "Enquiries": 19,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -4307.684210526316,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "CARNIVAL",
+        "Fuel type": "Diesel",
+        "Enquiries": 4,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5129.0,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Fuel type": null,
+        "Enquiries": 254,
+        "Test_Drives": 17,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6132.110236220473,
+        "TD_Rate": 0.06692913385826772,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "CARENS",
+        "Fuel type": null,
+        "Enquiries": 446,
+        "Test_Drives": 62,
+        "Bookings": 1,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6151.54932735426,
+        "TD_Rate": 0.13901345291479822,
+        "Booking_Rate": 0.002242152466367713,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Fuel type": null,
+        "Enquiries": 507,
+        "Test_Drives": 105,
+        "Bookings": 1,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6097.680473372781,
+        "TD_Rate": 0.20710059171597633,
+        "Booking_Rate": 0.0019723865877712033,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Fuel type": "Electric",
+        "Enquiries": 1,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -20528.0,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "EV6",
+        "Fuel type": null,
+        "Enquiries": 6,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -10244.5,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "EV9",
+        "Fuel type": null,
+        "Enquiries": 1,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": 19.0,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "EV6",
+        "Fuel type": "Electric",
+        "Enquiries": 2,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -10282.0,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "SELTOS",
+        "Fuel type": null,
+        "Enquiries": 383,
+        "Test_Drives": 6,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5651.101827676241,
+        "TD_Rate": 0.015665796344647518,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "SONET",
+        "Fuel type": null,
+        "Enquiries": 577,
+        "Test_Drives": 79,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -6744.603119584055,
+        "TD_Rate": 0.1369150779896014,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Model": "SYROS",
+        "Fuel type": null,
+        "Enquiries": 185,
+        "Test_Drives": 13,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5755.410810810811,
+        "TD_Rate": 0.07027027027027027,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "top_variant_demand": [
+      {
+        "Model": "CARENS",
+        "Variant": null,
+        "Enquiries": 468
+      },
+      {
+        "Model": "CARENS",
+        "Variant": "Carens Clavis G1.5 6MT HTE EX7",
+        "Enquiries": 291
+      },
+      {
+        "Model": "CARENS",
+        "Variant": "Carens Clavis G1.5 6MT HTE(O)7",
+        "Enquiries": 173
+      },
+      {
+        "Model": "CARENS",
+        "Variant": "Carens G1.5 6MT Premium (O) 7",
+        "Enquiries": 125
+      },
+      {
+        "Model": "CARENS",
+        "Variant": "Carens Clavis G1.5T 6MT HTX7",
+        "Enquiries": 31
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Variant": null,
+        "Enquiries": 259
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Variant": "Carens Clavis EV HTK Plus 7",
+        "Enquiries": 45
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Variant": "Carens Clavis EV ER HTX 7",
+        "Enquiries": 42
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Variant": "Carens Clavis EV ER HTX Plus 7",
+        "Enquiries": 37
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Variant": "Carens Clavis EV ER HTX (E) 7",
+        "Enquiries": 14
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Variant": null,
+        "Enquiries": 512
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Variant": "Seltos G1.5 6MT HTK (O)",
+        "Enquiries": 268
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Variant": "Seltos G1.5 6MT HTE (O)",
+        "Enquiries": 168
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Variant": "Seltos G1.5 6MT HTE",
+        "Enquiries": 163
+      },
+      {
+        "Model": "NEW SELTOS",
+        "Variant": "Seltos G1.5T 7DCT GTX (A)",
+        "Enquiries": 144
+      },
+      {
+        "Model": "SELTOS",
+        "Variant": null,
+        "Enquiries": 385
+      },
+      {
+        "Model": "SELTOS",
+        "Variant": "Seltos HTK (O) 1.5 Petrol",
+        "Enquiries": 47
+      },
+      {
+        "Model": "SELTOS",
+        "Variant": "Seltos HTE (O) 1.5 Petrol",
+        "Enquiries": 30
+      },
+      {
+        "Model": "SELTOS",
+        "Variant": "Seltos HTE 1.5 Petrol",
+        "Enquiries": 18
+      },
+      {
+        "Model": "SELTOS",
+        "Variant": "Seltos HTX 1.5 Petrol",
+        "Enquiries": 16
+      },
+      {
+        "Model": "SONET",
+        "Variant": "Sonet G1.2 5MT HTK Plus",
+        "Enquiries": 761
+      },
+      {
+        "Model": "SONET",
+        "Variant": null,
+        "Enquiries": 560
+      },
+      {
+        "Model": "SONET",
+        "Variant": "Sonet G1.0T 7DCT HTX",
+        "Enquiries": 146
+      },
+      {
+        "Model": "SONET",
+        "Variant": "Sonet G1.2 5MT HTK (O)",
+        "Enquiries": 144
+      },
+      {
+        "Model": "SONET",
+        "Variant": "Sonet G1.0T 7DCT GTX Plus",
+        "Enquiries": 79
+      }
+    ]
+  },
+  "customer_segmentation": {
+    "segment_performance": [
+      {
+        "Customer Type": "Individual",
+        "Enquiries": 6617,
+        "Test_Drives": 3013,
+        "Bookings": 1356,
+        "Retails": 503,
+        "Avg_Sales_Cycle_Days": -4653.152788272631,
+        "TD_Rate": 0.4553423001360133,
+        "Booking_Rate": 0.20492670394438567,
+        "Retail_Rate": 0.07601632159588938
+      },
+      {
+        "Customer Type": "Corporate",
+        "Enquiries": 350,
+        "Test_Drives": 236,
+        "Bookings": 316,
+        "Retails": 283,
+        "Avg_Sales_Cycle_Days": -1638.5657142857142,
+        "TD_Rate": 0.6742857142857143,
+        "Booking_Rate": 0.9028571428571428,
+        "Retail_Rate": 0.8085714285714286
+      }
+    ],
+    "corporate_accounts": [
+      {
+        "corporate Name": "GOV-Government Employee",
+        "Corporate Category": "Corporate",
+        "Enquiries": 71,
+        "Test_Drives": 52,
+        "Bookings": 70,
+        "Retails": 69,
+        "Avg_Sales_Cycle_Days": 2.1267605633802815,
+        "TD_Rate": 0.7323943661971831,
+        "Booking_Rate": 0.9859154929577465,
+        "Retail_Rate": 0.971830985915493
+      },
+      {
+        "corporate Name": "AGRE-Agreegator",
+        "Corporate Category": "Corporate",
+        "Enquiries": 34,
+        "Test_Drives": 21,
+        "Bookings": 33,
+        "Retails": 32,
+        "Avg_Sales_Cycle_Days": -1201.5588235294117,
+        "TD_Rate": 0.6176470588235294,
+        "Booking_Rate": 0.9705882352941176,
+        "Retail_Rate": 0.9411764705882353
+      },
+      {
+        "corporate Name": "MSME-MSME",
+        "Corporate Category": "Corporate",
+        "Enquiries": 41,
+        "Test_Drives": 23,
+        "Bookings": 38,
+        "Retails": 28,
+        "Avg_Sales_Cycle_Days": -2002.0731707317073,
+        "TD_Rate": 0.5609756097560976,
+        "Booking_Rate": 0.926829268292683,
+        "Retail_Rate": 0.6829268292682927
+      },
+      {
+        "corporate Name": "CSD-CSD - Canteen Store Department",
+        "Corporate Category": "Corporate",
+        "Enquiries": 22,
+        "Test_Drives": 17,
+        "Bookings": 21,
+        "Retails": 21,
+        "Avg_Sales_Cycle_Days": 9.181818181818182,
+        "TD_Rate": 0.7727272727272727,
+        "Booking_Rate": 0.9545454545454546,
+        "Retail_Rate": 0.9545454545454546
+      },
+      {
+        "corporate Name": "TOP75-Tata Group",
+        "Corporate Category": "Corporate",
+        "Enquiries": 16,
+        "Test_Drives": 14,
+        "Bookings": 15,
+        "Retails": 15,
+        "Avg_Sales_Cycle_Days": -1276.4375,
+        "TD_Rate": 0.875,
+        "Booking_Rate": 0.9375,
+        "Retail_Rate": 0.9375
+      },
+      {
+        "corporate Name": "TOP75-Jindal Group",
+        "Corporate Category": "Corporate",
+        "Enquiries": 11,
+        "Test_Drives": 9,
+        "Bookings": 11,
+        "Retails": 10,
+        "Avg_Sales_Cycle_Days": -1865.8181818181818,
+        "TD_Rate": 0.8181818181818182,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 0.9090909090909091
+      },
+      {
+        "corporate Name": "DEAL-Dealers / Employee",
+        "Corporate Category": "Corporate",
+        "Enquiries": 9,
+        "Test_Drives": 0,
+        "Bookings": 9,
+        "Retails": 9,
+        "Avg_Sales_Cycle_Days": -0.6666666666666666,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 1.0
+      },
+      {
+        "corporate Name": "TOP75-Infosys",
+        "Corporate Category": "Corporate",
+        "Enquiries": 8,
+        "Test_Drives": 6,
+        "Bookings": 8,
+        "Retails": 8,
+        "Avg_Sales_Cycle_Days": 2.875,
+        "TD_Rate": 0.75,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 1.0
+      },
+      {
+        "corporate Name": "PSB-State Bank of India (SBI)",
+        "Corporate Category": "Corporate",
+        "Enquiries": 8,
+        "Test_Drives": 7,
+        "Bookings": 7,
+        "Retails": 7,
+        "Avg_Sales_Cycle_Days": -2569.25,
+        "TD_Rate": 0.875,
+        "Booking_Rate": 0.875,
+        "Retail_Rate": 0.875
+      },
+      {
+        "corporate Name": "TOP75-L & T Group",
+        "Corporate Category": "Corporate",
+        "Enquiries": 6,
+        "Test_Drives": 6,
+        "Bookings": 6,
+        "Retails": 6,
+        "Avg_Sales_Cycle_Days": 2.5,
+        "TD_Rate": 1.0,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 1.0
+      },
+      {
+        "corporate Name": "TOP75-ICICI Group",
+        "Corporate Category": "Corporate",
+        "Enquiries": 5,
+        "Test_Drives": 4,
+        "Bookings": 5,
+        "Retails": 5,
+        "Avg_Sales_Cycle_Days": 4.8,
+        "TD_Rate": 0.8,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 1.0
+      },
+      {
+        "corporate Name": null,
+        "Corporate Category": "Corporate",
+        "Enquiries": 40,
+        "Test_Drives": 15,
+        "Bookings": 18,
+        "Retails": 2,
+        "Avg_Sales_Cycle_Days": -7686.275,
+        "TD_Rate": 0.375,
+        "Booking_Rate": 0.45,
+        "Retail_Rate": 0.05
+      }
+    ],
+    "category_performance": [
+      {
+        "Corporate Category": "Individual",
+        "Enquiries": 6617,
+        "Test_Drives": 3013,
+        "Bookings": 1356,
+        "Retails": 503,
+        "Avg_Sales_Cycle_Days": -4653.152788272631,
+        "TD_Rate": 0.4553423001360133,
+        "Booking_Rate": 0.20492670394438567,
+        "Retail_Rate": 0.07601632159588938
+      },
+      {
+        "Corporate Category": "Corporate",
+        "Enquiries": 350,
+        "Test_Drives": 236,
+        "Bookings": 316,
+        "Retails": 283,
+        "Avg_Sales_Cycle_Days": -1638.5657142857142,
+        "TD_Rate": 0.6742857142857143,
+        "Booking_Rate": 0.9028571428571428,
+        "Retail_Rate": 0.8085714285714286
+      }
+    ],
+    "sales_cycle": [
+      {
+        "Customer Type": "Corporate",
+        "Enquiries": 350,
+        "Avg_Sales_Cycle_All": -1638.5657142857142,
+        "Avg_Sales_Cycle_Retailed": 3.3286219081272086,
+        "Median_Sales_Cycle_Retailed": 0.0
+      },
+      {
+        "Customer Type": "Individual",
+        "Enquiries": 6617,
+        "Avg_Sales_Cycle_All": -4653.152788272631,
+        "Avg_Sales_Cycle_Retailed": 6.387673956262425,
+        "Median_Sales_Cycle_Retailed": 4.0
+      }
+    ],
+    "monthly_trend": [
+      {
+        "Enquiry Month": "2026-01",
+        "Customer Type": "Corporate",
+        "Enquiries": 78,
+        "Retails": 69,
+        "Retail_Rate": 0.8846153846153846
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "Customer Type": "Individual",
+        "Enquiries": 1156,
+        "Retails": 108,
+        "Retail_Rate": 0.09342560553633218
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "Customer Type": "Corporate",
+        "Enquiries": 61,
+        "Retails": 50,
+        "Retail_Rate": 0.819672131147541
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "Customer Type": "Individual",
+        "Enquiries": 1208,
+        "Retails": 87,
+        "Retail_Rate": 0.07201986754966887
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "Customer Type": "Corporate",
+        "Enquiries": 38,
+        "Retails": 31,
+        "Retail_Rate": 0.8157894736842105
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "Customer Type": "Individual",
+        "Enquiries": 1102,
+        "Retails": 69,
+        "Retail_Rate": 0.06261343012704174
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "Customer Type": "Corporate",
+        "Enquiries": 64,
+        "Retails": 47,
+        "Retail_Rate": 0.734375
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "Customer Type": "Individual",
+        "Enquiries": 1189,
+        "Retails": 110,
+        "Retail_Rate": 0.09251471825063078
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "Customer Type": "Corporate",
+        "Enquiries": 70,
+        "Retails": 60,
+        "Retail_Rate": 0.8571428571428571
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "Customer Type": "Individual",
+        "Enquiries": 1049,
+        "Retails": 86,
+        "Retail_Rate": 0.08198284080076262
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "Customer Type": "Corporate",
+        "Enquiries": 39,
+        "Retails": 26,
+        "Retail_Rate": 0.6666666666666666
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "Customer Type": "Individual",
+        "Enquiries": 913,
+        "Retails": 43,
+        "Retail_Rate": 0.047097480832420595
+      }
+    ]
+  },
+  "exchange_funnel": {
+    "funnel": [
+      {
+        "Stage": "Total Enquiries",
+        "Count": 6967,
+        "Stage_Rate_of_Enquiry": 1.0
+      },
+      {
+        "Stage": "Has Present Car",
+        "Count": 1795,
+        "Stage_Rate_of_Enquiry": 0.2576431749677049
+      },
+      {
+        "Stage": "Interested in Exchange",
+        "Count": 1677,
+        "Stage_Rate_of_Enquiry": 0.24070618630687526
+      },
+      {
+        "Stage": "Old Car Evaluation Done",
+        "Count": 635,
+        "Stage_Rate_of_Enquiry": 0.09114396440361705
+      },
+      {
+        "Stage": "Retailed",
+        "Count": 786,
+        "Stage_Rate_of_Enquiry": 0.11281756853739056
+      }
+    ],
+    "conversion_impact": [
+      {
+        "Interested_In_Exchange": "Not Interested (N/Blank)",
+        "Enquiries": 5290,
+        "Bookings": 943,
+        "Retails": 323,
+        "Booking_Rate": 0.1782608695652174,
+        "Retail_Rate": 0.061058601134215504
+      },
+      {
+        "Interested_In_Exchange": "Interested (Y)",
+        "Enquiries": 1677,
+        "Bookings": 729,
+        "Retails": 463,
+        "Booking_Rate": 0.4347048300536673,
+        "Retail_Rate": 0.2760882528324389
+      }
+    ],
+    "oem_brands": [
+      {
+        "OEM Maker": "Maruti",
+        "Count": 558,
+        "Retails": 208,
+        "Retail_Rate": 0.3727598566308244
+      },
+      {
+        "OEM Maker": "Hyundai",
+        "Count": 448,
+        "Retails": 104,
+        "Retail_Rate": 0.23214285714285715
+      },
+      {
+        "OEM Maker": "Honda",
+        "Count": 141,
+        "Retails": 29,
+        "Retail_Rate": 0.20567375886524822
+      },
+      {
+        "OEM Maker": "Tata",
+        "Count": 119,
+        "Retails": 36,
+        "Retail_Rate": 0.3025210084033613
+      },
+      {
+        "OEM Maker": "Ford",
+        "Count": 114,
+        "Retails": 20,
+        "Retail_Rate": 0.17543859649122806
+      },
+      {
+        "OEM Maker": "Kia",
+        "Count": 81,
+        "Retails": 10,
+        "Retail_Rate": 0.12345679012345678
+      },
+      {
+        "OEM Maker": "Mahindra",
+        "Count": 67,
+        "Retails": 19,
+        "Retail_Rate": 0.2835820895522388
+      },
+      {
+        "OEM Maker": "Chevrolet",
+        "Count": 56,
+        "Retails": 13,
+        "Retail_Rate": 0.23214285714285715
+      },
+      {
+        "OEM Maker": "Renault",
+        "Count": 34,
+        "Retails": 8,
+        "Retail_Rate": 0.23529411764705882
+      },
+      {
+        "OEM Maker": "Fiat",
+        "Count": 29,
+        "Retails": 3,
+        "Retail_Rate": 0.10344827586206896
+      },
+      {
+        "OEM Maker": "Toyota",
+        "Count": 24,
+        "Retails": 12,
+        "Retail_Rate": 0.5
+      },
+      {
+        "OEM Maker": "Ashok Leyland",
+        "Count": 23,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "OEM Maker": "Skoda",
+        "Count": 22,
+        "Retails": 8,
+        "Retail_Rate": 0.36363636363636365
+      },
+      {
+        "OEM Maker": "Volkswagen",
+        "Count": 16,
+        "Retails": 6,
+        "Retail_Rate": 0.375
+      },
+      {
+        "OEM Maker": "Datsun",
+        "Count": 14,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "present_car_conversion": [
+      {
+        "Has_Present_Car": "No Present Car",
+        "Enquiries": 5172,
+        "Retails": 303,
+        "Retail_Rate": 0.058584686774941996
+      },
+      {
+        "Has_Present_Car": "Has Present Car",
+        "Enquiries": 1795,
+        "Retails": 483,
+        "Retail_Rate": 0.2690807799442897
+      }
+    ],
+    "data_quality_notes": {
+      "exchange_done_populated": false,
+      "exchange_channel_populated": false
+    }
+  },
+  "pricing": {
+    "summary": [
+      {
+        "Metric": "Won Deals (Retail)",
+        "Value": 786.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Deals with Quoted Price > 0",
+        "Value": 459.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Deals with Expected Price > 0",
+        "Value": 459.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Deals with Final Price > 0",
+        "Value": 0.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Valid deals for gap calculation",
+        "Value": 459.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Avg Customer Expectation Gap (Quoted \u2212 Expected)",
+        "Value": -17555.555555555555,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Median Customer Expectation Gap (Quoted \u2212 Expected)",
+        "Value": -15000.0,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Avg Discount % (Quoted basis)",
+        "Value": -29.90479269971466,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Avg Expected Price (non-zero)",
+        "Value": 168699.34640522875,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      },
+      {
+        "Metric": "Avg Quoted Price (non-zero)",
+        "Value": 151143.7908496732,
+        "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+      }
+    ],
+    "gap_by_model": [
+      {
+        "Model": "NEW SELTOS",
+        "Won_Deals": 106,
+        "Avg_Gap": -9669.811320754718,
+        "Median_Gap": -5000.0,
+        "Avg_Discount_Pct": -33.9177670649456,
+        "Avg_Quoted": 58632.07547169811,
+        "Avg_Expected": 68301.88679245283
+      },
+      {
+        "Model": "CARENS",
+        "Won_Deals": 149,
+        "Avg_Gap": -13523.489932885906,
+        "Median_Gap": -5000.0,
+        "Avg_Discount_Pct": -34.41750311809492,
+        "Avg_Quoted": 96174.4966442953,
+        "Avg_Expected": 109697.9865771812
+      },
+      {
+        "Model": "SYROS",
+        "Won_Deals": 8,
+        "Avg_Gap": -16875.0,
+        "Median_Gap": -20000.0,
+        "Avg_Discount_Pct": -9.941468253968253,
+        "Avg_Quoted": 298125.0,
+        "Avg_Expected": 315000.0
+      },
+      {
+        "Model": "SONET",
+        "Won_Deals": 157,
+        "Avg_Gap": -23713.375796178345,
+        "Median_Gap": -20000.0,
+        "Avg_Discount_Pct": -27.36903555645373,
+        "Avg_Quoted": 209936.30573248406,
+        "Avg_Expected": 233649.68152866242
+      },
+      {
+        "Model": "SELTOS",
+        "Won_Deals": 24,
+        "Avg_Gap": -27083.333333333332,
+        "Median_Gap": -30000.0,
+        "Avg_Discount_Pct": -18.642095259030743,
+        "Avg_Quoted": 270208.3333333333,
+        "Avg_Expected": 297291.6666666667
+      },
+      {
+        "Model": "CARENS CLAVIS EV",
+        "Won_Deals": 15,
+        "Avg_Gap": -34000.0,
+        "Median_Gap": -30000.0,
+        "Avg_Discount_Pct": -11.928530738462177,
+        "Avg_Quoted": 466666.6666666667,
+        "Avg_Expected": 500666.6666666667
+      }
+    ],
+    "bucket_summary": [
+      {
+        "Quoted_Bucket": "<8L",
+        "Won_Deals": 453,
+        "Avg_Quoted": 137428.25607064017,
+        "Avg_Expected": 154377.4834437086,
+        "Avg_Final": 0.0
+      },
+      {
+        "Quoted_Bucket": "8-12L",
+        "Won_Deals": 3,
+        "Avg_Quoted": 983333.3333333334,
+        "Avg_Expected": 1050000.0,
+        "Avg_Final": 0.0
+      },
+      {
+        "Quoted_Bucket": "12-16L",
+        "Won_Deals": 3,
+        "Avg_Quoted": 1390000.0,
+        "Avg_Expected": 1450000.0,
+        "Avg_Final": NaN
+      },
+      {
+        "Quoted_Bucket": "16-25L",
+        "Won_Deals": 0,
+        "Avg_Quoted": NaN,
+        "Avg_Expected": NaN,
+        "Avg_Final": NaN
+      },
+      {
+        "Quoted_Bucket": "25L+",
+        "Won_Deals": 0,
+        "Avg_Quoted": NaN,
+        "Avg_Expected": NaN,
+        "Avg_Final": NaN
+      }
+    ],
+    "data_quality": {
+      "has_final_price": false,
+      "gap_metric_used": "Customer Expectation Gap (Quoted \u2212 Expected)",
+      "note": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    }
+  },
+  "lost_leads": {
+    "overview": [
+      {
+        "Metric": "Total Lost Leads",
+        "Value": 1797
+      },
+      {
+        "Metric": "With lost reason",
+        "Value": 1543
+      },
+      {
+        "Metric": "With lost due to",
+        "Value": 1543
+      },
+      {
+        "Metric": "With Lost Remark",
+        "Value": 1543
+      },
+      {
+        "Metric": "With lost by",
+        "Value": 0
+      }
+    ],
+    "reason_pareto": [
+      {
+        "Category": "Closed without sale",
+        "Count": 873,
+        "Share_Pct": 56.578094620868434,
+        "Cumulative_Pct": 56.578094620868434
+      },
+      {
+        "Category": "Change Request",
+        "Count": 418,
+        "Share_Pct": 27.090084251458197,
+        "Cumulative_Pct": 83.66817887232664
+      },
+      {
+        "Category": "Lost",
+        "Count": 252,
+        "Share_Pct": 16.33182112767336,
+        "Cumulative_Pct": 100.0
+      }
+    ],
+    "due_to_pareto": [
+      {
+        "Category": "Plan Postponed",
+        "Count": 655,
+        "Share_Pct": 42.44977316915101,
+        "Cumulative_Pct": 42.44977316915101
+      },
+      {
+        "Category": "Change  Request",
+        "Count": 418,
+        "Share_Pct": 27.090084251458197,
+        "Cumulative_Pct": 69.53985742060921
+      },
+      {
+        "Category": "Lost to co-dealer",
+        "Count": 135,
+        "Share_Pct": 8.749189889825017,
+        "Cumulative_Pct": 78.28904731043423
+      },
+      {
+        "Category": "Finance / budget related",
+        "Count": 134,
+        "Share_Pct": 8.684381075826312,
+        "Cumulative_Pct": 86.97342838626054
+      },
+      {
+        "Category": "Lost to competition",
+        "Count": 117,
+        "Share_Pct": 7.582631237848347,
+        "Cumulative_Pct": 94.55605962410888
+      },
+      {
+        "Category": "Do not like the car",
+        "Count": 68,
+        "Share_Pct": 4.4069993519118595,
+        "Cumulative_Pct": 98.96305897602075
+      },
+      {
+        "Category": "Delay in delivery",
+        "Count": 16,
+        "Share_Pct": 1.0369410239792611,
+        "Cumulative_Pct": 100.00000000000001
+      }
+    ],
+    "monthly_trend": [
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Change  Request",
+        "Count": 102
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Delay in delivery",
+        "Count": 3
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Do not like the car",
+        "Count": 12
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Finance / budget related",
+        "Count": 62
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Lost to co-dealer",
+        "Count": 50
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Lost to competition",
+        "Count": 43
+      },
+      {
+        "Enquiry Month": "2026-01",
+        "lost due to": "Plan Postponed",
+        "Count": 208
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Change  Request",
+        "Count": 76
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Delay in delivery",
+        "Count": 1
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Do not like the car",
+        "Count": 6
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Finance / budget related",
+        "Count": 11
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Lost to co-dealer",
+        "Count": 15
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Lost to competition",
+        "Count": 11
+      },
+      {
+        "Enquiry Month": "2026-02",
+        "lost due to": "Plan Postponed",
+        "Count": 66
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Change  Request",
+        "Count": 39
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Do not like the car",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Finance / budget related",
+        "Count": 3
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Lost to co-dealer",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Lost to competition",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-03",
+        "lost due to": "Plan Postponed",
+        "Count": 77
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Change  Request",
+        "Count": 106
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Delay in delivery",
+        "Count": 6
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Do not like the car",
+        "Count": 28
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Finance / budget related",
+        "Count": 23
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Lost to co-dealer",
+        "Count": 47
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Lost to competition",
+        "Count": 25
+      },
+      {
+        "Enquiry Month": "2026-04",
+        "lost due to": "Plan Postponed",
+        "Count": 161
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Change  Request",
+        "Count": 61
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Delay in delivery",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Do not like the car",
+        "Count": 17
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Finance / budget related",
+        "Count": 31
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Lost to co-dealer",
+        "Count": 15
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Lost to competition",
+        "Count": 32
+      },
+      {
+        "Enquiry Month": "2026-05",
+        "lost due to": "Plan Postponed",
+        "Count": 122
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Change  Request",
+        "Count": 34
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Delay in delivery",
+        "Count": 2
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Do not like the car",
+        "Count": 1
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Finance / budget related",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Lost to co-dealer",
+        "Count": 4
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Lost to competition",
+        "Count": 2
+      },
+      {
+        "Enquiry Month": "2026-06",
+        "lost due to": "Plan Postponed",
+        "Count": 21
+      }
+    ],
+    "remark_keywords": [
+      {
+        "Keyword": "plan",
+        "Frequency": 555
+      },
+      {
+        "Keyword": "enquiry",
+        "Frequency": 231
+      },
+      {
+        "Keyword": "existing",
+        "Frequency": 198
+      },
+      {
+        "Keyword": "due",
+        "Frequency": 107
+      },
+      {
+        "Keyword": "purchased",
+        "Frequency": 76
+      },
+      {
+        "Keyword": "cuttack",
+        "Frequency": 73
+      },
+      {
+        "Keyword": "now",
+        "Frequency": 72
+      },
+      {
+        "Keyword": "late",
+        "Frequency": 69
+      },
+      {
+        "Keyword": "other",
+        "Frequency": 68
+      },
+      {
+        "Keyword": "postponed",
+        "Frequency": 62
+      },
+      {
+        "Keyword": "issue",
+        "Frequency": 61
+      },
+      {
+        "Keyword": "interested",
+        "Frequency": 57
+      },
+      {
+        "Keyword": "booked",
+        "Frequency": 53
+      },
+      {
+        "Keyword": "change",
+        "Frequency": 51
+      },
+      {
+        "Keyword": "sambalpur",
+        "Frequency": 42
+      },
+      {
+        "Keyword": "number",
+        "Frequency": 41
+      },
+      {
+        "Keyword": "customer",
+        "Frequency": 39
+      },
+      {
+        "Keyword": "responding",
+        "Frequency": 38
+      },
+      {
+        "Keyword": "some",
+        "Frequency": 37
+      },
+      {
+        "Keyword": "personal",
+        "Frequency": 36
+      }
+    ],
+    "lost_by": [],
+    "data_quality": {
+      "lost_by_populated": false
+    }
+  },
+  "campaign_digital": {
+    "campaign_performance": [
+      {
+        "Campaign No": null,
+        "Campaign Name": null,
+        "Enquiries": 6964,
+        "Test_Drives": 3248,
+        "Bookings": 1671,
+        "Retails": 786,
+        "Avg_Sales_Cycle_Days": -4497.76838024124,
+        "TD_Rate": 0.46639862148190697,
+        "Booking_Rate": 0.23994830557151062,
+        "Retail_Rate": 0.1128661688684664
+      },
+      {
+        "Campaign No": "CKIN260100000003",
+        "Campaign Name": "TISPNSRSHP",
+        "Enquiries": 2,
+        "Test_Drives": 1,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -20475.0,
+        "TD_Rate": 0.5,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Campaign No": "CKIN260100000001",
+        "Campaign Name": "1MROADSHOW",
+        "Enquiries": 1,
+        "Test_Drives": 0,
+        "Bookings": 1,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -1.0,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 1.0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "online_request_type": [
+      {
+        "Online Request Type": null,
+        "Enquiries": 4655,
+        "Test_Drives": 2924,
+        "Bookings": 1639,
+        "Retails": 774,
+        "Avg_Sales_Cycle_Days": -3487.254350161117,
+        "TD_Rate": 0.628141783029001,
+        "Booking_Rate": 0.35209452201933406,
+        "Retail_Rate": 0.16627282491944145
+      },
+      {
+        "Online Request Type": "Early Interest Request",
+        "Enquiries": 2101,
+        "Test_Drives": 277,
+        "Bookings": 28,
+        "Retails": 10,
+        "Avg_Sales_Cycle_Days": -6626.930033317468,
+        "TD_Rate": 0.13184198000951927,
+        "Booking_Rate": 0.013326987148976678,
+        "Retail_Rate": 0.00475963826749167
+      },
+      {
+        "Online Request Type": "Quotation Request",
+        "Enquiries": 51,
+        "Test_Drives": 14,
+        "Bookings": 3,
+        "Retails": 1,
+        "Avg_Sales_Cycle_Days": -6020.450980392156,
+        "TD_Rate": 0.27450980392156865,
+        "Booking_Rate": 0.058823529411764705,
+        "Retail_Rate": 0.0196078431372549
+      },
+      {
+        "Online Request Type": "Finalize The Price Request",
+        "Enquiries": 11,
+        "Test_Drives": 4,
+        "Bookings": 1,
+        "Retails": 1,
+        "Avg_Sales_Cycle_Days": -5582.909090909091,
+        "TD_Rate": 0.36363636363636365,
+        "Booking_Rate": 0.09090909090909091,
+        "Retail_Rate": 0.09090909090909091
+      },
+      {
+        "Online Request Type": "Call Back Request",
+        "Enquiries": 15,
+        "Test_Drives": 4,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -12284.066666666668,
+        "TD_Rate": 0.26666666666666666,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Online Request Type": "Price Enquiry",
+        "Enquiries": 8,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5122.125,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Online Request Type": "Self-Evaluation",
+        "Enquiries": 24,
+        "Test_Drives": 3,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5110.958333333333,
+        "TD_Rate": 0.125,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Online Request Type": "Show Interest",
+        "Enquiries": 13,
+        "Test_Drives": 0,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -4732.307692307692,
+        "TD_Rate": 0.0,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Online Request Type": "Test Drive Request",
+        "Enquiries": 85,
+        "Test_Drives": 21,
+        "Bookings": 0,
+        "Retails": 0,
+        "Avg_Sales_Cycle_Days": -5050.423529411764,
+        "TD_Rate": 0.24705882352941178,
+        "Booking_Rate": 0.0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "website_remarks": [
+      {
+        "Website Remark": "Present Car Make=K;\nPresent Car Model=SX;\nTest Drive Required=N;",
+        "Enquiries": 5,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "12/05/2026 13:00-16:00",
+        "Enquiries": 3,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 10/01/2026",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 18/01/2026",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 05/04/2026",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "06/06/2026 13:00-16:00",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "13:00-16:00 13/01/2026",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "Current Vehicle Make=M3;\nCurrent Vehicle Model=SD;\nTest Drive Required=N;",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "15/05/2026 10:00-13:00",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "13:00-16:00 15/03/2026",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "16/06/2026 16:00-19:00",
+        "Enquiries": 2,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10/05/2026 13:00-16:00",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10/05/2026 10:00-13:00",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "05/02/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 04/04/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 03/03/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 03/02/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 03/01/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10:00-13:00 01/02/2026",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Website Remark": "10/06/2026 13:00-16:00",
+        "Enquiries": 1,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "website_remark_types": [
+      {
+        "Remark_Type": "Date/Time Slot",
+        "Count": 96
+      },
+      {
+        "Remark_Type": "Text Remark",
+        "Count": 29
+      }
+    ],
+    "digital_source_breakdown": [
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "KIN Website",
+        "Enquiries": 357,
+        "Retails": 4,
+        "Retail_Rate": 0.011204481792717087
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "Other Websites",
+        "Enquiries": 215,
+        "Retails": 30,
+        "Retail_Rate": 0.13953488372093023
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "MYKIA",
+        "Enquiries": 32,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "Call Centre",
+        "Enquiries": 24,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "Meta",
+        "Enquiries": 23,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "Dealer CRM",
+        "Enquiries": 17,
+        "Retails": 2,
+        "Retail_Rate": 0.11764705882352941
+      },
+      {
+        "Source": "Online/CRM",
+        "Sub-source": "Outbound Calls",
+        "Enquiries": 8,
+        "Retails": 0,
+        "Retail_Rate": 0.0
+      }
+    ],
+    "data_quality": {
+      "campaign_tagged_leads": 3,
+      "campaign_warning": "WARNING: Only 3 leads have campaign tags. Campaign-level ROI analysis is statistically unreliable.",
+      "online_request_type_leads": 6963,
+      "website_remark_leads": 125
+    }
+  },
+  "lead_velocity": {
+    "velocity_by_outcome": [
+      {
+        "Outcome": "Active",
+        "Count": 3672,
+        "Avg_Aging": 20.329520697167755,
+        "Median_Aging": 17.0,
+        "P25_Aging": 9.0,
+        "P75_Aging": 28.0,
+        "P90_Aging": 43.0,
+        "Avg_Quotation_Emails": 0.0,
+        "Median_Quotation_Emails": 0.0
+      },
+      {
+        "Outcome": "Booked (Active)",
+        "Count": 886,
+        "Avg_Aging": 21.080135440180587,
+        "Median_Aging": 18.0,
+        "P25_Aging": 10.0,
+        "P75_Aging": 30.0,
+        "P90_Aging": 41.0,
+        "Avg_Quotation_Emails": 0.001128668171557562,
+        "Median_Quotation_Emails": 0.0
+      },
+      {
+        "Outcome": "Lost",
+        "Count": 1623,
+        "Avg_Aging": 29.230437461491064,
+        "Median_Aging": 28.0,
+        "P25_Aging": 17.0,
+        "P75_Aging": 39.0,
+        "P90_Aging": 54.0,
+        "Avg_Quotation_Emails": 0.0,
+        "Median_Quotation_Emails": 0.0
+      },
+      {
+        "Outcome": "Retailed",
+        "Count": 786,
+        "Avg_Aging": 26.24681933842239,
+        "Median_Aging": 24.0,
+        "P25_Aging": 13.0,
+        "P75_Aging": 37.0,
+        "P90_Aging": 50.0,
+        "Avg_Quotation_Emails": 0.0,
+        "Median_Quotation_Emails": 0.0
+      }
+    ],
+    "aging_bucket_performance": [
+      {
+        "Aging_Bucket": "0-3d",
+        "Enquiries": 398,
+        "Retails": 21,
+        "Lost": 35,
+        "Retail_Rate": 0.052763819095477386,
+        "Lost_Rate": 0.08793969849246232
+      },
+      {
+        "Aging_Bucket": "4-7d",
+        "Enquiries": 705,
+        "Retails": 45,
+        "Lost": 78,
+        "Retail_Rate": 0.06382978723404255,
+        "Lost_Rate": 0.11063829787234042
+      },
+      {
+        "Aging_Bucket": "8-14d",
+        "Enquiries": 1344,
+        "Retails": 153,
+        "Lost": 230,
+        "Retail_Rate": 0.11383928571428571,
+        "Lost_Rate": 0.17113095238095238
+      },
+      {
+        "Aging_Bucket": "15-21d",
+        "Enquiries": 1367,
+        "Retails": 140,
+        "Lost": 311,
+        "Retail_Rate": 0.10241404535479151,
+        "Lost_Rate": 0.22750548646671542
+      },
+      {
+        "Aging_Bucket": "22-30d",
+        "Enquiries": 1085,
+        "Retails": 132,
+        "Lost": 309,
+        "Retail_Rate": 0.12165898617511521,
+        "Lost_Rate": 0.2847926267281106
+      },
+      {
+        "Aging_Bucket": "31-45d",
+        "Enquiries": 1318,
+        "Retails": 186,
+        "Lost": 513,
+        "Retail_Rate": 0.1411229135053111,
+        "Lost_Rate": 0.3892261001517451
+      },
+      {
+        "Aging_Bucket": "46-60d",
+        "Enquiries": 680,
+        "Retails": 97,
+        "Lost": 284,
+        "Retail_Rate": 0.1426470588235294,
+        "Lost_Rate": 0.4176470588235294
+      },
+      {
+        "Aging_Bucket": "61d+",
+        "Enquiries": 70,
+        "Retails": 12,
+        "Lost": 37,
+        "Retail_Rate": 0.17142857142857143,
+        "Lost_Rate": 0.5285714285714286
+      }
+    ],
+    "aging_outcome_crosstab": [
+      {
+        "Aging_Bucket": "0-3d",
+        "Outcome": "Active",
+        "Count": 277
+      },
+      {
+        "Aging_Bucket": "0-3d",
+        "Outcome": "Booked (Active)",
+        "Count": 65
+      },
+      {
+        "Aging_Bucket": "0-3d",
+        "Outcome": "Lost",
+        "Count": 35
+      },
+      {
+        "Aging_Bucket": "0-3d",
+        "Outcome": "Retailed",
+        "Count": 21
+      },
+      {
+        "Aging_Bucket": "4-7d",
+        "Outcome": "Active",
+        "Count": 468
+      },
+      {
+        "Aging_Bucket": "4-7d",
+        "Outcome": "Booked (Active)",
+        "Count": 116
+      },
+      {
+        "Aging_Bucket": "4-7d",
+        "Outcome": "Lost",
+        "Count": 76
+      },
+      {
+        "Aging_Bucket": "4-7d",
+        "Outcome": "Retailed",
+        "Count": 45
+      },
+      {
+        "Aging_Bucket": "8-14d",
+        "Outcome": "Active",
+        "Count": 797
+      },
+      {
+        "Aging_Bucket": "8-14d",
+        "Outcome": "Booked (Active)",
+        "Count": 173
+      },
+      {
+        "Aging_Bucket": "8-14d",
+        "Outcome": "Lost",
+        "Count": 221
+      },
+      {
+        "Aging_Bucket": "8-14d",
+        "Outcome": "Retailed",
+        "Count": 153
+      },
+      {
+        "Aging_Bucket": "15-21d",
+        "Outcome": "Active",
+        "Count": 765
+      },
+      {
+        "Aging_Bucket": "15-21d",
+        "Outcome": "Booked (Active)",
+        "Count": 176
+      },
+      {
+        "Aging_Bucket": "15-21d",
+        "Outcome": "Lost",
+        "Count": 286
+      },
+      {
+        "Aging_Bucket": "15-21d",
+        "Outcome": "Retailed",
+        "Count": 140
+      },
+      {
+        "Aging_Bucket": "22-30d",
+        "Outcome": "Active",
+        "Count": 548
+      },
+      {
+        "Aging_Bucket": "22-30d",
+        "Outcome": "Booked (Active)",
+        "Count": 135
+      },
+      {
+        "Aging_Bucket": "22-30d",
+        "Outcome": "Lost",
+        "Count": 270
+      },
+      {
+        "Aging_Bucket": "22-30d",
+        "Outcome": "Retailed",
+        "Count": 132
+      },
+      {
+        "Aging_Bucket": "31-45d",
+        "Outcome": "Active",
+        "Count": 523
+      },
+      {
+        "Aging_Bucket": "31-45d",
+        "Outcome": "Booked (Active)",
+        "Count": 153
+      },
+      {
+        "Aging_Bucket": "31-45d",
+        "Outcome": "Lost",
+        "Count": 456
+      },
+      {
+        "Aging_Bucket": "31-45d",
+        "Outcome": "Retailed",
+        "Count": 186
+      },
+      {
+        "Aging_Bucket": "46-60d",
+        "Outcome": "Active",
+        "Count": 275
+      },
+      {
+        "Aging_Bucket": "46-60d",
+        "Outcome": "Booked (Active)",
+        "Count": 60
+      },
+      {
+        "Aging_Bucket": "46-60d",
+        "Outcome": "Lost",
+        "Count": 248
+      },
+      {
+        "Aging_Bucket": "46-60d",
+        "Outcome": "Retailed",
+        "Count": 97
+      },
+      {
+        "Aging_Bucket": "61d+",
+        "Outcome": "Active",
+        "Count": 19
+      },
+      {
+        "Aging_Bucket": "61d+",
+        "Outcome": "Booked (Active)",
+        "Count": 8
+      },
+      {
+        "Aging_Bucket": "61d+",
+        "Outcome": "Lost",
+        "Count": 31
+      },
+      {
+        "Aging_Bucket": "61d+",
+        "Outcome": "Retailed",
+        "Count": 12
+      }
+    ],
+    "email_engagement": [],
+    "optimal_response_window": "61d+",
+    "data_quality": {
+      "has_email_data": false,
+      "total_email_count_sum": 1.0,
+      "aging_days_coverage_pct": 100.0
+    }
+  },
+  "funnel_summary": [
+    {
+      "Stage": "Enquiry",
+      "Count": 6967,
+      "Conversion_of_Enquiry": 1.0,
+      "Stage_to_Stage_Conversion": 1.0,
+      "Drop_off_Rate": 0.0
+    },
+    {
+      "Stage": "Test Drive",
+      "Count": 3249,
+      "Conversion_of_Enquiry": 0.4663413233816564,
+      "Stage_to_Stage_Conversion": 0.4663413233816564,
+      "Drop_off_Rate": 0.5336586766183435
+    },
+    {
+      "Stage": "Booking",
+      "Count": 1672,
+      "Conversion_of_Enquiry": 0.2399885172958231,
+      "Stage_to_Stage_Conversion": 0.5146198830409356,
+      "Drop_off_Rate": 0.4853801169590643
+    },
+    {
+      "Stage": "Retail",
+      "Count": 786,
+      "Conversion_of_Enquiry": 0.1128175685373905,
+      "Stage_to_Stage_Conversion": 0.4700956937799043,
+      "Drop_off_Rate": 0.5299043062200957
+    }
+  ],
+  "source_performance": [
+    {
+      "Source": "Referral",
+      "Enquiries": 1097,
+      "Test_Drives": 645,
+      "Bookings": 580,
+      "Retails": 303,
+      "Avg_Sales_Cycle_Days": -2478.7046490428443,
+      "TD_Rate": 0.5879671832269827,
+      "Booking_Rate": 0.528714676390155,
+      "Retail_Rate": 0.276207839562443
+    },
+    {
+      "Source": "Walkin",
+      "Enquiries": 1627,
+      "Test_Drives": 1191,
+      "Bookings": 465,
+      "Retails": 219,
+      "Avg_Sales_Cycle_Days": -4216.224339274739,
+      "TD_Rate": 0.7320221266133989,
+      "Booking_Rate": 0.2858020897357099,
+      "Retail_Rate": 0.1346035648432698
+    },
+    {
+      "Source": "Field",
+      "Enquiries": 941,
+      "Test_Drives": 610,
+      "Bookings": 297,
+      "Retails": 122,
+      "Avg_Sales_Cycle_Days": -3724.8405951115833,
+      "TD_Rate": 0.6482465462274176,
+      "Booking_Rate": 0.3156216790648246,
+      "Retail_Rate": 0.1296493092454835
+    },
+    {
+      "Source": "Hyperlocal",
+      "Enquiries": 2232,
+      "Test_Drives": 412,
+      "Bookings": 170,
+      "Retails": 77,
+      "Avg_Sales_Cycle_Days": -6173.268817204301,
+      "TD_Rate": 0.1845878136200716,
+      "Booking_Rate": 0.0761648745519713,
+      "Retail_Rate": 0.0344982078853046
+    },
+    {
+      "Source": "Online/CRM",
+      "Enquiries": 676,
+      "Test_Drives": 197,
+      "Bookings": 71,
+      "Retails": 36,
+      "Avg_Sales_Cycle_Days": -4476.066568047338,
+      "TD_Rate": 0.2914201183431952,
+      "Booking_Rate": 0.1050295857988165,
+      "Retail_Rate": 0.0532544378698224
+    },
+    {
+      "Source": "Telephone",
+      "Enquiries": 384,
+      "Test_Drives": 191,
+      "Bookings": 88,
+      "Retails": 29,
+      "Avg_Sales_Cycle_Days": -3787.4583333333335,
+      "TD_Rate": 0.4973958333333333,
+      "Booking_Rate": 0.2291666666666666,
+      "Retail_Rate": 0.0755208333333333
+    },
+    {
+      "Source": null,
+      "Enquiries": 10,
+      "Test_Drives": 3,
+      "Bookings": 1,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -2045.8,
+      "TD_Rate": 0.3,
+      "Booking_Rate": 0.1,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "lead_type_performance": [
+    {
+      "Type": "Hot",
+      "Enquiries": 1698,
+      "Test_Drives": 1251,
+      "Bookings": 1242,
+      "Retails": 777,
+      "Avg_Sales_Cycle_Days": -2484.79210836278,
+      "TD_Rate": 0.7367491166077739,
+      "Booking_Rate": 0.7314487632508834,
+      "Retail_Rate": 0.4575971731448763
+    },
+    {
+      "Type": "Cold",
+      "Enquiries": 4214,
+      "Test_Drives": 1489,
+      "Bookings": 327,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -5431.374940673944,
+      "TD_Rate": 0.3533459895586141,
+      "Booking_Rate": 0.0775984812529663,
+      "Retail_Rate": 0.0018984337921214
+    },
+    {
+      "Type": "Warm",
+      "Enquiries": 1055,
+      "Test_Drives": 509,
+      "Bookings": 103,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -4034.52037914692,
+      "TD_Rate": 0.4824644549763033,
+      "Booking_Rate": 0.0976303317535545,
+      "Retail_Rate": 0.0009478672985781
+    }
+  ],
+  "model_performance": [
+    {
+      "Model": "SONET",
+      "Enquiries": 2115,
+      "Test_Drives": 1123,
+      "Bookings": 640,
+      "Retails": 344,
+      "Avg_Sales_Cycle_Days": -4172.921513002364,
+      "TD_Rate": 0.5309692671394799,
+      "Booking_Rate": 0.3026004728132387,
+      "Retail_Rate": 0.1626477541371158
+    },
+    {
+      "Model": "CARENS",
+      "Enquiries": 1326,
+      "Test_Drives": 656,
+      "Bookings": 354,
+      "Retails": 195,
+      "Avg_Sales_Cycle_Days": -4245.922322775264,
+      "TD_Rate": 0.4947209653092006,
+      "Booking_Rate": 0.2669683257918552,
+      "Retail_Rate": 0.1470588235294117
+    },
+    {
+      "Model": "NEW SELTOS",
+      "Enquiries": 2155,
+      "Test_Drives": 1241,
+      "Bookings": 537,
+      "Retails": 187,
+      "Avg_Sales_Cycle_Days": -4350.961948955916,
+      "TD_Rate": 0.5758700696055684,
+      "Booking_Rate": 0.2491879350348027,
+      "Retail_Rate": 0.0867749419953596
+    },
+    {
+      "Model": "SELTOS",
+      "Enquiries": 566,
+      "Test_Drives": 32,
+      "Bookings": 41,
+      "Retails": 24,
+      "Avg_Sales_Cycle_Days": -6212.747349823321,
+      "TD_Rate": 0.0565371024734982,
+      "Booking_Rate": 0.0724381625441696,
+      "Retail_Rate": 0.0424028268551236
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Enquiries": 441,
+      "Test_Drives": 110,
+      "Bookings": 50,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -4879.238095238095,
+      "TD_Rate": 0.2494331065759637,
+      "Booking_Rate": 0.1133786848072562,
+      "Retail_Rate": 0.0453514739229024
+    },
+    {
+      "Model": "SYROS",
+      "Enquiries": 332,
+      "Test_Drives": 87,
+      "Bookings": 50,
+      "Retails": 16,
+      "Avg_Sales_Cycle_Days": -5056.421686746988,
+      "TD_Rate": 0.2620481927710843,
+      "Booking_Rate": 0.1506024096385542,
+      "Retail_Rate": 0.0481927710843373
+    },
+    {
+      "Model": "EV9",
+      "Enquiries": 1,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": 19.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "CARNIVAL",
+      "Enquiries": 23,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -4450.521739130435,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Model": "EV6",
+      "Enquiries": 8,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -10253.875,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "consultant_performance": [
+    {
+      "Consultant Name": "RAJ KUMAR JENA",
+      "Enquiries": 144,
+      "Test_Drives": 115,
+      "Bookings": 80,
+      "Retails": 42,
+      "Avg_Sales_Cycle_Days": -2269.6736111111118,
+      "TD_Rate": 0.7986111111111112,
+      "Booking_Rate": 0.5555555555555556,
+      "Retail_Rate": 0.2916666666666667
+    },
+    {
+      "Consultant Name": "MANISHA NAYAK",
+      "Enquiries": 201,
+      "Test_Drives": 106,
+      "Bookings": 57,
+      "Retails": 36,
+      "Avg_Sales_Cycle_Days": -4582.243781094528,
+      "TD_Rate": 0.527363184079602,
+      "Booking_Rate": 0.2835820895522388,
+      "Retail_Rate": 0.1791044776119403
+    },
+    {
+      "Consultant Name": "SOUMYA SASWAT NAYAK",
+      "Enquiries": 145,
+      "Test_Drives": 106,
+      "Bookings": 58,
+      "Retails": 32,
+      "Avg_Sales_Cycle_Days": -5792.606896551724,
+      "TD_Rate": 0.7310344827586207,
+      "Booking_Rate": 0.4,
+      "Retail_Rate": 0.2206896551724138
+    },
+    {
+      "Consultant Name": "RASHMITA SAHANI",
+      "Enquiries": 147,
+      "Test_Drives": 111,
+      "Bookings": 66,
+      "Retails": 31,
+      "Avg_Sales_Cycle_Days": -5154.1292517006805,
+      "TD_Rate": 0.7551020408163265,
+      "Booking_Rate": 0.4489795918367347,
+      "Retail_Rate": 0.2108843537414966
+    },
+    {
+      "Consultant Name": "CHITTARANJAN SAHOO",
+      "Enquiries": 129,
+      "Test_Drives": 71,
+      "Bookings": 48,
+      "Retails": 30,
+      "Avg_Sales_Cycle_Days": -1415.240310077519,
+      "TD_Rate": 0.5503875968992248,
+      "Booking_Rate": 0.3720930232558139,
+      "Retail_Rate": 0.2325581395348837
+    },
+    {
+      "Consultant Name": "DIBYAJYOTI MOHANTY",
+      "Enquiries": 162,
+      "Test_Drives": 80,
+      "Bookings": 51,
+      "Retails": 26,
+      "Avg_Sales_Cycle_Days": -3653.481481481481,
+      "TD_Rate": 0.4938271604938271,
+      "Booking_Rate": 0.3148148148148148,
+      "Retail_Rate": 0.1604938271604938
+    },
+    {
+      "Consultant Name": "MD ANISHUR RAHEMAN",
+      "Enquiries": 156,
+      "Test_Drives": 101,
+      "Bookings": 56,
+      "Retails": 26,
+      "Avg_Sales_Cycle_Days": -6178.583333333333,
+      "TD_Rate": 0.6474358974358975,
+      "Booking_Rate": 0.358974358974359,
+      "Retail_Rate": 0.1666666666666666
+    },
+    {
+      "Consultant Name": "BIJNARAJ SUKUMAR SAHU",
+      "Enquiries": 164,
+      "Test_Drives": 97,
+      "Bookings": 57,
+      "Retails": 26,
+      "Avg_Sales_Cycle_Days": -2992.7256097560976,
+      "TD_Rate": 0.5914634146341463,
+      "Booking_Rate": 0.3475609756097561,
+      "Retail_Rate": 0.1585365853658536
+    },
+    {
+      "Consultant Name": "AK BIPLAB DASH",
+      "Enquiries": 140,
+      "Test_Drives": 74,
+      "Bookings": 53,
+      "Retails": 25,
+      "Avg_Sales_Cycle_Days": -7758.3,
+      "TD_Rate": 0.5285714285714286,
+      "Booking_Rate": 0.3785714285714285,
+      "Retail_Rate": 0.1785714285714285
+    },
+    {
+      "Consultant Name": "HAREKRUSHNA DAS",
+      "Enquiries": 150,
+      "Test_Drives": 73,
+      "Bookings": 54,
+      "Retails": 24,
+      "Avg_Sales_Cycle_Days": -2592.326666666667,
+      "TD_Rate": 0.4866666666666667,
+      "Booking_Rate": 0.36,
+      "Retail_Rate": 0.16
+    },
+    {
+      "Consultant Name": "UTKAL KISHORE BARIK",
+      "Enquiries": 116,
+      "Test_Drives": 84,
+      "Bookings": 49,
+      "Retails": 24,
+      "Avg_Sales_Cycle_Days": -3529.0172413793102,
+      "TD_Rate": 0.7241379310344828,
+      "Booking_Rate": 0.4224137931034483,
+      "Retail_Rate": 0.2068965517241379
+    },
+    {
+      "Consultant Name": "UMASHANKAR V",
+      "Enquiries": 115,
+      "Test_Drives": 79,
+      "Bookings": 39,
+      "Retails": 24,
+      "Avg_Sales_Cycle_Days": -697.104347826087,
+      "TD_Rate": 0.6869565217391305,
+      "Booking_Rate": 0.3391304347826087,
+      "Retail_Rate": 0.208695652173913
+    },
+    {
+      "Consultant Name": "JYOTI RANJAN BEURA",
+      "Enquiries": 176,
+      "Test_Drives": 109,
+      "Bookings": 62,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -6058.136363636364,
+      "TD_Rate": 0.6193181818181818,
+      "Booking_Rate": 0.3522727272727273,
+      "Retail_Rate": 0.125
+    },
+    {
+      "Consultant Name": "ITISHREE BEHERA",
+      "Enquiries": 159,
+      "Test_Drives": 111,
+      "Bookings": 43,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -6703.836477987421,
+      "TD_Rate": 0.6981132075471698,
+      "Booking_Rate": 0.270440251572327,
+      "Retail_Rate": 0.1383647798742138
+    },
+    {
+      "Consultant Name": "RAJA SENAPATI",
+      "Enquiries": 119,
+      "Test_Drives": 73,
+      "Bookings": 49,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -2056.4789915966385,
+      "TD_Rate": 0.6134453781512605,
+      "Booking_Rate": 0.4117647058823529,
+      "Retail_Rate": 0.1848739495798319
+    },
+    {
+      "Consultant Name": "PRITIMANJARI RATHA",
+      "Enquiries": 144,
+      "Test_Drives": 102,
+      "Bookings": 36,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -4407.444444444444,
+      "TD_Rate": 0.7083333333333334,
+      "Booking_Rate": 0.25,
+      "Retail_Rate": 0.1527777777777778
+    },
+    {
+      "Consultant Name": "KURESH BEHERA",
+      "Enquiries": 124,
+      "Test_Drives": 68,
+      "Bookings": 40,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -3465.459677419354,
+      "TD_Rate": 0.5483870967741935,
+      "Booking_Rate": 0.3225806451612903,
+      "Retail_Rate": 0.1774193548387097
+    },
+    {
+      "Consultant Name": "SUMIT KUMAR JENA",
+      "Enquiries": 125,
+      "Test_Drives": 65,
+      "Bookings": 38,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -1627.496,
+      "TD_Rate": 0.52,
+      "Booking_Rate": 0.304,
+      "Retail_Rate": 0.16
+    },
+    {
+      "Consultant Name": "ITISHREE MALLICK",
+      "Enquiries": 167,
+      "Test_Drives": 95,
+      "Bookings": 51,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -4791.868263473054,
+      "TD_Rate": 0.5688622754491018,
+      "Booking_Rate": 0.3053892215568862,
+      "Retail_Rate": 0.1197604790419161
+    },
+    {
+      "Consultant Name": "MADHUSMITA SWAIN",
+      "Enquiries": 92,
+      "Test_Drives": 46,
+      "Bookings": 37,
+      "Retails": 20,
+      "Avg_Sales_Cycle_Days": -2659.945652173913,
+      "TD_Rate": 0.5,
+      "Booking_Rate": 0.4021739130434782,
+      "Retail_Rate": 0.217391304347826
+    },
+    {
+      "Consultant Name": "AKASH KUMAR BEHERA",
+      "Enquiries": 99,
+      "Test_Drives": 60,
+      "Bookings": 36,
+      "Retails": 18,
+      "Avg_Sales_Cycle_Days": -2471.6666666666665,
+      "TD_Rate": 0.6060606060606061,
+      "Booking_Rate": 0.3636363636363636,
+      "Retail_Rate": 0.1818181818181818
+    },
+    {
+      "Consultant Name": "NISIKANTA ROUT",
+      "Enquiries": 130,
+      "Test_Drives": 85,
+      "Bookings": 34,
+      "Retails": 17,
+      "Avg_Sales_Cycle_Days": -5675.746153846154,
+      "TD_Rate": 0.6538461538461539,
+      "Booking_Rate": 0.2615384615384615,
+      "Retail_Rate": 0.1307692307692307
+    },
+    {
+      "Consultant Name": "RUDRA NARAYAN MOHAPATRA",
+      "Enquiries": 168,
+      "Test_Drives": 107,
+      "Bookings": 36,
+      "Retails": 16,
+      "Avg_Sales_Cycle_Days": -8176.702380952381,
+      "TD_Rate": 0.6369047619047619,
+      "Booking_Rate": 0.2142857142857142,
+      "Retail_Rate": 0.0952380952380952
+    },
+    {
+      "Consultant Name": "BISWANATH NAYAK",
+      "Enquiries": 119,
+      "Test_Drives": 20,
+      "Bookings": 31,
+      "Retails": 15,
+      "Avg_Sales_Cycle_Days": -1883.7142857142856,
+      "TD_Rate": 0.1680672268907563,
+      "Booking_Rate": 0.2605042016806723,
+      "Retail_Rate": 0.1260504201680672
+    },
+    {
+      "Consultant Name": "PRAJNADEEPA ROUT",
+      "Enquiries": 134,
+      "Test_Drives": 94,
+      "Bookings": 36,
+      "Retails": 15,
+      "Avg_Sales_Cycle_Days": -6895.268656716418,
+      "TD_Rate": 0.7014925373134329,
+      "Booking_Rate": 0.2686567164179104,
+      "Retail_Rate": 0.1119402985074626
+    },
+    {
+      "Consultant Name": "SUBASH CHANDRA DALUA",
+      "Enquiries": 94,
+      "Test_Drives": 61,
+      "Bookings": 25,
+      "Retails": 15,
+      "Avg_Sales_Cycle_Days": -4563.45744680851,
+      "TD_Rate": 0.648936170212766,
+      "Booking_Rate": 0.2659574468085106,
+      "Retail_Rate": 0.1595744680851064
+    },
+    {
+      "Consultant Name": "SIBANANDA BHUTIA",
+      "Enquiries": 139,
+      "Test_Drives": 46,
+      "Bookings": 24,
+      "Retails": 14,
+      "Avg_Sales_Cycle_Days": -2197.0143884892086,
+      "TD_Rate": 0.3309352517985611,
+      "Booking_Rate": 0.1726618705035971,
+      "Retail_Rate": 0.1007194244604316
+    },
+    {
+      "Consultant Name": "BIKASH KUMAR PUHAN",
+      "Enquiries": 148,
+      "Test_Drives": 88,
+      "Bookings": 38,
+      "Retails": 13,
+      "Avg_Sales_Cycle_Days": -4840.75,
+      "TD_Rate": 0.5945945945945946,
+      "Booking_Rate": 0.2567567567567567,
+      "Retail_Rate": 0.0878378378378378
+    },
+    {
+      "Consultant Name": "RAJSMITA PRADHAN",
+      "Enquiries": 144,
+      "Test_Drives": 102,
+      "Bookings": 34,
+      "Retails": 13,
+      "Avg_Sales_Cycle_Days": -6552.479166666667,
+      "TD_Rate": 0.7083333333333334,
+      "Booking_Rate": 0.2361111111111111,
+      "Retail_Rate": 0.0902777777777777
+    },
+    {
+      "Consultant Name": "SARMISTHA SAHOO",
+      "Enquiries": 116,
+      "Test_Drives": 95,
+      "Bookings": 29,
+      "Retails": 13,
+      "Avg_Sales_Cycle_Days": -4602.275862068966,
+      "TD_Rate": 0.8189655172413793,
+      "Booking_Rate": 0.25,
+      "Retail_Rate": 0.1120689655172413
+    }
+  ],
+  "td_impact": [
+    {
+      "Is_TD": false,
+      "Enquiries": 3718,
+      "Bookings": 306,
+      "Retails": 165,
+      "Booking_Rate": 0.0823023130715438,
+      "Retail_Rate": 0.044378698224852
+    },
+    {
+      "Is_TD": true,
+      "Enquiries": 3249,
+      "Bookings": 1366,
+      "Retails": 621,
+      "Booking_Rate": 0.4204370575561711,
+      "Retail_Rate": 0.1911357340720221
+    }
+  ],
+  "monthly_trends": [
+    {
+      "Enquiry Month": "2026-01",
+      "Enquiries": 1234,
+      "Test_Drives": 387,
+      "Bookings": 289,
+      "Retails": 177,
+      "Avg_Sales_Cycle_Days": -7923.369529983793,
+      "TD_Rate": 0.3136142625607779,
+      "Booking_Rate": 0.2341977309562398,
+      "Retail_Rate": 0.1434359805510534
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "Enquiries": 1253,
+      "Test_Drives": 675,
+      "Bookings": 309,
+      "Retails": 157,
+      "Avg_Sales_Cycle_Days": -6451.66320830008,
+      "TD_Rate": 0.538707102952913,
+      "Booking_Rate": 0.246608140462889,
+      "Retail_Rate": 0.1252992817238627
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "Enquiries": 1119,
+      "Test_Drives": 589,
+      "Bookings": 318,
+      "Retails": 146,
+      "Avg_Sales_Cycle_Days": -5138.024128686328,
+      "TD_Rate": 0.5263628239499554,
+      "Booking_Rate": 0.2841823056300268,
+      "Retail_Rate": 0.13047363717605
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "Enquiries": 1269,
+      "Test_Drives": 563,
+      "Bookings": 276,
+      "Retails": 137,
+      "Avg_Sales_Cycle_Days": -2945.429472025217,
+      "TD_Rate": 0.4436564223798266,
+      "Booking_Rate": 0.2174940898345153,
+      "Retail_Rate": 0.1079590228526398
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "Enquiries": 1140,
+      "Test_Drives": 588,
+      "Bookings": 272,
+      "Retails": 100,
+      "Avg_Sales_Cycle_Days": -2335.248245614035,
+      "TD_Rate": 0.5157894736842106,
+      "Booking_Rate": 0.2385964912280701,
+      "Retail_Rate": 0.087719298245614
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "Enquiries": 952,
+      "Test_Drives": 447,
+      "Bookings": 208,
+      "Retails": 69,
+      "Avg_Sales_Cycle_Days": -1420.857142857143,
+      "TD_Rate": 0.4695378151260504,
+      "Booking_Rate": 0.2184873949579832,
+      "Retail_Rate": 0.0724789915966386
+    }
+  ],
+  "followup_bucket_performance": [
+    {
+      "Followup_Bucket": "0",
+      "Enquiries": 372,
+      "Bookings": 0,
+      "Retails": 0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Followup_Bucket": "1",
+      "Enquiries": 1591,
+      "Bookings": 9,
+      "Retails": 5,
+      "Booking_Rate": 0.0056568196103079,
+      "Retail_Rate": 0.0031426775612822
+    },
+    {
+      "Followup_Bucket": "2",
+      "Enquiries": 2203,
+      "Bookings": 894,
+      "Retails": 420,
+      "Booking_Rate": 0.4058102587380844,
+      "Retail_Rate": 0.1906491148433953
+    },
+    {
+      "Followup_Bucket": "3-4",
+      "Enquiries": 2034,
+      "Bookings": 747,
+      "Retails": 351,
+      "Booking_Rate": 0.3672566371681416,
+      "Retail_Rate": 0.1725663716814159
+    },
+    {
+      "Followup_Bucket": "5-6",
+      "Enquiries": 487,
+      "Bookings": 18,
+      "Retails": 8,
+      "Booking_Rate": 0.0369609856262833,
+      "Retail_Rate": 0.0164271047227926
+    },
+    {
+      "Followup_Bucket": "7-10",
+      "Enquiries": 211,
+      "Bookings": 3,
+      "Retails": 2,
+      "Booking_Rate": 0.0142180094786729,
+      "Retail_Rate": 0.0094786729857819
+    },
+    {
+      "Followup_Bucket": "11+",
+      "Enquiries": 69,
+      "Bookings": 1,
+      "Retails": 0,
+      "Booking_Rate": 0.0144927536231884,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "aging_bucket_performance": [
+    {
+      "Aging_Bucket": "0-7 days",
+      "Enquiries": 1103,
+      "Bookings": 247,
+      "Retails": 66,
+      "Booking_Rate": 0.2239347234814143,
+      "Retail_Rate": 0.0598368087035358
+    },
+    {
+      "Aging_Bucket": "8-15 days",
+      "Enquiries": 1496,
+      "Bookings": 363,
+      "Retails": 169,
+      "Booking_Rate": 0.2426470588235294,
+      "Retail_Rate": 0.1129679144385026
+    },
+    {
+      "Aging_Bucket": "16-30 days",
+      "Enquiries": 2300,
+      "Bookings": 546,
+      "Retails": 256,
+      "Booking_Rate": 0.2373913043478261,
+      "Retail_Rate": 0.1113043478260869
+    },
+    {
+      "Aging_Bucket": "31-45 days",
+      "Enquiries": 1318,
+      "Bookings": 339,
+      "Retails": 186,
+      "Booking_Rate": 0.2572078907435508,
+      "Retail_Rate": 0.1411229135053111
+    },
+    {
+      "Aging_Bucket": "46-60 days",
+      "Enquiries": 680,
+      "Bookings": 157,
+      "Retails": 97,
+      "Booking_Rate": 0.2308823529411764,
+      "Retail_Rate": 0.1426470588235294
+    },
+    {
+      "Aging_Bucket": "61+ days",
+      "Enquiries": 70,
+      "Bookings": 20,
+      "Retails": 12,
+      "Booking_Rate": 0.2857142857142857,
+      "Retail_Rate": 0.1714285714285714
+    }
+  ]
+}

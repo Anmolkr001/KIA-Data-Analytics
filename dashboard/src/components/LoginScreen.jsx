@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Lock, User, Eye, EyeOff, AlertCircle, ArrowRight } from "lucide-react";
+import { Lock, User, Eye, EyeOff, AlertCircle, ArrowRight, Bot } from "lucide-react";
+import HeroBackground from "./HeroBackground";
+import ModelSlider from "./ModelSlider";
+import Car360Viewer from "./Car360Viewer";
+import { kiaModels } from "../data/kiaModels";
 
 /* ═══════════════════════════════════════════════════
    KIA Logo — Reused from CSVLoader
@@ -29,14 +33,43 @@ const VALID_PASSWORD = "Anmol@2008";
 /* ═══════════════════════════════════════════════════
    LOGIN SCREEN COMPONENT
    ═══════════════════════════════════════════════════ */
-export default function LoginScreen({ onLogin }) {
+export default function LoginScreen({ onLogin, onOpenChat }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const [shake, setShake] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [selected360Model, setSelected360Model] = useState(null);
+
+  // Sync 360 viewer modal with browser history
+  useEffect(() => {
+    const onPopState = () => {
+      const hash = window.location.hash;
+      if (hash.startsWith("#model-")) {
+        const modelId = hash.replace("#model-", "");
+        const found = kiaModels.find((m) => m.id === modelId);
+        if (found) setSelected360Model(found);
+      } else {
+        setSelected360Model(null);
+      }
+    };
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+  const handleSelectModel = (model) => {
+    setSelected360Model(model);
+    window.history.pushState({ modal: model.id }, "", `#model-${model.id}`);
+  };
+
+  const handleCloseModal = () => {
+    setSelected360Model(null);
+    if (window.location.hash.startsWith("#model-")) {
+      window.history.back();
+    }
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => setMounted(true), 50);
@@ -74,47 +107,110 @@ export default function LoginScreen({ onLogin }) {
   };
 
   return (
-    <div className="login-root">
-      {/* Animated grid background */}
-      <div className="landing-grid-bg" aria-hidden="true">
-        <div className="landing-grid-lines" />
+    <div
+      className="login-root"
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center",
+        overflowY: "auto",
+        overflowX: "hidden",
+        padding: "20px 16px 20px",
+        background: "transparent",
+      }}
+    >
+      {/* Fullscreen Hero Background Studio with Soft Gradient Overlay */}
+      <HeroBackground src="/hero-bg.jpg" alt="Kia EV6 Exclusive Studio Background" />
+
+      {/* Showroom Top Nav Bar */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "1200px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          zIndex: 20,
+          padding: "4px 8px 12px",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <span
+            style={{
+              fontSize: "11px",
+              letterSpacing: "0.18em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.7)",
+              fontFamily: "'Outfit', sans-serif",
+              fontWeight: 700,
+            }}
+          >
+            KIA Digital Showroom
+          </span>
+          <span
+            style={{
+              fontSize: "10px",
+              padding: "2px 8px",
+              borderRadius: "12px",
+              background: "rgba(234, 0, 41, 0.2)",
+              color: "#ff4d6d",
+              border: "1px solid rgba(234, 0, 41, 0.35)",
+              fontWeight: 600,
+              textTransform: "uppercase",
+              letterSpacing: "0.06em",
+            }}
+          >
+            Bhubaneswar
+          </span>
+        </div>
+
+        {onOpenChat && (
+          <button
+            onClick={onOpenChat}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "7px",
+              padding: "7px 15px",
+              fontSize: "12px",
+              fontWeight: 700,
+              color: "#ffffff",
+              background: "linear-gradient(135deg, rgba(20, 24, 33, 0.9), rgba(10, 13, 20, 0.95))",
+              border: "1px solid rgba(234, 0, 41, 0.5)",
+              borderRadius: "9999px",
+              cursor: "pointer",
+              boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5), 0 0 14px rgba(234, 0, 41, 0.25)",
+              backdropFilter: "blur(12px)",
+              transition: "all 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
+            }}
+            title="Ask AI questions about car models, conversion rates, and dealership performance"
+          >
+            <Bot size={14} color="#ea0029" />
+            <span style={{ fontFamily: "'Outfit', sans-serif" }}>Ask AI Copilot</span>
+            <span
+              style={{
+                width: "7px",
+                height: "7px",
+                borderRadius: "50%",
+                background: "#ea0029",
+                display: "inline-block",
+                boxShadow: "0 0 8px #ea0029",
+              }}
+            />
+          </button>
+        )}
       </div>
 
-      {/* Gradient orbs */}
-      <div
-        className="gradient-orb-1"
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          width: "500px",
-          height: "500px",
-          borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(234,21,55,0.12) 0%, transparent 70%)",
-          top: "-10%",
-          right: "-8%",
-          filter: "blur(60px)",
-          pointerEvents: "none",
-        }}
-      />
-      <div
-        className="gradient-orb-2"
-        aria-hidden="true"
-        style={{
-          position: "absolute",
-          width: "400px",
-          height: "400px",
-          borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%)",
-          bottom: "-5%",
-          left: "-5%",
-          filter: "blur(60px)",
-          pointerEvents: "none",
-        }}
-      />
+      {/* Top Flex Spacer */}
+      <div style={{ flex: "1 0 10px", minHeight: "10px" }} aria-hidden="true" />
 
-      {/* Login card */}
+      {/* Login Card — Exactly as originally designed */}
       <div
         className={`login-card ${mounted ? "login-card--visible" : ""} ${shake ? "login-shake" : ""}`}
+        style={{ margin: "auto 0" }}
       >
         {/* Logo + Header */}
         <div className="login-header">
@@ -210,6 +306,24 @@ export default function LoginScreen({ onLogin }) {
           Bhubaneswar Dealership &bull; Secure Access
         </p>
       </div>
+
+      {/* Spacer between card and slider */}
+      <div style={{ flex: "1 0 24px", minHeight: "24px" }} aria-hidden="true" />
+
+      {/* Horizontal Model Slider (Embla Carousel) */}
+      <div style={{ width: "100%", zIndex: 10 }}>
+        <ModelSlider models={kiaModels} onSelectModel={handleSelectModel} />
+      </div>
+
+      {/* 360-Degree Interactive Viewer Modal */}
+      {selected360Model && (
+        <Car360Viewer
+          model={selected360Model}
+          models={kiaModels}
+          onClose={handleCloseModal}
+          onSelectModel={handleSelectModel}
+        />
+      )}
     </div>
   );
 }

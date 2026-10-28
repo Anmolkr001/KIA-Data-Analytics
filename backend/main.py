@@ -4,12 +4,22 @@ Serves aggregated and paginated enquiry data from master_clean.csv
 """
 
 import os
+import sys
 from datetime import datetime
-from typing import Optional
+from typing import Optional, Dict, Any, List
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
+
+# Ensure project root is in sys.path
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+from ask_your_data.agent import AskYourDataAgent
+from ask_your_data.config import LLM_PROVIDER, OPENAI_MODEL_NAME, ANTHROPIC_MODEL_NAME
 
 # ---------------------------------------------------------------------------
 # App Initialization
@@ -17,19 +27,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="KIA Enquiry Analytics API",
-    description="REST API for customer sales enquiry analytics dashboard",
+    description="REST API for customer sales enquiry analytics dashboard with LangChain AI Chat",
     version="1.0.0",
 )
 
-# CORS — allow the Vite dev server and common localhost origins
+# CORS — allow Vite dev servers on any localhost port
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:3000",
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -399,3 +404,99 @@ async def enquiries_alias(
         sort_by=sort_by,
         sort_order=sort_order,
     )
+
+
+# ---------------------------------------------------------------------------
+# LangChain & LLM Chat Assistant Endpoints
+# ---------------------------------------------------------------------------
+
+class ChatRequest(BaseModel):
+    message: str = Field(..., description="User query about car dealership CRM data")
+    provider: Optional[str] = Field(default=None, description="openai, anthropic, groq, or mock")
+    api_key: Optional[str] = Field(default=None, description="Optional runtime API key")
+
+
+_agent_instances: Dict[str, AskYourDataAgent] = {}
+
+
+def _get_agent(provider: Optional[str] = None, api_key: Optional[str] = None) -> AskYourDataAgent:
+    chosen_provider = (provider or os.getenv("LLM_PROVIDER", "openai")).strip().lower()
+
+    if api_key:
+        if chosen_provider == "anthropic":
+            os.environ["ANTHROPIC_API_KEY"] = api_key
+        elif chosen_provider == "groq":
+            os.environ["GROQ_API_KEY"] = api_key
+        else:
+            os.environ["OPENAI_API_KEY"] = api_key
+
+    cache_key = f"{chosen_provider}_{bool(api_key)}"
+    if cache_key not in _agent_instances:
+        _agent_instances[cache_key] = AskYourDataAgent(provider=chosen_provider)
+    return _agent_instances[cache_key]
+
+
+@app.get("/api/chat/status")
+async def chat_status():
+    """Returns the current LLM configuration and agent readiness status."""
+    current_provider = os.getenv("LLM_PROVIDER", "openai").lower()
+    has_openai = bool(os.getenv("OPENAI_API_KEY", "").strip()) and not os.getenv("OPENAI_API_KEY", "").startswith("your_")
+    has_anthropic = bool(os.getenv("ANTHROPIC_API_KEY", "").strip()) and not os.getenv("ANTHROPIC_API_KEY", "").startswith("your_")
+    has_groq = bool(os.getenv("GROQ_API_KEY", "").strip()) and not os.getenv("GROQ_API_KEY", "").startswith("your_")
+
+    active_model = "MockAnalyticsLLM (Built-in Dealership Engine)"
+    if current_provider == "openai" and has_openai:
+        active_model = f"OpenAI {OPENAI_MODEL_NAME}"
+    elif current_provider == "anthropic" and has_anthropic:
+        active_model = f"Anthropic {ANTHROPIC_MODEL_NAME}"
+    elif current_provider == "groq" and has_groq:
+        active_model = f"Groq {os.getenv('GROQ_MODEL_NAME', 'llama-3.3-70b-versatile')}"
+
+    return {
+        "status": "ready",
+        "provider": current_provider,
+        "active_model": active_model,
+        "available_providers": [
+            {"id": "openai", "name": "OpenAI (GPT-4o)", "has_key": has_openai},
+            {"id": "anthropic", "name": "Anthropic (Claude 3.5 Sonnet)", "has_key": has_anthropic},
+            {"id": "groq", "name": "Groq (Llama 3.3 70B)", "has_key": has_groq},
+            {"id": "mock", "name": "Built-in Analytics Engine (Offline/Ready)", "has_key": True},
+        ],
+        "features": [
+            "LangChain 5-step agent flow (Plan, Sandboxed Query, Self-check, Chart, Summary)",
+            "Automated retry loop with error diagnosis",
+            "Plotly interactive chart generation",
+            "Multi-turn conversation memory"
+        ]
+    }
+
+
+@app.post("/api/chat")
+async def chat_endpoint(payload: ChatRequest):
+    """
+    Executes natural language analytics queries on the car dealership CRM data using LangChain.
+    """
+    if not payload.message.strip():
+        raise HTTPException(status_code=400, detail="Message cannot be empty.")
+
+    try:
+        agent = _get_agent(provider=payload.provider, api_key=payload.api_key)
+        response = agent.ask(payload.message)
+
+        return {
+            "success": response.success,
+            "question": response.question,
+            "summary": response.summary,
+            "recommendation": response.recommendation,
+            "plan": response.plan,
+            "code": response.code,
+            "chart_spec": response.chart_spec,
+            "assumptions": response.assumptions,
+            "how_i_got_this": response.how_i_got_this(),
+            "latency_ms": response.latency_ms,
+            "attempts": response.attempts,
+            "error": response.error,
+        }
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Agent execution error: {str(exc)}")
+

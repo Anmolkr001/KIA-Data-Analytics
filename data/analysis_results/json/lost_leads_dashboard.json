@@ -1,0 +1,381 @@
+{
+  "overview": [
+    {
+      "Metric": "Total Lost Leads",
+      "Value": 1797
+    },
+    {
+      "Metric": "With lost reason",
+      "Value": 1543
+    },
+    {
+      "Metric": "With lost due to",
+      "Value": 1543
+    },
+    {
+      "Metric": "With Lost Remark",
+      "Value": 1543
+    },
+    {
+      "Metric": "With lost by",
+      "Value": 0
+    }
+  ],
+  "reason_pareto": [
+    {
+      "Category": "Closed without sale",
+      "Count": 873,
+      "Share_Pct": 56.578094620868434,
+      "Cumulative_Pct": 56.578094620868434
+    },
+    {
+      "Category": "Change Request",
+      "Count": 418,
+      "Share_Pct": 27.090084251458197,
+      "Cumulative_Pct": 83.66817887232664
+    },
+    {
+      "Category": "Lost",
+      "Count": 252,
+      "Share_Pct": 16.33182112767336,
+      "Cumulative_Pct": 100.0
+    }
+  ],
+  "due_to_pareto": [
+    {
+      "Category": "Plan Postponed",
+      "Count": 655,
+      "Share_Pct": 42.44977316915101,
+      "Cumulative_Pct": 42.44977316915101
+    },
+    {
+      "Category": "Change  Request",
+      "Count": 418,
+      "Share_Pct": 27.090084251458197,
+      "Cumulative_Pct": 69.53985742060921
+    },
+    {
+      "Category": "Lost to co-dealer",
+      "Count": 135,
+      "Share_Pct": 8.749189889825017,
+      "Cumulative_Pct": 78.28904731043423
+    },
+    {
+      "Category": "Finance / budget related",
+      "Count": 134,
+      "Share_Pct": 8.684381075826312,
+      "Cumulative_Pct": 86.97342838626054
+    },
+    {
+      "Category": "Lost to competition",
+      "Count": 117,
+      "Share_Pct": 7.582631237848347,
+      "Cumulative_Pct": 94.55605962410888
+    },
+    {
+      "Category": "Do not like the car",
+      "Count": 68,
+      "Share_Pct": 4.4069993519118595,
+      "Cumulative_Pct": 98.96305897602075
+    },
+    {
+      "Category": "Delay in delivery",
+      "Count": 16,
+      "Share_Pct": 1.0369410239792611,
+      "Cumulative_Pct": 100.00000000000001
+    }
+  ],
+  "monthly_trend": [
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Change  Request",
+      "Count": 102
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Delay in delivery",
+      "Count": 3
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Do not like the car",
+      "Count": 12
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Finance / budget related",
+      "Count": 62
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Lost to co-dealer",
+      "Count": 50
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Lost to competition",
+      "Count": 43
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "lost due to": "Plan Postponed",
+      "Count": 208
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Change  Request",
+      "Count": 76
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Delay in delivery",
+      "Count": 1
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Do not like the car",
+      "Count": 6
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Finance / budget related",
+      "Count": 11
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Lost to co-dealer",
+      "Count": 15
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Lost to competition",
+      "Count": 11
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "lost due to": "Plan Postponed",
+      "Count": 66
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Change  Request",
+      "Count": 39
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Do not like the car",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Finance / budget related",
+      "Count": 3
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Lost to co-dealer",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Lost to competition",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "lost due to": "Plan Postponed",
+      "Count": 77
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Change  Request",
+      "Count": 106
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Delay in delivery",
+      "Count": 6
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Do not like the car",
+      "Count": 28
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Finance / budget related",
+      "Count": 23
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Lost to co-dealer",
+      "Count": 47
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Lost to competition",
+      "Count": 25
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "lost due to": "Plan Postponed",
+      "Count": 161
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Change  Request",
+      "Count": 61
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Delay in delivery",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Do not like the car",
+      "Count": 17
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Finance / budget related",
+      "Count": 31
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Lost to co-dealer",
+      "Count": 15
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Lost to competition",
+      "Count": 32
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "lost due to": "Plan Postponed",
+      "Count": 122
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Change  Request",
+      "Count": 34
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Delay in delivery",
+      "Count": 2
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Do not like the car",
+      "Count": 1
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Finance / budget related",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Lost to co-dealer",
+      "Count": 4
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Lost to competition",
+      "Count": 2
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "lost due to": "Plan Postponed",
+      "Count": 21
+    }
+  ],
+  "remark_keywords": [
+    {
+      "Keyword": "plan",
+      "Frequency": 555
+    },
+    {
+      "Keyword": "enquiry",
+      "Frequency": 231
+    },
+    {
+      "Keyword": "existing",
+      "Frequency": 198
+    },
+    {
+      "Keyword": "due",
+      "Frequency": 107
+    },
+    {
+      "Keyword": "purchased",
+      "Frequency": 76
+    },
+    {
+      "Keyword": "cuttack",
+      "Frequency": 73
+    },
+    {
+      "Keyword": "now",
+      "Frequency": 72
+    },
+    {
+      "Keyword": "late",
+      "Frequency": 69
+    },
+    {
+      "Keyword": "other",
+      "Frequency": 68
+    },
+    {
+      "Keyword": "postponed",
+      "Frequency": 62
+    },
+    {
+      "Keyword": "issue",
+      "Frequency": 61
+    },
+    {
+      "Keyword": "interested",
+      "Frequency": 57
+    },
+    {
+      "Keyword": "booked",
+      "Frequency": 53
+    },
+    {
+      "Keyword": "change",
+      "Frequency": 51
+    },
+    {
+      "Keyword": "sambalpur",
+      "Frequency": 42
+    },
+    {
+      "Keyword": "number",
+      "Frequency": 41
+    },
+    {
+      "Keyword": "customer",
+      "Frequency": 39
+    },
+    {
+      "Keyword": "responding",
+      "Frequency": 38
+    },
+    {
+      "Keyword": "some",
+      "Frequency": 37
+    },
+    {
+      "Keyword": "personal",
+      "Frequency": 36
+    }
+  ],
+  "lost_by": [],
+  "data_quality": {
+    "lost_by_populated": false
+  }
+}

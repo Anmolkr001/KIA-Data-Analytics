@@ -1,0 +1,157 @@
+{
+  "funnel": [
+    {
+      "Stage": "Total Enquiries",
+      "Count": 6967,
+      "Stage_Rate_of_Enquiry": 1.0
+    },
+    {
+      "Stage": "Has Present Car",
+      "Count": 1795,
+      "Stage_Rate_of_Enquiry": 0.2576431749677049
+    },
+    {
+      "Stage": "Interested in Exchange",
+      "Count": 1677,
+      "Stage_Rate_of_Enquiry": 0.24070618630687526
+    },
+    {
+      "Stage": "Old Car Evaluation Done",
+      "Count": 635,
+      "Stage_Rate_of_Enquiry": 0.09114396440361705
+    },
+    {
+      "Stage": "Retailed",
+      "Count": 786,
+      "Stage_Rate_of_Enquiry": 0.11281756853739056
+    }
+  ],
+  "conversion_impact": [
+    {
+      "Interested_In_Exchange": "Not Interested (N/Blank)",
+      "Enquiries": 5290,
+      "Bookings": 943,
+      "Retails": 323,
+      "Booking_Rate": 0.1782608695652174,
+      "Retail_Rate": 0.061058601134215504
+    },
+    {
+      "Interested_In_Exchange": "Interested (Y)",
+      "Enquiries": 1677,
+      "Bookings": 729,
+      "Retails": 463,
+      "Booking_Rate": 0.4347048300536673,
+      "Retail_Rate": 0.2760882528324389
+    }
+  ],
+  "oem_brands": [
+    {
+      "OEM Maker": "Maruti",
+      "Count": 558,
+      "Retails": 208,
+      "Retail_Rate": 0.3727598566308244
+    },
+    {
+      "OEM Maker": "Hyundai",
+      "Count": 448,
+      "Retails": 104,
+      "Retail_Rate": 0.23214285714285715
+    },
+    {
+      "OEM Maker": "Honda",
+      "Count": 141,
+      "Retails": 29,
+      "Retail_Rate": 0.20567375886524822
+    },
+    {
+      "OEM Maker": "Tata",
+      "Count": 119,
+      "Retails": 36,
+      "Retail_Rate": 0.3025210084033613
+    },
+    {
+      "OEM Maker": "Ford",
+      "Count": 114,
+      "Retails": 20,
+      "Retail_Rate": 0.17543859649122806
+    },
+    {
+      "OEM Maker": "Kia",
+      "Count": 81,
+      "Retails": 10,
+      "Retail_Rate": 0.12345679012345678
+    },
+    {
+      "OEM Maker": "Mahindra",
+      "Count": 67,
+      "Retails": 19,
+      "Retail_Rate": 0.2835820895522388
+    },
+    {
+      "OEM Maker": "Chevrolet",
+      "Count": 56,
+      "Retails": 13,
+      "Retail_Rate": 0.23214285714285715
+    },
+    {
+      "OEM Maker": "Renault",
+      "Count": 34,
+      "Retails": 8,
+      "Retail_Rate": 0.23529411764705882
+    },
+    {
+      "OEM Maker": "Fiat",
+      "Count": 29,
+      "Retails": 3,
+      "Retail_Rate": 0.10344827586206896
+    },
+    {
+      "OEM Maker": "Toyota",
+      "Count": 24,
+      "Retails": 12,
+      "Retail_Rate": 0.5
+    },
+    {
+      "OEM Maker": "Ashok Leyland",
+      "Count": 23,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "OEM Maker": "Skoda",
+      "Count": 22,
+      "Retails": 8,
+      "Retail_Rate": 0.36363636363636365
+    },
+    {
+      "OEM Maker": "Volkswagen",
+      "Count": 16,
+      "Retails": 6,
+      "Retail_Rate": 0.375
+    },
+    {
+      "OEM Maker": "Datsun",
+      "Count": 14,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "present_car_conversion": [
+    {
+      "Has_Present_Car": "No Present Car",
+      "Enquiries": 5172,
+      "Retails": 303,
+      "Retail_Rate": 0.058584686774941996
+    },
+    {
+      "Has_Present_Car": "Has Present Car",
+      "Enquiries": 1795,
+      "Retails": 483,
+      "Retail_Rate": 0.2690807799442897
+    }
+  ],
+  "data_quality_notes": {
+    "exchange_done_populated": false,
+    "exchange_channel_populated": false
+  }
+}

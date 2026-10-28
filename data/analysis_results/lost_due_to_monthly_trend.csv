@@ -1,7 +1,42 @@
-Enquiry Month,Change Request,Delay in delivery,Do not like the car,Finance / budget related,Lost to co-dealer,Lost to competition,Plan Postponed
-2026-01,102,3,12,62,50,43,208
-2026-02,76,1,6,11,15,11,66
-2026-03,39,0,4,3,4,4,77
-2026-04,106,6,28,23,47,25,161
-2026-05,61,4,17,31,15,32,122
-2026-06,34,2,1,4,4,2,21
+Enquiry Month,lost due to,Count
+2026-01,Change  Request,102
+2026-01,Delay in delivery,3
+2026-01,Do not like the car,12
+2026-01,Finance / budget related,62
+2026-01,Lost to co-dealer,50
+2026-01,Lost to competition,43
+2026-01,Plan Postponed,208
+2026-02,Change  Request,76
+2026-02,Delay in delivery,1
+2026-02,Do not like the car,6
+2026-02,Finance / budget related,11
+2026-02,Lost to co-dealer,15
+2026-02,Lost to competition,11
+2026-02,Plan Postponed,66
+2026-03,Change  Request,39
+2026-03,Do not like the car,4
+2026-03,Finance / budget related,3
+2026-03,Lost to co-dealer,4
+2026-03,Lost to competition,4
+2026-03,Plan Postponed,77
+2026-04,Change  Request,106
+2026-04,Delay in delivery,6
+2026-04,Do not like the car,28
+2026-04,Finance / budget related,23
+2026-04,Lost to co-dealer,47
+2026-04,Lost to competition,25
+2026-04,Plan Postponed,161
+2026-05,Change  Request,61
+2026-05,Delay in delivery,4
+2026-05,Do not like the car,17
+2026-05,Finance / budget related,31
+2026-05,Lost to co-dealer,15
+2026-05,Lost to competition,32
+2026-05,Plan Postponed,122
+2026-06,Change  Request,34
+2026-06,Delay in delivery,2
+2026-06,Do not like the car,1
+2026-06,Finance / budget related,4
+2026-06,Lost to co-dealer,4
+2026-06,Lost to competition,2
+2026-06,Plan Postponed,21

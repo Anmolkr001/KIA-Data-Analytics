@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-07-15T22:10:59.125747",
+  "date_range": {
+    "start": "2026-01-01",
+    "end": "2026-06-21"
+  },
+  "kpi": {
+    "total_enquiries": 6967,
+    "total_retails": 786,
+    "total_bookings": 1672,
+    "total_test_drives": 3249,
+    "total_lost": 1797,
+    "overall_retail_rate": 0.1128,
+    "overall_booking_rate": 0.24,
+    "overall_td_rate": 0.4663,
+    "avg_sales_cycle_days_won": 5.3,
+    "median_sales_cycle_days_won": 3.0
+  },
+  "highlights": {
+    "top_model_by_volume": {
+      "model": "NEW SELTOS",
+      "enquiries": 2155,
+      "retails": 187
+    },
+    "top_model_by_conversion": {
+      "model": "SONET",
+      "retail_rate": 0.1626,
+      "enquiries": 2115
+    },
+    "top_source": {
+      "source": "Hyperlocal",
+      "enquiries": 2232,
+      "retail_rate": 0.0345
+    },
+    "top_city": {
+      "city": "Bhubaneshwar",
+      "enquiries": 1889,
+      "retail_rate": 0.0
+    }
+  },
+  "customer_split": {
+    "Individual": {
+      "count": 6617,
+      "pct": 95.0
+    },
+    "Corporate": {
+      "count": 350,
+      "pct": 5.0
+    }
+  },
+  "fuel_split": {
+    "Gasoline": {
+      "count": 3861,
+      "pct": 55.4
+    },
+    "Diesel": {
+      "count": 538,
+      "pct": 7.7
+    },
+    "Electric": {
+      "count": 190,
+      "pct": 2.7
+    }
+  }
+}

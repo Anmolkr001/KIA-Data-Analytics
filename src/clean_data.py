@@ -85,8 +85,27 @@ def clean_double_spaces(val):
         return re.sub(r'\s+', ' ', val).strip()
     return val
 
+def resolve_excel_path():
+    """Prefer the proposal filename, fall back to the legacy raw copy."""
+    candidates = [
+        "d:/KIA/enq (1).xlsx",
+        "d:/KIA/raw_enq.xlsx",
+    ]
+    for path in candidates:
+        if os.path.exists(path):
+            return path
+    raise FileNotFoundError(
+        "Could not find CRM source file. Place 'enq (1).xlsx' in d:/KIA/."
+    )
+
+
+def to_numeric_series(series):
+    return pd.to_numeric(series, errors='coerce')
+
+
 def run_data_cleaning():
-    excel_path = "d:/KIA/raw_enq.xlsx"
+    excel_path = resolve_excel_path()
+    print(f"Reading source file: {excel_path}")
     xls = pd.ExcelFile(excel_path)
     
     sheet_names = xls.sheet_names
@@ -161,18 +180,46 @@ def run_data_cleaning():
     
     # 2. Parse date columns
     date_cols = [
-        'Enquiry Date', 'Test Drive Date', 'Booking Date', 'Retail date', 
-        'Delivery Date', 'Lost Date', 'First follow-up date', 'Last follow-up date', 
-        'Next Followup Date', 'Booking Receipt Date', 'MOB Quotation Email Count',
-        'MOB Email Date', 'DMS Quotation Email Count', 'DMS Email Date'
+        'Enquiry Date', 'Test Drive Date', 'Booking Date', 'Retail date',
+        'Delivery Date', 'Lost Date', 'First follow-up date', 'Last follow-up date',
+        'Next Followup Date', 'Booking Receipt Date',
+        'MOB Email Date', 'DMS Email Date'
     ]
-    
+
     for col in date_cols:
         if col in master_df.columns:
-            # Parse dates
-            parsed_series = master_df[col].apply(parse_date)
-            # Format as YYYY-MM-DD
-            master_df[col] = parsed_series
+            master_df[col] = master_df[col].apply(parse_date)
+
+    numeric_cols = [
+        'Quoted Price', 'Expected Price', 'Final Buying Price',
+        'MOB Quotation Email Count', 'DMS Quotation Email Count',
+        'enquiry aging days', 'Followup Count', 'No. of test drive given',
+        'Pin No.', 'Year of Manufactures'
+    ]
+    for col in numeric_cols:
+        if col in master_df.columns:
+            master_df[col] = to_numeric_series(master_df[col])
+
+    yn_cols = [
+        'Present Car(Y/N)', 'Interested in Exchange(Y/N)',
+        'Old Car Evaluation Done', 'Exchange Done', 'Online TD Slot'
+    ]
+    for col in yn_cols:
+        if col in master_df.columns:
+            master_df[col] = (
+                master_df[col]
+                .astype(str)
+                .str.strip()
+                .str.upper()
+                .replace({'NAN': np.nan, 'NONE': np.nan, 'NULL': np.nan})
+            )
+
+    master_df['Total Quotation Email Count'] = (
+        master_df.get('MOB Quotation Email Count', pd.Series(dtype=float))
+        .fillna(0)
+        + master_df.get('DMS Quotation Email Count', pd.Series(dtype=float))
+        .fillna(0)
+    )
             
     # Add a month column based on Enquiry Date
     master_df['Enquiry Month'] = master_df['Enquiry Date'].dt.strftime('%Y-%m')

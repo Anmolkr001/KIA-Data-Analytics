@@ -1,0 +1,298 @@
+{
+  "segment_performance": [
+    {
+      "Customer Type": "Individual",
+      "Enquiries": 6617,
+      "Test_Drives": 3013,
+      "Bookings": 1356,
+      "Retails": 503,
+      "Avg_Sales_Cycle_Days": -4653.152788272631,
+      "TD_Rate": 0.4553423001360133,
+      "Booking_Rate": 0.20492670394438567,
+      "Retail_Rate": 0.07601632159588938
+    },
+    {
+      "Customer Type": "Corporate",
+      "Enquiries": 350,
+      "Test_Drives": 236,
+      "Bookings": 316,
+      "Retails": 283,
+      "Avg_Sales_Cycle_Days": -1638.5657142857142,
+      "TD_Rate": 0.6742857142857143,
+      "Booking_Rate": 0.9028571428571428,
+      "Retail_Rate": 0.8085714285714286
+    }
+  ],
+  "corporate_accounts": [
+    {
+      "corporate Name": "GOV-Government Employee",
+      "Corporate Category": "Corporate",
+      "Enquiries": 71,
+      "Test_Drives": 52,
+      "Bookings": 70,
+      "Retails": 69,
+      "Avg_Sales_Cycle_Days": 2.1267605633802815,
+      "TD_Rate": 0.7323943661971831,
+      "Booking_Rate": 0.9859154929577465,
+      "Retail_Rate": 0.971830985915493
+    },
+    {
+      "corporate Name": "AGRE-Agreegator",
+      "Corporate Category": "Corporate",
+      "Enquiries": 34,
+      "Test_Drives": 21,
+      "Bookings": 33,
+      "Retails": 32,
+      "Avg_Sales_Cycle_Days": -1201.5588235294117,
+      "TD_Rate": 0.6176470588235294,
+      "Booking_Rate": 0.9705882352941176,
+      "Retail_Rate": 0.9411764705882353
+    },
+    {
+      "corporate Name": "MSME-MSME",
+      "Corporate Category": "Corporate",
+      "Enquiries": 41,
+      "Test_Drives": 23,
+      "Bookings": 38,
+      "Retails": 28,
+      "Avg_Sales_Cycle_Days": -2002.0731707317073,
+      "TD_Rate": 0.5609756097560976,
+      "Booking_Rate": 0.926829268292683,
+      "Retail_Rate": 0.6829268292682927
+    },
+    {
+      "corporate Name": "CSD-CSD - Canteen Store Department",
+      "Corporate Category": "Corporate",
+      "Enquiries": 22,
+      "Test_Drives": 17,
+      "Bookings": 21,
+      "Retails": 21,
+      "Avg_Sales_Cycle_Days": 9.181818181818182,
+      "TD_Rate": 0.7727272727272727,
+      "Booking_Rate": 0.9545454545454546,
+      "Retail_Rate": 0.9545454545454546
+    },
+    {
+      "corporate Name": "TOP75-Tata Group",
+      "Corporate Category": "Corporate",
+      "Enquiries": 16,
+      "Test_Drives": 14,
+      "Bookings": 15,
+      "Retails": 15,
+      "Avg_Sales_Cycle_Days": -1276.4375,
+      "TD_Rate": 0.875,
+      "Booking_Rate": 0.9375,
+      "Retail_Rate": 0.9375
+    },
+    {
+      "corporate Name": "TOP75-Jindal Group",
+      "Corporate Category": "Corporate",
+      "Enquiries": 11,
+      "Test_Drives": 9,
+      "Bookings": 11,
+      "Retails": 10,
+      "Avg_Sales_Cycle_Days": -1865.8181818181818,
+      "TD_Rate": 0.8181818181818182,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 0.9090909090909091
+    },
+    {
+      "corporate Name": "DEAL-Dealers / Employee",
+      "Corporate Category": "Corporate",
+      "Enquiries": 9,
+      "Test_Drives": 0,
+      "Bookings": 9,
+      "Retails": 9,
+      "Avg_Sales_Cycle_Days": -0.6666666666666666,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 1.0
+    },
+    {
+      "corporate Name": "TOP75-Infosys",
+      "Corporate Category": "Corporate",
+      "Enquiries": 8,
+      "Test_Drives": 6,
+      "Bookings": 8,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": 2.875,
+      "TD_Rate": 0.75,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 1.0
+    },
+    {
+      "corporate Name": "PSB-State Bank of India (SBI)",
+      "Corporate Category": "Corporate",
+      "Enquiries": 8,
+      "Test_Drives": 7,
+      "Bookings": 7,
+      "Retails": 7,
+      "Avg_Sales_Cycle_Days": -2569.25,
+      "TD_Rate": 0.875,
+      "Booking_Rate": 0.875,
+      "Retail_Rate": 0.875
+    },
+    {
+      "corporate Name": "TOP75-L & T Group",
+      "Corporate Category": "Corporate",
+      "Enquiries": 6,
+      "Test_Drives": 6,
+      "Bookings": 6,
+      "Retails": 6,
+      "Avg_Sales_Cycle_Days": 2.5,
+      "TD_Rate": 1.0,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 1.0
+    },
+    {
+      "corporate Name": "TOP75-ICICI Group",
+      "Corporate Category": "Corporate",
+      "Enquiries": 5,
+      "Test_Drives": 4,
+      "Bookings": 5,
+      "Retails": 5,
+      "Avg_Sales_Cycle_Days": 4.8,
+      "TD_Rate": 0.8,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 1.0
+    },
+    {
+      "corporate Name": null,
+      "Corporate Category": "Corporate",
+      "Enquiries": 40,
+      "Test_Drives": 15,
+      "Bookings": 18,
+      "Retails": 2,
+      "Avg_Sales_Cycle_Days": -7686.275,
+      "TD_Rate": 0.375,
+      "Booking_Rate": 0.45,
+      "Retail_Rate": 0.05
+    }
+  ],
+  "category_performance": [
+    {
+      "Corporate Category": "Individual",
+      "Enquiries": 6617,
+      "Test_Drives": 3013,
+      "Bookings": 1356,
+      "Retails": 503,
+      "Avg_Sales_Cycle_Days": -4653.152788272631,
+      "TD_Rate": 0.4553423001360133,
+      "Booking_Rate": 0.20492670394438567,
+      "Retail_Rate": 0.07601632159588938
+    },
+    {
+      "Corporate Category": "Corporate",
+      "Enquiries": 350,
+      "Test_Drives": 236,
+      "Bookings": 316,
+      "Retails": 283,
+      "Avg_Sales_Cycle_Days": -1638.5657142857142,
+      "TD_Rate": 0.6742857142857143,
+      "Booking_Rate": 0.9028571428571428,
+      "Retail_Rate": 0.8085714285714286
+    }
+  ],
+  "sales_cycle": [
+    {
+      "Customer Type": "Corporate",
+      "Enquiries": 350,
+      "Avg_Sales_Cycle_All": -1638.5657142857142,
+      "Avg_Sales_Cycle_Retailed": 3.3286219081272086,
+      "Median_Sales_Cycle_Retailed": 0.0
+    },
+    {
+      "Customer Type": "Individual",
+      "Enquiries": 6617,
+      "Avg_Sales_Cycle_All": -4653.152788272631,
+      "Avg_Sales_Cycle_Retailed": 6.387673956262425,
+      "Median_Sales_Cycle_Retailed": 4.0
+    }
+  ],
+  "monthly_trend": [
+    {
+      "Enquiry Month": "2026-01",
+      "Customer Type": "Corporate",
+      "Enquiries": 78,
+      "Retails": 69,
+      "Retail_Rate": 0.8846153846153846
+    },
+    {
+      "Enquiry Month": "2026-01",
+      "Customer Type": "Individual",
+      "Enquiries": 1156,
+      "Retails": 108,
+      "Retail_Rate": 0.09342560553633218
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "Customer Type": "Corporate",
+      "Enquiries": 61,
+      "Retails": 50,
+      "Retail_Rate": 0.819672131147541
+    },
+    {
+      "Enquiry Month": "2026-02",
+      "Customer Type": "Individual",
+      "Enquiries": 1208,
+      "Retails": 87,
+      "Retail_Rate": 0.07201986754966887
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "Customer Type": "Corporate",
+      "Enquiries": 38,
+      "Retails": 31,
+      "Retail_Rate": 0.8157894736842105
+    },
+    {
+      "Enquiry Month": "2026-03",
+      "Customer Type": "Individual",
+      "Enquiries": 1102,
+      "Retails": 69,
+      "Retail_Rate": 0.06261343012704174
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "Customer Type": "Corporate",
+      "Enquiries": 64,
+      "Retails": 47,
+      "Retail_Rate": 0.734375
+    },
+    {
+      "Enquiry Month": "2026-04",
+      "Customer Type": "Individual",
+      "Enquiries": 1189,
+      "Retails": 110,
+      "Retail_Rate": 0.09251471825063078
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "Customer Type": "Corporate",
+      "Enquiries": 70,
+      "Retails": 60,
+      "Retail_Rate": 0.8571428571428571
+    },
+    {
+      "Enquiry Month": "2026-05",
+      "Customer Type": "Individual",
+      "Enquiries": 1049,
+      "Retails": 86,
+      "Retail_Rate": 0.08198284080076262
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "Customer Type": "Corporate",
+      "Enquiries": 39,
+      "Retails": 26,
+      "Retail_Rate": 0.6666666666666666
+    },
+    {
+      "Enquiry Month": "2026-06",
+      "Customer Type": "Individual",
+      "Enquiries": 913,
+      "Retails": 43,
+      "Retail_Rate": 0.047097480832420595
+    }
+  ]
+}

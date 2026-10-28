@@ -1,0 +1,43 @@
+/* ═══════════════════════════════════════════════════
+   HERO BACKGROUND COMPONENT STYLES
+   ═══════════════════════════════════════════════════ */
+
+.hero-bg-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #05070d;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.5s ease;
+}
+
+/* Light gradient only behind the login card for readability */
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  /* Soft, transparent gradient localized in the center behind the card so the white studio remains bright and crisp */
+  background: radial-gradient(ellipse 700px 520px at 50% 45%, rgba(5, 8, 15, 0.42) 0%, rgba(5, 8, 15, 0.18) 55%, transparent 100%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-image {
+    object-position: center 35%;
+  }
+  .hero-bg-overlay {
+    background: radial-gradient(ellipse 450px 450px at 50% 40%, rgba(5, 8, 15, 0.48) 0%, rgba(5, 8, 15, 0.2) 65%, transparent 100%);
+  }
+}
+

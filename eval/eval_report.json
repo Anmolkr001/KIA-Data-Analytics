@@ -1,0 +1,183 @@
+{
+  "timestamp": "2026-10-14 18:01:28",
+  "total_questions": 15,
+  "passed": 15,
+  "failed": 0,
+  "accuracy_pct": 100.0,
+  "average_latency_ms": 190.8,
+  "category_breakdown": {
+    "Funnel KPIs": "5/5 (100.0%)",
+    "Sourcing Channels": "3/3 (100.0%)",
+    "Funnel Impact": "2/2 (100.0%)",
+    "Vehicle Models": "2/2 (100.0%)",
+    "Geography": "1/1 (100.0%)",
+    "CRM Operations": "2/2 (100.0%)"
+  },
+  "details": [
+    {
+      "id": 1,
+      "question": "What is the total number of lead enquiries in the CRM dataset?",
+      "category": "Funnel KPIs",
+      "expected": 6967,
+      "type": "count",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 614.7,
+      "details": "Matched count 6967"
+    },
+    {
+      "id": 2,
+      "question": "How many total retail deliveries or sales conversions were completed?",
+      "category": "Funnel KPIs",
+      "expected": 786,
+      "type": "count",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 181.0,
+      "details": "Matched count 786"
+    },
+    {
+      "id": 3,
+      "question": "What is our overall lead-to-retail conversion rate as a percentage?",
+      "category": "Funnel KPIs",
+      "expected": 11.28,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 161.6,
+      "details": "Matched rate 11.28% within +/-0.5%"
+    },
+    {
+      "id": 4,
+      "question": "How many test drives were completed by prospects?",
+      "category": "Funnel KPIs",
+      "expected": 3249,
+      "type": "count",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 207.4,
+      "details": "Matched count 3249"
+    },
+    {
+      "id": 5,
+      "question": "What percentage of enquiries completed a test drive?",
+      "category": "Funnel KPIs",
+      "expected": 46.63,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 147.5,
+      "details": "Matched rate 46.63% within +/-0.5%"
+    },
+    {
+      "id": 6,
+      "question": "Which lead sourcing channel generated the highest volume of enquiries?",
+      "category": "Sourcing Channels",
+      "expected": "Hyperlocal",
+      "type": "string",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 145.6,
+      "details": "Matched string 'Hyperlocal'"
+    },
+    {
+      "id": 7,
+      "question": "What is the conversion rate for Hyperlocal leads?",
+      "category": "Sourcing Channels",
+      "expected": 3.45,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 143.8,
+      "details": "Matched rate 3.45% within +/-0.5%"
+    },
+    {
+      "id": 8,
+      "question": "Which lead source has the highest conversion rate to retail sales?",
+      "category": "Sourcing Channels",
+      "expected": "Referral",
+      "type": "string",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 146.1,
+      "details": "Matched string 'Referral'"
+    },
+    {
+      "id": 9,
+      "question": "What is the conversion rate for customers who completed a test drive?",
+      "category": "Funnel Impact",
+      "expected": 19.11,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 169.7,
+      "details": "Matched rate 19.11% within +/-0.5%"
+    },
+    {
+      "id": 10,
+      "question": "What is the conversion rate for customers who did NOT take a test drive?",
+      "category": "Funnel Impact",
+      "expected": 4.44,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 187.5,
+      "details": "Matched rate 4.44% within +/-0.5%"
+    },
+    {
+      "id": 11,
+      "question": "Which Kia vehicle model has the highest total number of enquiries?",
+      "category": "Vehicle Models",
+      "expected": "NEW SELTOS",
+      "type": "string",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 145.0,
+      "details": "Matched string 'NEW SELTOS'"
+    },
+    {
+      "id": 12,
+      "question": "Which high-volume car model (over 1,000 enquiries) has the highest conversion rate?",
+      "category": "Vehicle Models",
+      "expected": "SONET",
+      "type": "string",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 152.9,
+      "details": "Matched string 'SONET'"
+    },
+    {
+      "id": 13,
+      "question": "What percentage of lead enquiries originate from Bhubaneswar?",
+      "category": "Geography",
+      "expected": 45.77,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 143.2,
+      "details": "Matched rate 45.77% within +/-0.5%"
+    },
+    {
+      "id": 14,
+      "question": "What is the conversion rate for leads flagged with warmth stage 'Hot'?",
+      "category": "CRM Operations",
+      "expected": 45.76,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 156.5,
+      "details": "Matched rate 45.76% within +/-0.5%"
+    },
+    {
+      "id": 15,
+      "question": "What is the conversion rate when prospects receive exactly 2 follow-ups?",
+      "category": "CRM Operations",
+      "expected": 19.06,
+      "type": "percentage",
+      "correct": true,
+      "attempts": 1,
+      "latency_ms": 158.8,
+      "details": "Matched rate 19.06% within +/-0.5%"
+    }
+  ]
+}

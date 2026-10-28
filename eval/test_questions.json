@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "question": "What is the total number of lead enquiries in the CRM dataset?",
+    "category": "Funnel KPIs",
+    "metric_type": "count",
+    "expected_value": 6967,
+    "tolerance": 0,
+    "verification_code": "result = len(df)",
+    "description": "Total lead volume verification"
+  },
+  {
+    "id": 2,
+    "question": "How many total retail deliveries or sales conversions were completed?",
+    "category": "Funnel KPIs",
+    "metric_type": "count",
+    "expected_value": 786,
+    "tolerance": 0,
+    "verification_code": "result = df['is_converted'].sum()",
+    "description": "Total retail delivery count"
+  },
+  {
+    "id": 3,
+    "question": "What is our overall lead-to-retail conversion rate as a percentage?",
+    "category": "Funnel KPIs",
+    "metric_type": "percentage",
+    "expected_value": 11.28,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df['is_converted'].mean() * 100, 2)",
+    "description": "Overall conversion percentage (11.28%)"
+  },
+  {
+    "id": 4,
+    "question": "How many test drives were completed by prospects?",
+    "category": "Funnel KPIs",
+    "metric_type": "count",
+    "expected_value": 3249,
+    "tolerance": 0,
+    "verification_code": "result = (df['test_drive_done'] == 'Yes').sum()",
+    "description": "Completed test drive count"
+  },
+  {
+    "id": 5,
+    "question": "What percentage of enquiries completed a test drive?",
+    "category": "Funnel KPIs",
+    "metric_type": "percentage",
+    "expected_value": 46.63,
+    "tolerance": 0.5,
+    "verification_code": "result = round((df['test_drive_done'] == 'Yes').mean() * 100, 2)",
+    "description": "Test drive completion rate (46.63%)"
+  },
+  {
+    "id": 6,
+    "question": "Which lead sourcing channel generated the highest volume of enquiries?",
+    "category": "Sourcing Channels",
+    "metric_type": "string",
+    "expected_value": "Hyperlocal",
+    "tolerance": 0,
+    "verification_code": "result = df['lead_source'].value_counts().index[0]",
+    "description": "Top source by lead volume (Hyperlocal with 2,232 leads)"
+  },
+  {
+    "id": 7,
+    "question": "What is the conversion rate for Hyperlocal leads?",
+    "category": "Sourcing Channels",
+    "metric_type": "percentage",
+    "expected_value": 3.45,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df[df['lead_source'] == 'Hyperlocal']['is_converted'].mean() * 100, 2)",
+    "description": "Hyperlocal conversion rate (3.45%)"
+  },
+  {
+    "id": 8,
+    "question": "Which lead source has the highest conversion rate to retail sales?",
+    "category": "Sourcing Channels",
+    "metric_type": "string",
+    "expected_value": "Referral",
+    "tolerance": 0,
+    "verification_code": "result = (df.groupby('lead_source')['is_converted'].mean()).idxmax()",
+    "description": "Highest converting lead source (Referral with 27.62%)"
+  },
+  {
+    "id": 9,
+    "question": "What is the conversion rate for customers who completed a test drive?",
+    "category": "Funnel Impact",
+    "metric_type": "percentage",
+    "expected_value": 19.11,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df[df['test_drive_done'] == 'Yes']['is_converted'].mean() * 100, 2)",
+    "description": "Test drive conversion rate (19.11% vs 4.44% without)"
+  },
+  {
+    "id": 10,
+    "question": "What is the conversion rate for customers who did NOT take a test drive?",
+    "category": "Funnel Impact",
+    "metric_type": "percentage",
+    "expected_value": 4.44,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df[df['test_drive_done'] == 'No']['is_converted'].mean() * 100, 2)",
+    "description": "Non-test drive conversion rate (4.44%)"
+  },
+  {
+    "id": 11,
+    "question": "Which Kia vehicle model has the highest total number of enquiries?",
+    "category": "Vehicle Models",
+    "metric_type": "string",
+    "expected_value": "NEW SELTOS",
+    "tolerance": 0,
+    "verification_code": "result = df['car_model'].value_counts().index[0]",
+    "description": "Top car model by volume (NEW SELTOS with 2,155 leads)"
+  },
+  {
+    "id": 12,
+    "question": "Which high-volume car model (over 1,000 enquiries) has the highest conversion rate?",
+    "category": "Vehicle Models",
+    "metric_type": "string",
+    "expected_value": "SONET",
+    "tolerance": 0,
+    "verification_code": "counts = df['car_model'].value_counts(); models = counts[counts >= 1000].index; result = df[df['car_model'].isin(models)].groupby('car_model')['is_converted'].mean().idxmax()",
+    "description": "Highest conversion high-volume model (SONET at 16.26%)"
+  },
+  {
+    "id": 13,
+    "question": "What percentage of lead enquiries originate from Bhubaneswar?",
+    "category": "Geography",
+    "metric_type": "percentage",
+    "expected_value": 45.77,
+    "tolerance": 0.5,
+    "verification_code": "result = round((df['city_clean'] == 'BHUBANESWAR').mean() * 100, 2)",
+    "description": "Bhubaneswar lead share (45.77%)"
+  },
+  {
+    "id": 14,
+    "question": "What is the conversion rate for leads flagged with warmth stage 'Hot'?",
+    "category": "CRM Operations",
+    "metric_type": "percentage",
+    "expected_value": 45.76,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df[df['lead_warmth'] == 'Hot']['is_converted'].mean() * 100, 2)",
+    "description": "Hot lead conversion rate (45.76%)"
+  },
+  {
+    "id": 15,
+    "question": "What is the conversion rate when prospects receive exactly 2 follow-ups?",
+    "category": "CRM Operations",
+    "metric_type": "percentage",
+    "expected_value": 19.06,
+    "tolerance": 0.5,
+    "verification_code": "result = round(df[df['followup_count'] == 2]['is_converted'].mean() * 100, 2)",
+    "description": "Peak conversion at 2 follow-up contacts (19.06%)"
+  }
+]

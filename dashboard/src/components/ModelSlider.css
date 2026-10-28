@@ -1,0 +1,304 @@
+/* ═══════════════════════════════════════════════════
+   MODEL SLIDER STYLES (EMBLA CAROUSEL)
+   ═══════════════════════════════════════════════════ */
+
+.model-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 20px 20px;
+  z-index: 10;
+  background: rgba(10, 15, 26, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.model-slider-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+
+.model-slider-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.model-slider-badge {
+  background: rgba(234, 21, 55, 0.15);
+  border: 1px solid rgba(234, 21, 55, 0.4);
+  color: #ff4d6d;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.model-slider-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f1f5f9;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+.model-slider-subtitle {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0;
+  font-weight: 400;
+}
+
+.model-slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.model-slider-nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
+}
+
+.model-slider-nav-btn:hover:not(:disabled) {
+  background: rgba(234, 21, 55, 0.85);
+  border-color: #ea1537;
+  color: #ffffff;
+  transform: scale(1.08);
+  box-shadow: 0 0 16px rgba(234, 21, 55, 0.5);
+}
+
+.model-slider-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Embla Carousel Viewport & Container */
+.model-slider-viewport {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 16px;
+  cursor: grab;
+}
+
+.model-slider-viewport:active {
+  cursor: grabbing;
+}
+
+.model-slider-container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: -14px;
+}
+
+/* Slide Cards */
+.model-slide {
+  flex: 0 0 280px;
+  min-width: 0;
+  padding-left: 14px;
+}
+
+@media (min-width: 640px) {
+  .model-slide {
+    flex: 0 0 310px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .model-slide {
+    flex: 0 0 330px;
+  }
+}
+
+.model-card {
+  position: relative;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  overflow: hidden;
+  text-align: left;
+  user-select: none;
+}
+
+.model-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(234, 21, 55, 0.6);
+  background: rgba(18, 28, 52, 0.82);
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.6), 0 0 20px rgba(234, 21, 55, 0.25);
+}
+
+.model-card-badge-360 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease;
+}
+
+.model-card:hover .model-card-badge-360 {
+  background: #ea1537;
+  border-color: #ea1537;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(234, 21, 55, 0.6);
+}
+
+/* Image preview container */
+.model-card-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 60%, rgba(30, 41, 59, 0.8) 0%, rgba(10, 15, 26, 0.95) 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.model-card-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.7));
+}
+
+.model-card:hover .model-card-img {
+  transform: scale(1.08) translateY(-2px);
+}
+
+.model-card-category {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ea1537;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.model-card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+  letter-spacing: -0.3px;
+}
+
+.model-card-tagline {
+  font-size: 11px;
+  color: #94a3b8;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Call to action bar */
+.model-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.model-card-action-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease;
+}
+
+.model-card:hover .model-card-action-text {
+  color: #ffffff;
+}
+
+.model-card-action-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+.model-card:hover .model-card-action-icon {
+  background: #ea1537;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* Dots pagination */
+.model-slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.model-slider-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.25s ease;
+}
+
+.model-slider-dot--active {
+  width: 22px;
+  background: #ea1537;
+  box-shadow: 0 0 8px rgba(234, 21, 55, 0.6);
+}

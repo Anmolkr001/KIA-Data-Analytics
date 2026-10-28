@@ -1,0 +1,152 @@
+{
+  "summary": [
+    {
+      "Metric": "Won Deals (Retail)",
+      "Value": 786.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Deals with Quoted Price > 0",
+      "Value": 459.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Deals with Expected Price > 0",
+      "Value": 459.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Deals with Final Price > 0",
+      "Value": 0.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Valid deals for gap calculation",
+      "Value": 459.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Avg Customer Expectation Gap (Quoted \u2212 Expected)",
+      "Value": -17555.555555555555,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Median Customer Expectation Gap (Quoted \u2212 Expected)",
+      "Value": -15000.0,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Avg Discount % (Quoted basis)",
+      "Value": -29.90479269971466,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Avg Expected Price (non-zero)",
+      "Value": 168699.34640522875,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    },
+    {
+      "Metric": "Avg Quoted Price (non-zero)",
+      "Value": 151143.7908496732,
+      "Notes": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+    }
+  ],
+  "gap_by_model": [
+    {
+      "Model": "NEW SELTOS",
+      "Won_Deals": 106,
+      "Avg_Gap": -9669.811320754718,
+      "Median_Gap": -5000.0,
+      "Avg_Discount_Pct": -33.9177670649456,
+      "Avg_Quoted": 58632.07547169811,
+      "Avg_Expected": 68301.88679245283
+    },
+    {
+      "Model": "CARENS",
+      "Won_Deals": 149,
+      "Avg_Gap": -13523.489932885906,
+      "Median_Gap": -5000.0,
+      "Avg_Discount_Pct": -34.41750311809492,
+      "Avg_Quoted": 96174.4966442953,
+      "Avg_Expected": 109697.9865771812
+    },
+    {
+      "Model": "SYROS",
+      "Won_Deals": 8,
+      "Avg_Gap": -16875.0,
+      "Median_Gap": -20000.0,
+      "Avg_Discount_Pct": -9.941468253968253,
+      "Avg_Quoted": 298125.0,
+      "Avg_Expected": 315000.0
+    },
+    {
+      "Model": "SONET",
+      "Won_Deals": 157,
+      "Avg_Gap": -23713.375796178345,
+      "Median_Gap": -20000.0,
+      "Avg_Discount_Pct": -27.36903555645373,
+      "Avg_Quoted": 209936.30573248406,
+      "Avg_Expected": 233649.68152866242
+    },
+    {
+      "Model": "SELTOS",
+      "Won_Deals": 24,
+      "Avg_Gap": -27083.333333333332,
+      "Median_Gap": -30000.0,
+      "Avg_Discount_Pct": -18.642095259030743,
+      "Avg_Quoted": 270208.3333333333,
+      "Avg_Expected": 297291.6666666667
+    },
+    {
+      "Model": "CARENS CLAVIS EV",
+      "Won_Deals": 15,
+      "Avg_Gap": -34000.0,
+      "Median_Gap": -30000.0,
+      "Avg_Discount_Pct": -11.928530738462177,
+      "Avg_Quoted": 466666.6666666667,
+      "Avg_Expected": 500666.6666666667
+    }
+  ],
+  "bucket_summary": [
+    {
+      "Quoted_Bucket": "<8L",
+      "Won_Deals": 453,
+      "Avg_Quoted": 137428.25607064017,
+      "Avg_Expected": 154377.4834437086,
+      "Avg_Final": 0.0
+    },
+    {
+      "Quoted_Bucket": "8-12L",
+      "Won_Deals": 3,
+      "Avg_Quoted": 983333.3333333334,
+      "Avg_Expected": 1050000.0,
+      "Avg_Final": 0.0
+    },
+    {
+      "Quoted_Bucket": "12-16L",
+      "Won_Deals": 3,
+      "Avg_Quoted": 1390000.0,
+      "Avg_Expected": 1450000.0,
+      "Avg_Final": NaN
+    },
+    {
+      "Quoted_Bucket": "16-25L",
+      "Won_Deals": 0,
+      "Avg_Quoted": NaN,
+      "Avg_Expected": NaN,
+      "Avg_Final": NaN
+    },
+    {
+      "Quoted_Bucket": "25L+",
+      "Won_Deals": 0,
+      "Avg_Quoted": NaN,
+      "Avg_Expected": NaN,
+      "Avg_Final": NaN
+    }
+  ],
+  "data_quality": {
+    "has_final_price": false,
+    "gap_metric_used": "Customer Expectation Gap (Quoted \u2212 Expected)",
+    "note": "WARNING: Final Buying Price is entirely zero in this CRM export. Gap is computed as Quoted Price \u2212 Expected Price (customer expectation gap). Only 0 records have a non-zero Final Buying Price."
+  }
+}

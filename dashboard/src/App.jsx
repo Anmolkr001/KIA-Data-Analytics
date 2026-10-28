@@ -9,8 +9,21 @@ import ModelInsights from "./components/ModelInsights";
 import GeographicPerformance from "./components/GeographicPerformance";
 import FunnelVelocity from "./components/FunnelVelocity";
 import EnquiryAnalytics from "./components/EnquiryAnalytics";
+import AskYourDataChat from "./components/AskYourDataChat";
 import { filterData, getUniqueValues, getCityStateOptions } from "./utils/dataProcessor";
-import { LogOut, Filter, Calendar, RotateCcw, BarChart3, Database, Sun, Moon } from "lucide-react";
+import { LogOut, Filter, Calendar, RotateCcw, BarChart3, Database, Sun, Moon, ArrowLeft, Bot, Sparkles } from "lucide-react";
+
+// Dashboard Tabs definition
+const TABS = [
+  { id: "executive", label: "Executive Summary" },
+  { id: "enquiry-analytics", label: "Enquiry Analytics" },
+  { id: "funnel", label: "Lead Funnel & Status" },
+  { id: "consultants", label: "Consultants Performance" },
+  { id: "sources", label: "Channels Effectiveness" },
+  { id: "products", label: "Model Insights" },
+  { id: "geography", label: "Geographic Performance" },
+  { id: "velocity", label: "Funnel Velocity" }
+];
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -18,7 +31,69 @@ export default function App() {
   });
   const [rawData, setRawData] = useState(null);
 
-  const [activeTab, setActiveTab] = useState("executive");
+  const [activeTab, setActiveTab] = useState(() => {
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash.replace("#", "");
+      if (TABS.some(t => t.id === hash)) return hash;
+    }
+    return "executive";
+  });
+
+  // Track tab history for in-app navigation
+  const [tabHistory, setTabHistory] = useState(() => [activeTab]);
+  const [historyIndex, setHistoryIndex] = useState(0);
+
+  // Chatbox Copilot state
+  const [chatOpen, setChatOpen] = useState(false);
+
+  // Tab switch handler with browser history
+  const handleTabChange = (newTab, pushState = true) => {
+    if (newTab === activeTab) return;
+    setActiveTab(newTab);
+    if (pushState) {
+      window.history.pushState({ type: "tab", tab: newTab }, "", `#${newTab}`);
+      setTabHistory(prev => [...prev.slice(0, historyIndex + 1), newTab]);
+      setHistoryIndex(prev => prev + 1);
+    }
+  };
+
+  // Browser Back / Forward popstate listener
+  useEffect(() => {
+    const handlePopState = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (TABS.some(t => t.id === hash)) {
+        setActiveTab(hash);
+        setTabHistory(prev => {
+          const idx = prev.lastIndexOf(hash);
+          if (idx !== -1) setHistoryIndex(idx);
+          return prev;
+        });
+      } else if (hash === "upload") {
+        setRawData(null);
+      } else if (hash === "showroom" || hash === "login" || !hash) {
+        if (!rawData) {
+          setIsAuthenticated(false);
+        } else {
+          setRawData(null);
+        }
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [rawData]);
+
+  // Handle in-app "Back" button click
+  const handleGoBack = () => {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else if (historyIndex > 0) {
+      const prevTab = tabHistory[historyIndex - 1];
+      setHistoryIndex(prev => prev - 1);
+      setActiveTab(prevTab);
+      window.location.hash = `#${prevTab}`;
+    }
+  };
 
   // Dark / Light Mode
   const [darkMode, setDarkMode] = useState(() => {
@@ -95,6 +170,7 @@ export default function App() {
     setRawData(null);
     resetFilters();
     setActiveTab("executive");
+    window.history.pushState({ type: "upload" }, "", "#upload");
   };
 
   // Logout handler
@@ -104,32 +180,40 @@ export default function App() {
     setRawData(null);
     resetFilters();
     setActiveTab("executive");
+    window.history.pushState({ type: "showroom" }, "", "#showroom");
   };
 
-  // Render Login Screen if not authenticated
+  // Determine primary screen view
+  let mainView = null;
+
   if (!isAuthenticated) {
-    return <LoginScreen onLogin={() => setIsAuthenticated(true)} />;
-  }
-
-  // Render Loader if no data uploaded
-  if (!rawData) {
-    return <CSVLoader onDataLoaded={setRawData} />;
-  }
-
-  // Dashboard Tabs definition
-  const tabs = [
-    { id: "executive", label: "Executive Summary" },
-    { id: "enquiry-analytics", label: "Enquiry Analytics" },
-    { id: "funnel", label: "Lead Funnel & Status" },
-    { id: "consultants", label: "Consultants Performance" },
-    { id: "sources", label: "Channels Effectiveness" },
-    { id: "products", label: "Model Insights" },
-    { id: "geography", label: "Geographic Performance" },
-    { id: "velocity", label: "Funnel Velocity" }
-  ];
-
-  return (
-    <div className={`min-h-screen flex flex-col font-sans transition-colors duration-300 ${darkMode ? "theme-dark bg-kia-dark text-kia-text" : "theme-light bg-kia-light-bg text-kia-light-text"}`}>
+    mainView = (
+      <LoginScreen
+        onLogin={() => {
+          setIsAuthenticated(true);
+          window.history.pushState({ type: "upload" }, "", "#upload");
+        }}
+        onOpenChat={() => setChatOpen(true)}
+      />
+    );
+  } else if (!rawData) {
+    mainView = (
+      <CSVLoader
+        onDataLoaded={(data) => {
+          setRawData(data);
+          window.history.pushState({ type: "tab", tab: "executive" }, "", "#executive");
+        }}
+        onBack={() => {
+          sessionStorage.removeItem("kia-auth");
+          setIsAuthenticated(false);
+          window.history.pushState({ type: "showroom" }, "", "#showroom");
+        }}
+        onOpenChat={() => setChatOpen(true)}
+      />
+    );
+  } else {
+    mainView = (
+      <div className={`min-h-screen flex flex-col font-sans transition-colors duration-300 ${darkMode ? "theme-dark bg-kia-dark text-kia-text" : "theme-light bg-kia-light-bg text-kia-light-text"}`}>
       
       {/* Accessibility: Skip-to-content link */}
       <a
@@ -143,6 +227,17 @@ export default function App() {
       {/* Top Navbar */}
       <header className="sticky top-0 bg-kia-card/95 border-b border-kia-border z-40 px-4 md:px-6 py-3 md:py-4 flex flex-wrap items-center justify-between gap-2 backdrop-blur-md">
         <div className="flex items-center gap-3">
+          {/* In-App Back Navigation Button */}
+          <button
+            onClick={handleGoBack}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white/90 bg-white/5 hover:bg-white/10 hover:text-white border border-kia-border rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-kia-red cursor-pointer shadow-sm active:scale-95"
+            aria-label="Back to previous page"
+            title="Go to previous page (Browser Back)"
+          >
+            <ArrowLeft size={14} className="text-kia-red" />
+            <span className="font-outfit font-bold">Back</span>
+          </button>
+
           <div className="h-8 w-8 rounded-lg bg-kia-red flex items-center justify-center text-white font-extrabold text-sm tracking-widest font-outfit">
             KIA
           </div>
@@ -158,6 +253,20 @@ export default function App() {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Ask AI Copilot Button */}
+          <button
+            onClick={() => setChatOpen((prev) => !prev)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-kia-red/30 to-kia-red/20 hover:from-kia-red/50 hover:to-kia-red/30 border border-kia-red/50 rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-kia-red cursor-pointer shadow-sm active:scale-95"
+            title="Ask AI questions about your dealership dataset"
+          >
+            <Bot size={14} className="text-kia-red" />
+            <span className="font-outfit font-bold hidden sm:inline">Ask AI Copilot</span>
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-kia-red opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-kia-red"></span>
+            </span>
+          </button>
+
           {/* Dark/Light Mode Toggle */}
           <button
             onClick={() => setDarkMode((prev) => !prev)}
@@ -305,16 +414,16 @@ export default function App() {
             role="tablist"
             aria-label="Dashboard sections"
           >
-            {tabs.map((tab) => (
+            {TABS.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => handleTabChange(tab.id)}
                 role="tab"
                 id={`tab-${tab.id}`}
                 aria-selected={activeTab === tab.id}
                 aria-controls={`tabpanel-${tab.id}`}
                 tabIndex={activeTab === tab.id ? 0 : -1}
-                className={`py-3 px-4 text-xs md:text-sm font-semibold border-b-2 rounded-t-lg transition-all ${
+                className={`py-3 px-4 text-xs md:text-sm font-semibold border-b-2 rounded-t-lg transition-all cursor-pointer ${
                   activeTab === tab.id
                     ? "border-kia-red text-kia-red bg-white/[0.02]"
                     : "border-transparent text-kia-muted hover:text-[var(--color-kia-text)] hover:border-kia-border"
@@ -369,7 +478,21 @@ export default function App() {
           Lead Conversion Intelligence Dashboard &copy; 2026. Bhubaneswar Kia dealership.
         </p>
       </footer>
-
     </div>
+  );
+  }
+
+  return (
+    <>
+      {mainView}
+
+      {/* KIA AI Dealership Analytics Copilot Chatbox — Globally Accessible */}
+      <AskYourDataChat
+        rawData={rawData}
+        isOpen={chatOpen}
+        onOpen={() => setChatOpen(true)}
+        onClose={() => setChatOpen(false)}
+      />
+    </>
   );
 }

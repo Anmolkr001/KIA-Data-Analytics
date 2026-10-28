@@ -1,0 +1,33 @@
+Aging_Bucket,Outcome,Count
+0-3d,Active,277
+0-3d,Booked (Active),65
+0-3d,Lost,35
+0-3d,Retailed,21
+4-7d,Active,468
+4-7d,Booked (Active),116
+4-7d,Lost,76
+4-7d,Retailed,45
+8-14d,Active,797
+8-14d,Booked (Active),173
+8-14d,Lost,221
+8-14d,Retailed,153
+15-21d,Active,765
+15-21d,Booked (Active),176
+15-21d,Lost,286
+15-21d,Retailed,140
+22-30d,Active,548
+22-30d,Booked (Active),135
+22-30d,Lost,270
+22-30d,Retailed,132
+31-45d,Active,523
+31-45d,Booked (Active),153
+31-45d,Lost,456
+31-45d,Retailed,186
+46-60d,Active,275
+46-60d,Booked (Active),60
+46-60d,Lost,248
+46-60d,Retailed,97
+61d+,Active,19
+61d+,Booked (Active),8
+61d+,Lost,31
+61d+,Retailed,12

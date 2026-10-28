@@ -1,0 +1,330 @@
+{
+  "campaign_performance": [
+    {
+      "Campaign No": null,
+      "Campaign Name": null,
+      "Enquiries": 6964,
+      "Test_Drives": 3248,
+      "Bookings": 1671,
+      "Retails": 786,
+      "Avg_Sales_Cycle_Days": -4497.76838024124,
+      "TD_Rate": 0.46639862148190697,
+      "Booking_Rate": 0.23994830557151062,
+      "Retail_Rate": 0.1128661688684664
+    },
+    {
+      "Campaign No": "CKIN260100000003",
+      "Campaign Name": "TISPNSRSHP",
+      "Enquiries": 2,
+      "Test_Drives": 1,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -20475.0,
+      "TD_Rate": 0.5,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Campaign No": "CKIN260100000001",
+      "Campaign Name": "1MROADSHOW",
+      "Enquiries": 1,
+      "Test_Drives": 0,
+      "Bookings": 1,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -1.0,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 1.0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "online_request_type": [
+    {
+      "Online Request Type": null,
+      "Enquiries": 4655,
+      "Test_Drives": 2924,
+      "Bookings": 1639,
+      "Retails": 774,
+      "Avg_Sales_Cycle_Days": -3487.254350161117,
+      "TD_Rate": 0.628141783029001,
+      "Booking_Rate": 0.35209452201933406,
+      "Retail_Rate": 0.16627282491944145
+    },
+    {
+      "Online Request Type": "Early Interest Request",
+      "Enquiries": 2101,
+      "Test_Drives": 277,
+      "Bookings": 28,
+      "Retails": 10,
+      "Avg_Sales_Cycle_Days": -6626.930033317468,
+      "TD_Rate": 0.13184198000951927,
+      "Booking_Rate": 0.013326987148976678,
+      "Retail_Rate": 0.00475963826749167
+    },
+    {
+      "Online Request Type": "Quotation Request",
+      "Enquiries": 51,
+      "Test_Drives": 14,
+      "Bookings": 3,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -6020.450980392156,
+      "TD_Rate": 0.27450980392156865,
+      "Booking_Rate": 0.058823529411764705,
+      "Retail_Rate": 0.0196078431372549
+    },
+    {
+      "Online Request Type": "Finalize The Price Request",
+      "Enquiries": 11,
+      "Test_Drives": 4,
+      "Bookings": 1,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -5582.909090909091,
+      "TD_Rate": 0.36363636363636365,
+      "Booking_Rate": 0.09090909090909091,
+      "Retail_Rate": 0.09090909090909091
+    },
+    {
+      "Online Request Type": "Call Back Request",
+      "Enquiries": 15,
+      "Test_Drives": 4,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -12284.066666666668,
+      "TD_Rate": 0.26666666666666666,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Online Request Type": "Price Enquiry",
+      "Enquiries": 8,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5122.125,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Online Request Type": "Self-Evaluation",
+      "Enquiries": 24,
+      "Test_Drives": 3,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5110.958333333333,
+      "TD_Rate": 0.125,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Online Request Type": "Show Interest",
+      "Enquiries": 13,
+      "Test_Drives": 0,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -4732.307692307692,
+      "TD_Rate": 0.0,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Online Request Type": "Test Drive Request",
+      "Enquiries": 85,
+      "Test_Drives": 21,
+      "Bookings": 0,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -5050.423529411764,
+      "TD_Rate": 0.24705882352941178,
+      "Booking_Rate": 0.0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "website_remarks": [
+    {
+      "Website Remark": "Present Car Make=K;\nPresent Car Model=SX;\nTest Drive Required=N;",
+      "Enquiries": 5,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "12/05/2026 13:00-16:00",
+      "Enquiries": 3,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 10/01/2026",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 18/01/2026",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 05/04/2026",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "06/06/2026 13:00-16:00",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "13:00-16:00 13/01/2026",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "Current Vehicle Make=M3;\nCurrent Vehicle Model=SD;\nTest Drive Required=N;",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "15/05/2026 10:00-13:00",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "13:00-16:00 15/03/2026",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "16/06/2026 16:00-19:00",
+      "Enquiries": 2,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10/05/2026 13:00-16:00",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10/05/2026 10:00-13:00",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "05/02/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 04/04/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 03/03/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 03/02/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 03/01/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10:00-13:00 01/02/2026",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Website Remark": "10/06/2026 13:00-16:00",
+      "Enquiries": 1,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "website_remark_types": [
+    {
+      "Remark_Type": "Date/Time Slot",
+      "Count": 96
+    },
+    {
+      "Remark_Type": "Text Remark",
+      "Count": 29
+    }
+  ],
+  "digital_source_breakdown": [
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "KIN Website",
+      "Enquiries": 357,
+      "Retails": 4,
+      "Retail_Rate": 0.011204481792717087
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "Other Websites",
+      "Enquiries": 215,
+      "Retails": 30,
+      "Retail_Rate": 0.13953488372093023
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "MYKIA",
+      "Enquiries": 32,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "Call Centre",
+      "Enquiries": 24,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "Meta",
+      "Enquiries": 23,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "Dealer CRM",
+      "Enquiries": 17,
+      "Retails": 2,
+      "Retail_Rate": 0.11764705882352941
+    },
+    {
+      "Source": "Online/CRM",
+      "Sub-source": "Outbound Calls",
+      "Enquiries": 8,
+      "Retails": 0,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "data_quality": {
+    "campaign_tagged_leads": 3,
+    "campaign_warning": "WARNING: Only 3 leads have campaign tags. Campaign-level ROI analysis is statistically unreliable.",
+    "online_request_type_leads": 6963,
+    "website_remark_leads": 125
+  }
+}

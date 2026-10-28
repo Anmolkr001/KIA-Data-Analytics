@@ -1,0 +1,283 @@
+{
+  "velocity_by_outcome": [
+    {
+      "Outcome": "Active",
+      "Count": 3672,
+      "Avg_Aging": 20.329520697167755,
+      "Median_Aging": 17.0,
+      "P25_Aging": 9.0,
+      "P75_Aging": 28.0,
+      "P90_Aging": 43.0,
+      "Avg_Quotation_Emails": 0.0,
+      "Median_Quotation_Emails": 0.0
+    },
+    {
+      "Outcome": "Booked (Active)",
+      "Count": 886,
+      "Avg_Aging": 21.080135440180587,
+      "Median_Aging": 18.0,
+      "P25_Aging": 10.0,
+      "P75_Aging": 30.0,
+      "P90_Aging": 41.0,
+      "Avg_Quotation_Emails": 0.001128668171557562,
+      "Median_Quotation_Emails": 0.0
+    },
+    {
+      "Outcome": "Lost",
+      "Count": 1623,
+      "Avg_Aging": 29.230437461491064,
+      "Median_Aging": 28.0,
+      "P25_Aging": 17.0,
+      "P75_Aging": 39.0,
+      "P90_Aging": 54.0,
+      "Avg_Quotation_Emails": 0.0,
+      "Median_Quotation_Emails": 0.0
+    },
+    {
+      "Outcome": "Retailed",
+      "Count": 786,
+      "Avg_Aging": 26.24681933842239,
+      "Median_Aging": 24.0,
+      "P25_Aging": 13.0,
+      "P75_Aging": 37.0,
+      "P90_Aging": 50.0,
+      "Avg_Quotation_Emails": 0.0,
+      "Median_Quotation_Emails": 0.0
+    }
+  ],
+  "aging_bucket_performance": [
+    {
+      "Aging_Bucket": "0-3d",
+      "Enquiries": 398,
+      "Retails": 21,
+      "Lost": 35,
+      "Retail_Rate": 0.052763819095477386,
+      "Lost_Rate": 0.08793969849246232
+    },
+    {
+      "Aging_Bucket": "4-7d",
+      "Enquiries": 705,
+      "Retails": 45,
+      "Lost": 78,
+      "Retail_Rate": 0.06382978723404255,
+      "Lost_Rate": 0.11063829787234042
+    },
+    {
+      "Aging_Bucket": "8-14d",
+      "Enquiries": 1344,
+      "Retails": 153,
+      "Lost": 230,
+      "Retail_Rate": 0.11383928571428571,
+      "Lost_Rate": 0.17113095238095238
+    },
+    {
+      "Aging_Bucket": "15-21d",
+      "Enquiries": 1367,
+      "Retails": 140,
+      "Lost": 311,
+      "Retail_Rate": 0.10241404535479151,
+      "Lost_Rate": 0.22750548646671542
+    },
+    {
+      "Aging_Bucket": "22-30d",
+      "Enquiries": 1085,
+      "Retails": 132,
+      "Lost": 309,
+      "Retail_Rate": 0.12165898617511521,
+      "Lost_Rate": 0.2847926267281106
+    },
+    {
+      "Aging_Bucket": "31-45d",
+      "Enquiries": 1318,
+      "Retails": 186,
+      "Lost": 513,
+      "Retail_Rate": 0.1411229135053111,
+      "Lost_Rate": 0.3892261001517451
+    },
+    {
+      "Aging_Bucket": "46-60d",
+      "Enquiries": 680,
+      "Retails": 97,
+      "Lost": 284,
+      "Retail_Rate": 0.1426470588235294,
+      "Lost_Rate": 0.4176470588235294
+    },
+    {
+      "Aging_Bucket": "61d+",
+      "Enquiries": 70,
+      "Retails": 12,
+      "Lost": 37,
+      "Retail_Rate": 0.17142857142857143,
+      "Lost_Rate": 0.5285714285714286
+    }
+  ],
+  "aging_outcome_crosstab": [
+    {
+      "Aging_Bucket": "0-3d",
+      "Outcome": "Active",
+      "Count": 277
+    },
+    {
+      "Aging_Bucket": "0-3d",
+      "Outcome": "Booked (Active)",
+      "Count": 65
+    },
+    {
+      "Aging_Bucket": "0-3d",
+      "Outcome": "Lost",
+      "Count": 35
+    },
+    {
+      "Aging_Bucket": "0-3d",
+      "Outcome": "Retailed",
+      "Count": 21
+    },
+    {
+      "Aging_Bucket": "4-7d",
+      "Outcome": "Active",
+      "Count": 468
+    },
+    {
+      "Aging_Bucket": "4-7d",
+      "Outcome": "Booked (Active)",
+      "Count": 116
+    },
+    {
+      "Aging_Bucket": "4-7d",
+      "Outcome": "Lost",
+      "Count": 76
+    },
+    {
+      "Aging_Bucket": "4-7d",
+      "Outcome": "Retailed",
+      "Count": 45
+    },
+    {
+      "Aging_Bucket": "8-14d",
+      "Outcome": "Active",
+      "Count": 797
+    },
+    {
+      "Aging_Bucket": "8-14d",
+      "Outcome": "Booked (Active)",
+      "Count": 173
+    },
+    {
+      "Aging_Bucket": "8-14d",
+      "Outcome": "Lost",
+      "Count": 221
+    },
+    {
+      "Aging_Bucket": "8-14d",
+      "Outcome": "Retailed",
+      "Count": 153
+    },
+    {
+      "Aging_Bucket": "15-21d",
+      "Outcome": "Active",
+      "Count": 765
+    },
+    {
+      "Aging_Bucket": "15-21d",
+      "Outcome": "Booked (Active)",
+      "Count": 176
+    },
+    {
+      "Aging_Bucket": "15-21d",
+      "Outcome": "Lost",
+      "Count": 286
+    },
+    {
+      "Aging_Bucket": "15-21d",
+      "Outcome": "Retailed",
+      "Count": 140
+    },
+    {
+      "Aging_Bucket": "22-30d",
+      "Outcome": "Active",
+      "Count": 548
+    },
+    {
+      "Aging_Bucket": "22-30d",
+      "Outcome": "Booked (Active)",
+      "Count": 135
+    },
+    {
+      "Aging_Bucket": "22-30d",
+      "Outcome": "Lost",
+      "Count": 270
+    },
+    {
+      "Aging_Bucket": "22-30d",
+      "Outcome": "Retailed",
+      "Count": 132
+    },
+    {
+      "Aging_Bucket": "31-45d",
+      "Outcome": "Active",
+      "Count": 523
+    },
+    {
+      "Aging_Bucket": "31-45d",
+      "Outcome": "Booked (Active)",
+      "Count": 153
+    },
+    {
+      "Aging_Bucket": "31-45d",
+      "Outcome": "Lost",
+      "Count": 456
+    },
+    {
+      "Aging_Bucket": "31-45d",
+      "Outcome": "Retailed",
+      "Count": 186
+    },
+    {
+      "Aging_Bucket": "46-60d",
+      "Outcome": "Active",
+      "Count": 275
+    },
+    {
+      "Aging_Bucket": "46-60d",
+      "Outcome": "Booked (Active)",
+      "Count": 60
+    },
+    {
+      "Aging_Bucket": "46-60d",
+      "Outcome": "Lost",
+      "Count": 248
+    },
+    {
+      "Aging_Bucket": "46-60d",
+      "Outcome": "Retailed",
+      "Count": 97
+    },
+    {
+      "Aging_Bucket": "61d+",
+      "Outcome": "Active",
+      "Count": 19
+    },
+    {
+      "Aging_Bucket": "61d+",
+      "Outcome": "Booked (Active)",
+      "Count": 8
+    },
+    {
+      "Aging_Bucket": "61d+",
+      "Outcome": "Lost",
+      "Count": 31
+    },
+    {
+      "Aging_Bucket": "61d+",
+      "Outcome": "Retailed",
+      "Count": 12
+    }
+  ],
+  "email_engagement": [],
+  "optimal_response_window": "61d+",
+  "data_quality": {
+    "has_email_data": false,
+    "total_email_count_sum": 1.0,
+    "aging_days_coverage_pct": 100.0
+  }
+}

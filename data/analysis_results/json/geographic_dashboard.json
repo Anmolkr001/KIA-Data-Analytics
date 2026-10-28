@@ -1,0 +1,485 @@
+{
+  "top5_cities": [
+    {
+      "City": "VISAKHAPATNAM",
+      "Enquiries": 24,
+      "Test_Drives": 16,
+      "Bookings": 20,
+      "Retails": 18,
+      "Avg_Sales_Cycle_Days": -844.75,
+      "TD_Rate": 0.6666666666666666,
+      "Booking_Rate": 0.8333333333333334,
+      "Retail_Rate": 0.75
+    },
+    {
+      "City": "MALKANGIRI",
+      "Enquiries": 39,
+      "Test_Drives": 32,
+      "Bookings": 27,
+      "Retails": 17,
+      "Avg_Sales_Cycle_Days": -1042.923076923077,
+      "TD_Rate": 0.8205128205128205,
+      "Booking_Rate": 0.6923076923076923,
+      "Retail_Rate": 0.4358974358974359
+    },
+    {
+      "City": "JUNAGARH",
+      "Enquiries": 20,
+      "Test_Drives": 15,
+      "Bookings": 13,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -3083.3,
+      "TD_Rate": 0.75,
+      "Booking_Rate": 0.65,
+      "Retail_Rate": 0.4
+    },
+    {
+      "City": "PATTAMUNDAI",
+      "Enquiries": 23,
+      "Test_Drives": 22,
+      "Bookings": 13,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -3568.782608695652,
+      "TD_Rate": 0.9565217391304348,
+      "Booking_Rate": 0.5652173913043478,
+      "Retail_Rate": 0.34782608695652173
+    },
+    {
+      "City": "ASKA",
+      "Enquiries": 26,
+      "Test_Drives": 17,
+      "Bookings": 14,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -2363.8846153846152,
+      "TD_Rate": 0.6538461538461539,
+      "Booking_Rate": 0.5384615384615384,
+      "Retail_Rate": 0.3076923076923077
+    }
+  ],
+  "bottom5_cities": [
+    {
+      "City": "BARIPADA",
+      "Enquiries": 21,
+      "Test_Drives": 14,
+      "Bookings": 8,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -2922.904761904762,
+      "TD_Rate": 0.6666666666666666,
+      "Booking_Rate": 0.38095238095238093,
+      "Retail_Rate": 0.0
+    },
+    {
+      "City": "Bhubaneshwar",
+      "Enquiries": 1889,
+      "Test_Drives": 250,
+      "Bookings": 28,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6807.806246691371,
+      "TD_Rate": 0.1323451561672843,
+      "Booking_Rate": 0.014822657490735839,
+      "Retail_Rate": 0.0
+    },
+    {
+      "City": null,
+      "Enquiries": 486,
+      "Test_Drives": 108,
+      "Bookings": 14,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -4966.510288065843,
+      "TD_Rate": 0.2222222222222222,
+      "Booking_Rate": 0.02880658436213992,
+      "Retail_Rate": 0.0
+    },
+    {
+      "City": "KHORDHA",
+      "Enquiries": 36,
+      "Test_Drives": 23,
+      "Bookings": 8,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -3412.4166666666665,
+      "TD_Rate": 0.6388888888888888,
+      "Booking_Rate": 0.2222222222222222,
+      "Retail_Rate": 0.027777777777777776
+    },
+    {
+      "City": "ANGUL",
+      "Enquiries": 286,
+      "Test_Drives": 113,
+      "Bookings": 53,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -2350.846153846154,
+      "TD_Rate": 0.3951048951048951,
+      "Booking_Rate": 0.1853146853146853,
+      "Retail_Rate": 0.07692307692307693
+    }
+  ],
+  "state_performance": [
+    {
+      "State": "ODISHA",
+      "Enquiries": 4515,
+      "Test_Drives": 2841,
+      "Bookings": 1563,
+      "Retails": 758,
+      "Avg_Sales_Cycle_Days": -3540.9840531561463,
+      "TD_Rate": 0.6292358803986711,
+      "Booking_Rate": 0.3461794019933555,
+      "Retail_Rate": 0.16788482834994464
+    },
+    {
+      "State": "ANDHRA PRADESH",
+      "Enquiries": 33,
+      "Test_Drives": 20,
+      "Bookings": 25,
+      "Retails": 19,
+      "Avg_Sales_Cycle_Days": -1854.969696969697,
+      "TD_Rate": 0.6060606060606061,
+      "Booking_Rate": 0.7575757575757576,
+      "Retail_Rate": 0.5757575757575758
+    },
+    {
+      "State": null,
+      "Enquiries": 2363,
+      "Test_Drives": 349,
+      "Bookings": 40,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6420.264071096064,
+      "TD_Rate": 0.14769360981802793,
+      "Booking_Rate": 0.016927634363097757,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "city_performance": [
+    {
+      "City": "BHUBANESWAR",
+      "Enquiries": 1299,
+      "Test_Drives": 901,
+      "Bookings": 313,
+      "Retails": 113,
+      "Avg_Sales_Cycle_Days": -4670.19168591224,
+      "TD_Rate": 0.6936104695919938,
+      "Booking_Rate": 0.2409545804464973,
+      "Retail_Rate": 0.0869899923017706
+    },
+    {
+      "City": "CUTTACK",
+      "Enquiries": 621,
+      "Test_Drives": 358,
+      "Bookings": 190,
+      "Retails": 82,
+      "Avg_Sales_Cycle_Days": -2829.0,
+      "TD_Rate": 0.5764895330112721,
+      "Booking_Rate": 0.3059581320450886,
+      "Retail_Rate": 0.1320450885668277
+    },
+    {
+      "City": "BERHAMPUR",
+      "Enquiries": 480,
+      "Test_Drives": 282,
+      "Bookings": 128,
+      "Retails": 62,
+      "Avg_Sales_Cycle_Days": -3021.397916666667,
+      "TD_Rate": 0.5875,
+      "Booking_Rate": 0.26666666666666666,
+      "Retail_Rate": 0.12916666666666668
+    },
+    {
+      "City": "KUJANG",
+      "Enquiries": 146,
+      "Test_Drives": 50,
+      "Bookings": 54,
+      "Retails": 24,
+      "Avg_Sales_Cycle_Days": -2940.2328767123286,
+      "TD_Rate": 0.3424657534246575,
+      "Booking_Rate": 0.3698630136986301,
+      "Retail_Rate": 0.1643835616438356
+    },
+    {
+      "City": "ANGUL",
+      "Enquiries": 286,
+      "Test_Drives": 113,
+      "Bookings": 53,
+      "Retails": 22,
+      "Avg_Sales_Cycle_Days": -2350.846153846154,
+      "TD_Rate": 0.3951048951048951,
+      "Booking_Rate": 0.1853146853146853,
+      "Retail_Rate": 0.07692307692307693
+    },
+    {
+      "City": "TALCHER",
+      "Enquiries": 99,
+      "Test_Drives": 32,
+      "Bookings": 28,
+      "Retails": 19,
+      "Avg_Sales_Cycle_Days": -1226.3030303030303,
+      "TD_Rate": 0.32323232323232326,
+      "Booking_Rate": 0.2828282828282828,
+      "Retail_Rate": 0.1919191919191919
+    },
+    {
+      "City": "VISAKHAPATNAM",
+      "Enquiries": 24,
+      "Test_Drives": 16,
+      "Bookings": 20,
+      "Retails": 18,
+      "Avg_Sales_Cycle_Days": -844.75,
+      "TD_Rate": 0.6666666666666666,
+      "Booking_Rate": 0.8333333333333334,
+      "Retail_Rate": 0.75
+    },
+    {
+      "City": "MALKANGIRI",
+      "Enquiries": 39,
+      "Test_Drives": 32,
+      "Bookings": 27,
+      "Retails": 17,
+      "Avg_Sales_Cycle_Days": -1042.923076923077,
+      "TD_Rate": 0.8205128205128205,
+      "Booking_Rate": 0.6923076923076923,
+      "Retail_Rate": 0.4358974358974359
+    },
+    {
+      "City": "JAGATPUR",
+      "Enquiries": 51,
+      "Test_Drives": 41,
+      "Bookings": 22,
+      "Retails": 13,
+      "Avg_Sales_Cycle_Days": -3615.9411764705883,
+      "TD_Rate": 0.803921568627451,
+      "Booking_Rate": 0.43137254901960786,
+      "Retail_Rate": 0.2549019607843137
+    },
+    {
+      "City": "KENDRAPARA",
+      "Enquiries": 65,
+      "Test_Drives": 40,
+      "Bookings": 24,
+      "Retails": 13,
+      "Avg_Sales_Cycle_Days": -5358.307692307692,
+      "TD_Rate": 0.6153846153846154,
+      "Booking_Rate": 0.36923076923076925,
+      "Retail_Rate": 0.2
+    },
+    {
+      "City": "PURI",
+      "Enquiries": 79,
+      "Test_Drives": 52,
+      "Bookings": 31,
+      "Retails": 11,
+      "Avg_Sales_Cycle_Days": -5449.354430379747,
+      "TD_Rate": 0.6582278481012658,
+      "Booking_Rate": 0.3924050632911392,
+      "Retail_Rate": 0.13924050632911392
+    },
+    {
+      "City": "CHATRAPUR",
+      "Enquiries": 35,
+      "Test_Drives": 28,
+      "Bookings": 16,
+      "Retails": 10,
+      "Avg_Sales_Cycle_Days": -1750.4285714285713,
+      "TD_Rate": 0.8,
+      "Booking_Rate": 0.45714285714285713,
+      "Retail_Rate": 0.2857142857142857
+    },
+    {
+      "City": "JAJPUR",
+      "Enquiries": 36,
+      "Test_Drives": 25,
+      "Bookings": 14,
+      "Retails": 10,
+      "Avg_Sales_Cycle_Days": -3990.527777777778,
+      "TD_Rate": 0.6944444444444444,
+      "Booking_Rate": 0.3888888888888889,
+      "Retail_Rate": 0.2777777777777778
+    },
+    {
+      "City": "DHENKANAL",
+      "Enquiries": 51,
+      "Test_Drives": 24,
+      "Bookings": 14,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -2000.5098039215686,
+      "TD_Rate": 0.47058823529411764,
+      "Booking_Rate": 0.27450980392156865,
+      "Retail_Rate": 0.1568627450980392
+    },
+    {
+      "City": "ASKA",
+      "Enquiries": 26,
+      "Test_Drives": 17,
+      "Bookings": 14,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -2363.8846153846152,
+      "TD_Rate": 0.6538461538461539,
+      "Booking_Rate": 0.5384615384615384,
+      "Retail_Rate": 0.3076923076923077
+    },
+    {
+      "City": "SALIPUR",
+      "Enquiries": 37,
+      "Test_Drives": 30,
+      "Bookings": 18,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -3324.675675675676,
+      "TD_Rate": 0.8108108108108109,
+      "Booking_Rate": 0.4864864864864865,
+      "Retail_Rate": 0.21621621621621623
+    },
+    {
+      "City": "JUNAGARH",
+      "Enquiries": 20,
+      "Test_Drives": 15,
+      "Bookings": 13,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -3083.3,
+      "TD_Rate": 0.75,
+      "Booking_Rate": 0.65,
+      "Retail_Rate": 0.4
+    },
+    {
+      "City": "PATTAMUNDAI",
+      "Enquiries": 23,
+      "Test_Drives": 22,
+      "Bookings": 13,
+      "Retails": 8,
+      "Avg_Sales_Cycle_Days": -3568.782608695652,
+      "TD_Rate": 0.9565217391304348,
+      "Booking_Rate": 0.5652173913043478,
+      "Retail_Rate": 0.34782608695652173
+    },
+    {
+      "City": "KAMAKHYANAGAR",
+      "Enquiries": 36,
+      "Test_Drives": 25,
+      "Bookings": 19,
+      "Retails": 7,
+      "Avg_Sales_Cycle_Days": -2272.722222222222,
+      "TD_Rate": 0.6944444444444444,
+      "Booking_Rate": 0.5277777777777778,
+      "Retail_Rate": 0.19444444444444445
+    },
+    {
+      "City": "JAGATSINGHPUR",
+      "Enquiries": 41,
+      "Test_Drives": 23,
+      "Bookings": 15,
+      "Retails": 7,
+      "Avg_Sales_Cycle_Days": -2995.2195121951218,
+      "TD_Rate": 0.5609756097560976,
+      "Booking_Rate": 0.36585365853658536,
+      "Retail_Rate": 0.17073170731707318
+    },
+    {
+      "City": "JAJPUR ROAD",
+      "Enquiries": 30,
+      "Test_Drives": 22,
+      "Bookings": 13,
+      "Retails": 7,
+      "Avg_Sales_Cycle_Days": -3415.5666666666666,
+      "TD_Rate": 0.7333333333333333,
+      "Booking_Rate": 0.43333333333333335,
+      "Retail_Rate": 0.23333333333333334
+    },
+    {
+      "City": "KENDUJHAR",
+      "Enquiries": 24,
+      "Test_Drives": 16,
+      "Bookings": 7,
+      "Retails": 5,
+      "Avg_Sales_Cycle_Days": -3413.9166666666665,
+      "TD_Rate": 0.6666666666666666,
+      "Booking_Rate": 0.2916666666666667,
+      "Retail_Rate": 0.20833333333333334
+    },
+    {
+      "City": "BHADRAK",
+      "Enquiries": 27,
+      "Test_Drives": 20,
+      "Bookings": 7,
+      "Retails": 5,
+      "Avg_Sales_Cycle_Days": -6077.37037037037,
+      "TD_Rate": 0.7407407407407407,
+      "Booking_Rate": 0.25925925925925924,
+      "Retail_Rate": 0.18518518518518517
+    },
+    {
+      "City": "NIALI",
+      "Enquiries": 20,
+      "Test_Drives": 17,
+      "Bookings": 7,
+      "Retails": 4,
+      "Avg_Sales_Cycle_Days": -3061.8,
+      "TD_Rate": 0.85,
+      "Booking_Rate": 0.35,
+      "Retail_Rate": 0.2
+    },
+    {
+      "City": "PARALAKHEMUNDI",
+      "Enquiries": 39,
+      "Test_Drives": 18,
+      "Bookings": 5,
+      "Retails": 4,
+      "Avg_Sales_Cycle_Days": -1563.7948717948718,
+      "TD_Rate": 0.46153846153846156,
+      "Booking_Rate": 0.1282051282051282,
+      "Retail_Rate": 0.10256410256410256
+    },
+    {
+      "City": "HINDOL",
+      "Enquiries": 21,
+      "Test_Drives": 11,
+      "Bookings": 10,
+      "Retails": 4,
+      "Avg_Sales_Cycle_Days": -3904.714285714286,
+      "TD_Rate": 0.5238095238095238,
+      "Booking_Rate": 0.47619047619047616,
+      "Retail_Rate": 0.19047619047619047
+    },
+    {
+      "City": "NAYAGARH",
+      "Enquiries": 23,
+      "Test_Drives": 17,
+      "Bookings": 10,
+      "Retails": 3,
+      "Avg_Sales_Cycle_Days": -7134.130434782609,
+      "TD_Rate": 0.7391304347826086,
+      "Booking_Rate": 0.43478260869565216,
+      "Retail_Rate": 0.13043478260869565
+    },
+    {
+      "City": "KHORDHA",
+      "Enquiries": 36,
+      "Test_Drives": 23,
+      "Bookings": 8,
+      "Retails": 1,
+      "Avg_Sales_Cycle_Days": -3412.4166666666665,
+      "TD_Rate": 0.6388888888888888,
+      "Booking_Rate": 0.2222222222222222,
+      "Retail_Rate": 0.027777777777777776
+    },
+    {
+      "City": "Bhubaneshwar",
+      "Enquiries": 1889,
+      "Test_Drives": 250,
+      "Bookings": 28,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -6807.806246691371,
+      "TD_Rate": 0.1323451561672843,
+      "Booking_Rate": 0.014822657490735839,
+      "Retail_Rate": 0.0
+    },
+    {
+      "City": "BARIPADA",
+      "Enquiries": 21,
+      "Test_Drives": 14,
+      "Bookings": 8,
+      "Retails": 0,
+      "Avg_Sales_Cycle_Days": -2922.904761904762,
+      "TD_Rate": 0.6666666666666666,
+      "Booking_Rate": 0.38095238095238093,
+      "Retail_Rate": 0.0
+    }
+  ],
+  "total_cities": 30,
+  "total_states": 2
+}
