@@ -73,6 +73,7 @@ export default function App() {
       } else if (hash === "showroom" || hash === "login" || !hash) {
         if (!rawData) {
           setIsAuthenticated(false);
+          setChatOpen(false);
         } else {
           setRawData(null);
         }
@@ -177,6 +178,7 @@ export default function App() {
   const handleLogout = () => {
     sessionStorage.removeItem("kia-auth");
     setIsAuthenticated(false);
+    setChatOpen(false);
     setRawData(null);
     resetFilters();
     setActiveTab("executive");
@@ -193,7 +195,6 @@ export default function App() {
           setIsAuthenticated(true);
           window.history.pushState({ type: "upload" }, "", "#upload");
         }}
-        onOpenChat={() => setChatOpen(true)}
       />
     );
   } else if (!rawData) {
@@ -206,6 +207,7 @@ export default function App() {
         onBack={() => {
           sessionStorage.removeItem("kia-auth");
           setIsAuthenticated(false);
+          setChatOpen(false);
           window.history.pushState({ type: "showroom" }, "", "#showroom");
         }}
         onOpenChat={() => setChatOpen(true)}
@@ -486,13 +488,15 @@ export default function App() {
     <>
       {mainView}
 
-      {/* KIA AI Dealership Analytics Copilot Chatbox — Globally Accessible */}
-      <AskYourDataChat
-        rawData={rawData}
-        isOpen={chatOpen}
-        onOpen={() => setChatOpen(true)}
-        onClose={() => setChatOpen(false)}
-      />
+      {/* KIA AI Dealership Analytics Copilot Chatbox — Accessible After Login Credentials Passed */}
+      {isAuthenticated && (
+        <AskYourDataChat
+          rawData={rawData}
+          isOpen={chatOpen}
+          onOpen={() => setChatOpen(true)}
+          onClose={() => setChatOpen(false)}
+        />
+      )}
     </>
   );
 }

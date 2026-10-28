@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Lock, User, Eye, EyeOff, AlertCircle, ArrowRight, Bot } from "lucide-react";
+import { Lock, User, Eye, EyeOff, AlertCircle, ArrowRight } from "lucide-react";
 import HeroBackground from "./HeroBackground";
 import ModelSlider from "./ModelSlider";
 import Car360Viewer from "./Car360Viewer";
@@ -33,7 +33,7 @@ const VALID_PASSWORD = "Anmol@2008";
 /* ═══════════════════════════════════════════════════
    LOGIN SCREEN COMPONENT
    ═══════════════════════════════════════════════════ */
-export default function LoginScreen({ onLogin, onOpenChat }) {
+export default function LoginScreen({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -166,42 +166,6 @@ export default function LoginScreen({ onLogin, onOpenChat }) {
             Bhubaneswar
           </span>
         </div>
-
-        {onOpenChat && (
-          <button
-            onClick={onOpenChat}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "7px",
-              padding: "7px 15px",
-              fontSize: "12px",
-              fontWeight: 700,
-              color: "#ffffff",
-              background: "linear-gradient(135deg, rgba(20, 24, 33, 0.9), rgba(10, 13, 20, 0.95))",
-              border: "1px solid rgba(234, 0, 41, 0.5)",
-              borderRadius: "9999px",
-              cursor: "pointer",
-              boxShadow: "0 4px 20px rgba(0, 0, 0, 0.5), 0 0 14px rgba(234, 0, 41, 0.25)",
-              backdropFilter: "blur(12px)",
-              transition: "all 0.2s cubic-bezier(0.16, 1, 0.3, 1)",
-            }}
-            title="Ask AI questions about car models, conversion rates, and dealership performance"
-          >
-            <Bot size={14} color="#ea0029" />
-            <span style={{ fontFamily: "'Outfit', sans-serif" }}>Ask AI Copilot</span>
-            <span
-              style={{
-                width: "7px",
-                height: "7px",
-                borderRadius: "50%",
-                background: "#ea0029",
-                display: "inline-block",
-                boxShadow: "0 0 8px #ea0029",
-              }}
-            />
-          </button>
-        )}
       </div>
 
       {/* Top Flex Spacer */}
